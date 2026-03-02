@@ -1,37 +1,40 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { usePathname } from "next/navigation"
+import { useTranslations } from "next-intl"
+import { Link, usePathname } from "@/i18n/routing"
 import { useTheme } from "next-themes"
-import { Menu, X, Sun, Moon } from "lucide-react"
+import { Menu, X, Sun, Moon, MailIcon, MapPinIcon, PhoneOutgoingIcon } from "lucide-react"
 import { Button } from "./ui/button"
-
-const navLinks = [
-  { href: "/home", label: "Home" },
-  { href: "/about-us", label: "About Us" },
-  { href: "/europe", label: "Europe" },
-  { href: "/sub-sahara-africa", label: "Sub-Sahara Africa" },
-  { href: "/united-states", label: "US" },
-]
+import LocaleSwitcher from "./localeSwitcher"
+import { interTight } from "@/app/utils/fonts"
 
 const Navbar = () => {
+  const t = useTranslations("Navbar")
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
   const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark")
 
+  const navLinks = [
+    { href: "/home", label: t("home") },
+    { href: "/about-us", label: t("about") },
+    { href: "/europe", label: t("europe") },
+    { href: "/sub-sahara-africa", label: t("africa") },
+    { href: "/united-states", label: t("us") },
+  ]
+
   return (
     <div className="w-screen flex flex-col items-center bg-background text-foreground">
       {/* Top info bar — hidden on mobile */}
-      <div className="border-b w-screen">
-        <div className="hidden md:flex w-full max-w-6xl mx-auto px-6 md:px-12 py-3 ">
-          <ul className="flex justify-center text-sm text-gray-500 w-full">
-            <li className="pr-4">info@welfareplus.com</li>
-            <li className="px-4 border-l border-gray-300">Ikeja, Lagos, Nigeria</li>
-            <li className="pl-4 border-l border-gray-300">+234 9023-6129-26</li>
+      <div className={`${interTight.className} font-medium border-b w-screen `}>
+        <div className="hidden md:flex w-fit max-w-6xl mx-auto px-6 md:px-12 py-3 justify-center items-center">
+          <ul className="flex justify-start text-sm text-gray-500 w-full mx-auto">
+            <li className="pr-4 flex items-center gap-x-3"><span><MailIcon size={16} className="stroke-primary" /></span>{t("email")}</li>
+            <li className="px-4 border-l border-gray-300 flex items-center gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
+            <li className="pl-4 border-l border-gray-300 flex items-center gap-x-3"><span><PhoneOutgoingIcon size={16} className="stroke-primary" /></span>{t("phone")}</li>
           </ul>
         </div>
       </div>
@@ -69,17 +72,20 @@ const Navbar = () => {
               <Sun size={18} className="hidden dark:block" />
               <Moon size={18} className="block dark:hidden" />
             </button>
-            <Button variant="plain" className="border shadow-none py-3 px-6 text-foreground">Get In Touch</Button>
+            <Button variant="plain" className="border shadow-none py-3 px-6 text-foreground">{t("getInTouch")}</Button>
           </div>
 
           {/* Hamburger button — mobile only */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LocaleSwitcher />
+            <button
+              className="p-2"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -111,12 +117,12 @@ const Navbar = () => {
               <Sun size={18} className="hidden dark:block" />
               <Moon size={18} className="block dark:hidden" />
             </button>
-            <Button variant="plain" className="border shadow-none py-3 px-6 flex-1">Get In Touch</Button>
+            <Button variant="plain" className="border shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
           </div>
           <ul className="flex flex-col gap-1 text-xs text-gray-500 border-t pt-3">
-            <li>info@welfareplus.com</li>
-            <li>Ikeja, Lagos, Nigeria</li>
-            <li>+234 9023-6129-26</li>
+            <li>{t("email")}</li>
+            <li>{t("address")}</li>
+            <li>{t("phone")}</li>
           </ul>
         </div>
       )}

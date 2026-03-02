@@ -1,4 +1,4 @@
-import { Satoshi, Outfit } from "next/font/google";
+import { Outfit, Inter_Tight } from "next/font/google";
 import LocalFont from "next/font/local";
 
 export const outfit = Outfit({
@@ -37,4 +37,9 @@ export const satoshi = LocalFont({
       weight: "900",
     },
   ],
+});
+
+export const interTight = Inter_Tight({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });

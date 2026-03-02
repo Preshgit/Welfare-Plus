@@ -1,12 +1,21 @@
+import { setRequestLocale } from 'next-intl/server';
 import ContactUs from "@/components/contactUs"
 import FeatureSection from "@/components/featureSection"
 import Impacts from "@/components/impacts"
 import ManWheelChair from "@/assets/images/man_wheelchair.png"
 import HubCard from "@/components/countryHero"
-
 import HandGrips from "@/assets/images/handgrips.png"
 
-const Page = () => {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  
+  // Enable static rendering
+  setRequestLocale(locale);
+
   return (
     <div style={{ backgroundImage: "url('/Line.svg')" }}>
       <HubCard description="Advancing Social Innovation and Assistive Technology Partnerships Across Europe. Welfare Plus Europe serves as the headquarters for international research, innovation, and partnerships in inclusive social welfare and independent living solutions." imageUrl={HandGrips} title="Europe's Hub for Inclusive Welfare Innovation" imageAlt='man with virtual reality glasses' locationLabel="U.S." key={'united states'} />
@@ -16,5 +25,3 @@ const Page = () => {
     </div>
   )
 }
-
-export default Page

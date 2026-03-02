@@ -1,0 +1,55 @@
+{
+  "Navbar": {
+    "home": "Koti",
+    "about": "Meistä",
+    "europe": "Eurooppa",
+    "africa": "Sub-Saharan Afrikka",
+    "us": "Yhdysvallat",
+    "getInTouch": "Ota yhteyttä",
+    "email": "info@welfareplus.com",
+    "address": "Ikeja, Lagos, Nigeria",
+    "phone": "+234 9023-6129-26"
+  },
+  "LocaleSwitcher": {
+    "label": "Vaihda kieltä"
+  },
+  "About": {
+    "button": "Meistä",
+    "title": "Löydä Mitä Teemme",
+    "description": "Welfare Plus on Suomeen sijoittuva liikeorganisaatio, joka on sidoksissa ulkomaisiin järjestöihin. Olemme sitoutuneet parantamaan hyvinvointia eri maissa ja yhteisöissä.",
+    "research": {
+      "title": "Tarjoamme Sosiaalityön tutkimusta",
+      "description": "Näyttöön perustuva tutkimus ja edunvalvonta sosiaalihuoltojärjestelmien vahvistamiseksi."
+    },
+    "products": {
+      "title": "Myymme Apuvälinetuotteita ja -teknologioita,",
+      "description": "Helpottamassa globaalien apuvälineratkaisujen saatavuutta eri väestöryhmille."
+    },
+    "programs": {
+      "title": "Fasilitoimme Sosiaalisten ohjelmien kehittämistä.",
+      "description": "Kokonaisvaltainen sosiaalihuolto, joka tukee perusinhimillisten tarpeiden saatavuutta."
+    },
+    "seeMore": "Lue Lisää Meistä"
+  },
+  "Homepage": {
+    "hero": {
+      "slides": [
+        {
+          "title": "Huomisen maailman voimaannuttaminen",
+          "subtitle": "Omistettu parantamaan hyvinvointia eri maissa ja yhteisöissä osallistavan sosiaalihuollon kautta.",
+          "cta": "Tutustu tehtäväämme"
+        },
+        {
+          "title": "Innovatiiviset apuvälineratkaisut",
+          "subtitle": "Helpottamassa globaalien apuvälineteknologioiden saatavuutta lapsille, eläkeläisille ja vammaisille.",
+          "cta": "Katso tuotteet"
+        },
+        {
+          "title": "Näyttöön perustuva sosiaalitutkimus",
+          "subtitle": "Vahvistamme sosiaalihuoltojärjestelmiä tiukan edunvalvonnan ja globaalin tiedonvaihdon avulla.",
+          "cta": "Lue tutkimuksemme"
+        }
+      ]
+    }
+  }
+}
