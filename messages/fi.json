@@ -1,4 +1,30 @@
 {
+  "Metadata": {
+    "home": {
+      "title": "Welfare Plus | Kokonaisvaltainen hyvinvointi ja sosiaalinen kehitys",
+      "description": "Voimaannutamme huomisen maailmaa kansainvälisten aloitteiden kautta kokonaisvaltaisen hyvinvoinnin ja osallistavan sosiaalisen kehityksen puolesta."
+    },
+    "about": {
+      "title": "Meistä | Welfare Plus",
+      "description": "Lue lisää Welfare Plus -organisaatiosta, joka on omistautunut hyvinvoinnin parantamiseen eri maissa ja yhteisöissä."
+    },
+    "europe": {
+      "title": "Eurooppa-hubi | Welfare Plus",
+      "description": "Tutkimme osallistavia hyvinvointiinnovaatioita ja apuvälineratkaisuja Euroopan maissa."
+    },
+    "africa": {
+      "title": "Sub-Saharan Afrikan hubi | Welfare Plus",
+      "description": "Welfare Plus Nigeria Limited: Edustamme kansainvälisiä apuvälineteknologioiden valmistajia Afrikassa."
+    },
+    "us": {
+      "title": "Yhdysvaltain hubi | Welfare Plus",
+      "description": "Sosiaalihuollon aloitteet ja apuvälineohjelmat Yhdysvalloissa."
+    },
+    "contact": {
+      "title": "Ota yhteyttä | Welfare Plus",
+      "description": "Ota yhteyttä Welfare Plusiin tiedustellaksesi sosiaalihuolto-ohjelmistamme ja apuvälineteknologioistamme."
+    }
+  },
   "Navbar": {
     "home": "Koti",
     "about": "Meistä",

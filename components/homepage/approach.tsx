@@ -34,7 +34,7 @@ const locations = [
 
 const Approach = () => {
   return (
-    <section className="bg-primary flex items-center text-foreground py-10">
+    <section className="bg-primary flex items-center text-foreground py-10 pt-24">
       <div className="space-y-10 w-5/6 mx-auto pb-10">
         <div className="mx-auto flex flex-col justify-center items-center gap-y-10">
           <Button variant="plain" className={`${outfit.className} bg-white h-[55.73px] w-[137.69px] border-gray-200 pl-[5.96px] pr-[17.91px] py-[7.96px] shadow-none border rounded-full`}><SparkleIcon fill='black' className="w-[39.81px] h-[39.81px]" />Global Reach</Button>

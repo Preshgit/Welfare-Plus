@@ -1,60 +1,86 @@
 {
-       "Navbar": {
-              "home": "Home",
-              "about": "About Us",
-              "europe": "Europe",
-              "africa": "Sub-Sahara Africa",
-              "us": "US",
-              "getInTouch": "Get In Touch",
-              "email": "info@welfareplus.com",
-              "address": "Ikeja, Lagos, Nigeria",
-              "phone": "+234 9023-6129-26"
-       },
-       "LocaleSwitcher": {
-              "label": "Change language"
-       },
-       "About": {
-              "button": "About Us",
-              "title": "Discover What We Do",
-              "description": "Welfare Plus is a Finland-based business organization affiliated to organizations abroad, and we are dedicated to improving wellbeing across countries and communities.",
-              "research": {
-                     "title": "We Provide Social Work research",
-                     "description": "Evidence-based research and advocacy to strengthen social welfare systems."
-              },
-              "products": {
-                     "title": "We sell Assistive Products & Technologies,",
-                     "description": "Facilitating access to global assistive solutions for diverse population groups."
-              },
-              "programs": {
-                     "title": "We Facilitate Social program development.",
-                     "description": "Holistic social care supporting access to basic human needs."
-              },
-              "seeMore": "See More About Us"
-       },
-       "Homepage": {
-              "hero": {
-                     "slides": [
-                            {
-                                   "title": "International Initiatives for Holistic Wellbeing and Inclusive Social Development.",
-                                   "subtitle": "Facilitating access to basic social welfare needs and the Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic well-being.",
-                                   "cta": "Learn More"
-                            },
-                            {
-                                   "title": "“The basis of social work lies in deficiencies in social systems.” – Paul Tillich",
-                                   "subtitle": "",
-                                   "cta": "Learn More"
-                            },
-                            {
-                                   "title": "“You may need social work at any time in the life cycle.” – Social Work England",
-                                   "subtitle": "",
-                                   "cta": "Learn More"
-                            },
-                            {
-                                   "title": "International Initiatives for Holistic Wellbeing and Inclusive Social Development.",
-                                   "subtitle": "Facilitating access to basic social welfare needs and the Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic well-being.",
-                                   "cta": "Learn More"
-                            }
-                     ]
-              }
-       }
+  "Metadata": {
+    "home": {
+      "title": "Welfare Plus | Holistic Wellbeing & Social Development",
+      "description": "Empowering tomorrow's world through international initiatives for holistic wellbeing and inclusive social development."
+    },
+    "about": {
+      "title": "About Us | Welfare Plus",
+      "description": "Learn about Welfare Plus, a Finland-based organization dedicated to improving wellbeing across countries and communities."
+    },
+    "europe": {
+      "title": "Europe Hub | Welfare Plus",
+      "description": "Exploring inclusive welfare innovation and assistive technology solutions across European countries."
+    },
+    "africa": {
+      "title": "Sub-Sahara Africa Hub | Welfare Plus",
+      "description": "Welfare Plus Nigeria Limited: Representing international manufacturers of assistive technologies in Africa."
+    },
+    "us": {
+      "title": "United States Hub | Welfare Plus",
+      "description": "Social welfare initiatives and assistive technology programs in the United States."
+    },
+    "contact": {
+      "title": "Contact Us | Welfare Plus",
+      "description": "Get in touch with Welfare Plus for inquiries about our social welfare programs and assistive technologies."
+    }
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "europe": "Europe",
+    "africa": "Sub-Sahara Africa",
+    "us": "US",
+    "getInTouch": "Get In Touch",
+    "email": "info@welfareplus.com",
+    "address": "Ikeja, Lagos, Nigeria",
+    "phone": "+234 9023-6129-26"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language"
+  },
+  "About": {
+    "button": "About Us",
+    "title": "Discover What We Do",
+    "description": "Welfare Plus is a Finland-based business organization affiliated to organizations abroad, and we are dedicated to improving wellbeing across countries and communities.",
+    "research": {
+      "title": "We Provide Social Work research",
+      "description": "Evidence-based research and advocacy to strengthen social welfare systems."
+    },
+    "products": {
+      "title": "We sell Assistive Products & Technologies,",
+      "description": "Facilitating access to global assistive solutions for diverse population groups."
+    },
+    "programs": {
+      "title": "We Facilitate Social program development.",
+      "description": "Holistic social care supporting access to basic human needs."
+    },
+    "seeMore": "See More About Us"
+  },
+  "Homepage": {
+    "hero": {
+      "slides": [
+        {
+          "title": "International Initiatives for Holistic Wellbeing and Inclusive Social Development.",
+          "subtitle": "Facilitating access to basic social welfare needs and the Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic well-being.",
+          "cta": "Learn More"
+        },
+        {
+          "title": "“The basis of social work lies in deficiencies in social systems.” – Paul Tillich",
+          "subtitle": "",
+          "cta": "Learn More"
+        },
+        {
+          "title": "“You may need social work at any time in the life cycle.” – Social Work England",
+          "subtitle": "",
+          "cta": "Learn More"
+        },
+        {
+          "title": "International Initiatives for Holistic Wellbeing and Inclusive Social Development.",
+          "subtitle": "Facilitating access to basic social welfare needs and the Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic well-being.",
+          "cta": "Learn More"
+        }
+      ]
+    }
+  }
 }

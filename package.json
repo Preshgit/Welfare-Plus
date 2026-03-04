@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "translate": "node scripts/translate-messages.mjs"
   },
   "dependencies": {
+    "@google-cloud/translate": "^9.3.0",
     "@radix-ui/react-slot": "^1.2.4",
     "@svgr/webpack": "^8.1.0",
     "class-variance-authority": "^0.7.1",

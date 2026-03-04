@@ -15,7 +15,7 @@ const About = () => {
   const t = useTranslations("About")
 
   return (
-    <section className={`${outfit.className} bg-background text-foreground flex justify-center items-center pt-40 pb-10 min-h-157.5`}>
+    <section className={`${outfit.className} bg-background text-foreground flex justify-center items-center py-24 pb-10 min-h-157.5`}>
       <div className="w-5/6 mx-auto flex flex-col justify-center items-center gap-y-10">
         <div className="text-center space-y-5">
           <Button variant="plain" className={`text-foreground h-[55.73px] w-[137.69px] border-gray-200 pl-[5.96px] pr-[17.91px] py-[7.96px] shadow-none border rounded-full`}><SparkleIcon className="fill-foreground w-[39.81px] h-[39.81px]" />{t("button")}</Button>

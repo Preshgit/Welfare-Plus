@@ -5,7 +5,7 @@ import { outfit } from "@/app/utils/fonts"
 
 const Impacts = ({ text, content, btnText }: { text: string, content: string, btnText: string }) => {
   return (
-    <section className="w-screen bg-linear-to-b px-25 dark:bg-background flex items-center justify-center">
+    <section className="w-screen bg-linear-to-b font-medium px-25 dark:bg-background flex items-center justify-center">
       <div className="space-y-5 text-center mx-auto">
         <HeadingThree text={text} className="text-primary!" />
         {content.split("\n").map((word, index) => (

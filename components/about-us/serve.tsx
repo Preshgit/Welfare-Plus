@@ -18,21 +18,22 @@ const Serve = () => {
         </div>
         <div className="grid grid-cols-3 gap-x-10 divide-x py-10">
           <div className="space-y-5">
-            <PuzzleIcon />
+            <PuzzleIcon className="dark:fill-primary" />
+
             <div className="space-y-5 text-left">
               <HeadingFour className='w-4/5! text-[25px]! font-bold!' text="Social work research." />
               <p className={`${satoshi.className} text-foreground font-normal text-[18px]`}>Evidence-based research and advocacy to strengthen social welfare systems.</p>
             </div>
           </div>
           <div className="space-y-5">
-            <LockIcon />
+            <LockIcon className="dark:fill-primary" />
             <div className="space-y-5 text-left">
               <HeadingFour className='text-[25px]! font-bold!' text="Social program development." />
               <p className={`${satoshi.className} text-foreground font-normal text-[18px]`}>Holistic social care supporting access to basic human needs.</p>
             </div>
           </div>
           <div className="space-y-5 text-left">
-            <LockIcon />
+            <LockIcon className="dark:fill-primary" />
             <div className="space-y-5">
               <HeadingFour className="text-[25px]! font-bold!" text="Assistive Products & Technologies" />
               <p className={`${satoshi.className} text-foreground font-normal text-[18px]`}>Facilitating access to global assistive solutions for diverse population groups.

@@ -1,10 +1,20 @@
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import ContactUs from "@/components/contactUs"
 import HubCard from "@/components/countryHero"
 import Impacts from "@/components/impacts"
 import AssistiveChair from "@/assets/images/assistive_chair.png"
 import VirtualReality from "@/assets/images/virtual_reality.png"
 import FeatureSection from "@/components/featureSection"
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Metadata.us' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export default async function Page({
   params,

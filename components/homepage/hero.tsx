@@ -8,89 +8,102 @@ import { Button } from "../ui/button"
 import { interTight, outfit, satoshi } from "@/app/utils/fonts"
 import { ArrowUpRight } from "lucide-react"
 
+const slideTransition = {
+  duration: 1.2,
+  ease: [0.22, 1, 0.36, 1] as any
+}
+
 const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => (
-  <div className={`relative w-full h-full  items-center justify-center overflow-hidden ${satoshi.className}`}>
-    <Image
-      src="/hero(2).png"
-      alt="Slide One Background"
-      fill
-      priority
-      className="object-cover brightness-50"
-    />
-    <div className="relative z-10 max-w-6xl py-28 px-16 gap-4.5 text-white px-6 text-left">
-      <div>
+  <div className={`relative w-full h-full flex items-center justify-center overflow-hidden ${satoshi.className}`}>
+    <motion.div 
+      initial={{ scale: 1.1 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+      className="absolute inset-0"
+    >
+      <Image
+        src="/hero(2).png"
+        alt="Slide One Background"
+        fill
+        priority
+        className="object-cover brightness-50"
+      />
+    </motion.div>
+    <div className="relative z-10 max-w-6xl w-full px-8 md:px-16 gap-4.5 text-white text-left">
+      <div className="space-y-8">
         <div>
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className={` text-[60px] font-medium  mb-6`}
+            transition={{ ...slideTransition, delay: 0.1 }}
+            className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-tight mb-6"
           >
             {title}
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl font-regular mb-10 "
+            transition={{ ...slideTransition, delay: 0.2 }}
+            className="text-lg md:text-xl lg:text-2xl font-light max-w-3xl mb-10 text-white/90"
           >
             {subtitle}
           </motion.p>
         </div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ ...slideTransition, delay: 0.3 }}
         >
-
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full">
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-7 text-lg rounded-full shadow-lg transition-transform hover:scale-105 active:scale-95">
             {cta}
-            <ArrowUpRight className="stroke-2" size={24} />
+            <ArrowUpRight className="stroke-2 ml-2" size={24} />
           </Button>
         </motion.div>
       </div>
     </div>
-    <div>
-      <p className="left-0 text-white">“You may need social work at any time in the life cycle.” – Social Work England
-        “The basis of social work lies in deficiencies in social systems.” – Paul Tillich</p>
-    </div>
-
   </div>
 )
 
 const SlideTwo = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => (
   <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <Image
-      src="/hero-3(2).png"
-      alt="Slide Two Background"
-      fill
-      className="object-cover brightness-50"
-    />
-    <div className="relative z-10 text-center text-white px-6 max-w-6xl">
+    <motion.div 
+      initial={{ scale: 1.1 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+      className="absolute inset-0"
+    >
+      <Image
+        src="/hero-3(2).png"
+        alt="Slide Two Background"
+        fill
+        className="object-cover brightness-50"
+      />
+    </motion.div>
+    <div className="relative z-10 text-center text-white px-8 max-w-6xl">
       <motion.h1
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        className={`${interTight.className} text-5xl md:text-6xl font-normal mb-6`}
+        transition={slideTransition}
+        className={`${interTight.className} text-4xl md:text-6xl lg:text-[72px] font-normal leading-tight mb-6`}
       >
         {title}
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        className={`${interTight.className} text-xl md:text-2xl font-light mb-10`}
+        transition={{ ...slideTransition, delay: 0.2 }}
+        className={`${interTight.className} text-lg md:text-xl lg:text-2xl font-light mb-10 text-white/90`}
       >
         {subtitle}
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
+        transition={{ ...slideTransition, delay: 0.3 }}
       >
-        <Button variant="primary" size="lg" className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg rounded-full">
+        <Button variant="plain" size="lg" className="border-white text-white hover:bg-white hover:text-black px-8 py-7 text-lg rounded-full shadow-lg transition-all hover:scale-105">
           {cta}
-          <ArrowUpRight />
+          <ArrowUpRight className="ml-2" />
         </Button>
       </motion.div>
     </div>
@@ -99,37 +112,44 @@ const SlideTwo = ({ title, subtitle, cta }: { title: string; subtitle: string; c
 
 const SlideThree = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => (
   <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <Image
-      src="/hero-2(1).png"
-      alt="Slide Three Background"
-      fill
-      className="object-cover brightness-50"
-    />
-    <div className="relative z-10 text-center text-white px-6 max-w-6xl">
+    <motion.div 
+      initial={{ scale: 1.2 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+      className="absolute inset-0"
+    >
+      <Image
+        src="/hero-2(1).png"
+        alt="Slide Three Background"
+        fill
+        className="object-cover brightness-50"
+      />
+    </motion.div>
+    <div className="relative z-10 text-center text-white px-8 max-w-6xl">
       <motion.h1
-        initial={{ opacity: 0, scale: 1.2 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-        className={` ${interTight.className} text-6xl md:text-7xl font-normal mb-6`}
+        initial={{ opacity: 0, scale: 0.9, filter: "blur(10px)" }}
+        animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+        transition={slideTransition}
+        className={` ${interTight.className} text-4xl md:text-7xl lg:text-[80px] font-normal leading-tight mb-6`}
       >
         {title}
       </motion.h1>
       <motion.p
-        initial={{ opacity: 0, opacity: 0 }}
-        animate={{ opacity: 1, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        className={`text-xl md:text-2xl font-light mb-10 ${interTight.className}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ...slideTransition, delay: 0.3 }}
+        className={`text-lg md:text-xl lg:text-2xl font-light mb-10 text-white/90 ${interTight.className}`}
       >
         {subtitle}
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
+        transition={{ ...slideTransition, delay: 0.4 }}
       >
-        <Button size="lg" className="text-white   px-8 py-6 text-lg rounded-full">
+        <Button size="lg" className="bg-white text-black hover:bg-white/90 px-8 py-7 text-lg rounded-full shadow-lg transition-all hover:scale-105">
           {cta}
-          <ArrowUpRight />
+          <ArrowUpRight className="ml-2" />
         </Button>
       </motion.div>
     </div>
@@ -162,22 +182,23 @@ const Hero = () => {
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.7 }}
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="w-full h-full"
         >
           <CurrentSlide {...slideData[current]} />
         </motion.div>
       </AnimatePresence>
-      <div className="absolute bottom-10 right-10 z-20 flex gap-3">
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-16 z-20 flex gap-4">
         {[0, 1, 2].map((i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full transition-all ${current === i ? "bg-primary w-8" : "bg-white/40"
+            className={`h-1.5 rounded-full transition-all duration-500 ease-out ${current === i ? "bg-primary w-12" : "bg-white/30 w-6 hover:bg-white/50"
               }`}
+            aria-label={`Go to slide ${i + 1}`}
           />
         ))}
       </div>

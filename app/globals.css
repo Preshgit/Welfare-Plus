@@ -125,4 +125,25 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+
+	/* 1. Hide the actual iframe bar */
+	.goog-te-banner-frame.skiptranslate {
+		display: none !important;
+	}
+
+	/* 2. Prevent the body from being pushed down */
+	body {
+		top: 0px !important;
+	}
+
+	/* 3. Hide the "Original Text" popup when hovering over translated text */
+	.goog-te-balloon-frame {
+		display: none !important;
+	}
+
+	/* 4. Optional: Remove the highlight effect on translated text */
+	font {
+		background-color: transparent !important;
+		box-shadow: none !important;
+	}
 }
