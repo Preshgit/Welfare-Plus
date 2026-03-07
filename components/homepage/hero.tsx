@@ -13,9 +13,11 @@ const slideTransition = {
   ease: [0.22, 1, 0.36, 1] as any
 }
 
-const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => (
+const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => {
+  const t = useTranslations("Homepage.hero")
+  return (
   <div className={`relative w-full h-full flex items-center justify-center overflow-hidden ${satoshi.className}`}>
-    <motion.div 
+    <motion.div
       initial={{ scale: 1.1 }}
       animate={{ scale: 1 }}
       transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
@@ -29,14 +31,14 @@ const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; c
         className="object-cover brightness-50"
       />
     </motion.div>
-    <div className="relative z-10 max-w-6xl w-full px-8 md:px-16 gap-4.5 text-white text-left">
+    <div className="relative z-10 max-w-6xl w-full gap-4.5 text-white text-left">
       <div className="space-y-8">
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...slideTransition, delay: 0.1 }}
-            className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-[60px] font-medium leading-tight mb-6"
           >
             {title}
           </motion.h1>
@@ -44,7 +46,7 @@ const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; c
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...slideTransition, delay: 0.2 }}
-            className="text-lg md:text-xl lg:text-2xl font-light max-w-3xl mb-10 text-white/90"
+            className="text-lg md:text-xl lg:text-xl font-light max-w-3xl mb-10 text-white/90"
           >
             {subtitle}
           </motion.p>
@@ -60,13 +62,18 @@ const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; c
           </Button>
         </motion.div>
       </div>
+      <div className="flex flex-col ml-auto w-fit space-y-3">
+        <p><i>{t("quote1")}</i></p>
+        <p><i>{t("quote2")}</i></p>
+      </div>
     </div>
   </div>
-)
+  )
+}
 
 const SlideTwo = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => (
   <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <motion.div 
+    <motion.div
       initial={{ scale: 1.1 }}
       animate={{ scale: 1 }}
       transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
@@ -84,7 +91,7 @@ const SlideTwo = ({ title, subtitle, cta }: { title: string; subtitle: string; c
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={slideTransition}
-        className={`${interTight.className} text-4xl md:text-6xl lg:text-[72px] font-normal leading-tight mb-6`}
+        className={`${interTight.className} text-4xl md:text-6xl lg:text-[60px] font-normal leading-tight mb-6`}
       >
         {title}
       </motion.h1>
@@ -101,7 +108,7 @@ const SlideTwo = ({ title, subtitle, cta }: { title: string; subtitle: string; c
         animate={{ opacity: 1, y: 0 }}
         transition={{ ...slideTransition, delay: 0.3 }}
       >
-        <Button variant="plain" size="lg" className="border-white text-white hover:bg-white hover:text-black px-8 py-7 text-lg rounded-full shadow-lg transition-all hover:scale-105">
+        <Button size="lg" className="border-white text-white hover:bg-white hover:text-black px-8 py-7 text-lg rounded-full shadow-lg transition-all hover:scale-105">
           {cta}
           <ArrowUpRight className="ml-2" />
         </Button>
@@ -112,7 +119,7 @@ const SlideTwo = ({ title, subtitle, cta }: { title: string; subtitle: string; c
 
 const SlideThree = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => (
   <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-    <motion.div 
+    <motion.div
       initial={{ scale: 1.2 }}
       animate={{ scale: 1 }}
       transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
@@ -130,7 +137,7 @@ const SlideThree = ({ title, subtitle, cta }: { title: string; subtitle: string;
         initial={{ opacity: 0, scale: 0.9, filter: "blur(10px)" }}
         animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
         transition={slideTransition}
-        className={` ${interTight.className} text-4xl md:text-7xl lg:text-[80px] font-normal leading-tight mb-6`}
+        className={` ${interTight.className} text-2xl md:text-7xl lg:text-[60px] font-normal leading-tight mb-6`}
       >
         {title}
       </motion.h1>
@@ -147,7 +154,7 @@ const SlideThree = ({ title, subtitle, cta }: { title: string; subtitle: string;
         animate={{ opacity: 1 }}
         transition={{ ...slideTransition, delay: 0.4 }}
       >
-        <Button size="lg" className="bg-white text-black hover:bg-white/90 px-8 py-7 text-lg rounded-full shadow-lg transition-all hover:scale-105">
+        <Button size="lg" className=" px-8 py-7 text-lg rounded-full shadow-lg transition-all hover:scale-105">
           {cta}
           <ArrowUpRight className="ml-2" />
         </Button>

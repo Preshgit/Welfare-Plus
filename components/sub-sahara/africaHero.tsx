@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useTranslations } from "next-intl"
 import { satoshi } from "@/app/utils/fonts"
 import HeadingOne from "../ui/typography/headingOne"
 import ImageGalleryStrip from "./imageGallery"
@@ -56,6 +57,7 @@ const staggerContainer = {
 }
 
 const AfricaHero = () => {
+  const t = useTranslations("AfricaHero")
   return (
     <motion.section
       className={`${satoshi.className} min-h-screen text-center bg-background text-foreground py-24 gap-12 flex flex-col items-center justify-center`}
@@ -65,12 +67,9 @@ const AfricaHero = () => {
     >
       <motion.div className="max-w-7xl w-full px-0 space-y-12" variants={staggerContainer}>
         <motion.div className="space-y-6" variants={fadeInUp}>
-          <HeadingOne text="Africa's Hub for Inclusive Welfare Innovation" className="text-4xl md:text-6xl lg:text-[72px] leading-tight" />
+          <HeadingOne text={t("heading")} className="text-4xl md:text-6xl lg:text-[72px] leading-tight" />
           <motion.p className="text-lg md:text-xl lg:text-2xl font-normal text-muted-foreground max-w-full mx-auto leading-relaxed">
-            Welfare Plus (in Finland) collaborates with Welfare-Plus Nigeria Limited to represent international
-            manufacturers of the best assistive technologies and independent living devices. These
-            partnerships support market access, distribution, and the implementation of inclusive social welfare and
-            development programs across African countries.
+            {t("description")}
           </motion.p>
         </motion.div>
         <motion.div variants={fadeInUp}>

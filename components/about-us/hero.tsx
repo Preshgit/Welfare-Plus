@@ -9,6 +9,7 @@ import ManWheelChair from "@/assets/images/man_on_wheelchair.png"
 import StarOne from "@/assets/svg/star_one.svg"
 import StarTwo from "@/assets/svg/star_two.svg"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
@@ -35,48 +36,46 @@ const scaleIn = {
 }
 
 export default function Hero() {
+  const t = useTranslations("AboutUs.hero")
   return (
-    <section className="relative bg-background overflow-hidden min-h-[90vh] flex items-center">
-      <div className="mx-auto max-w-7xl px-6 md:px-10 py-24 flex flex-col md:flex-row gap-16 items-center">
+    <section className="relative bg-background overflow-hidden min-h-[90vh] flex items-center px-8">
+      <div className="mx-auto max-w-full px-6 md:px-10 py-24 flex flex-col md:flex-row gap-16 items-center">
         <motion.div
-          className="space-y-8 w-full md:w-1/2"
+          className="space-y-8 w-full"
           initial="initial"
           animate="animate"
           variants={fadeInLeft}
         >
           <motion.h1
-            className={`${satoshi.className} text-foreground text-4xl md:text-5xl lg:text-7xl font-medium leading-tight`}
+            className={`${satoshi.className} text-foreground text-4xl md:text-5xl lg:text-[60px] font-medium leading-tight`}
             variants={fadeInUp}
           >
-            We&apos;re Scaling International{" "}
-            <span className="text-primary">Social Welfare</span>{" "}
-            through Research & Social Work.
+            {t("headingPre")}{" "}
+            <span className="text-primary">{t("headingHighlight")}</span>{" "}
+            {t("headingPost")}
           </motion.h1>
           <motion.p
-            className={`${satoshi.className} text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl`}
+            className={`${satoshi.className} text-muted-foreground w-4/5 text-[22px] md:text-xl leading-relaxed max-w-full`}
             variants={fadeInUp}
           >
-            Welfare Plus is an internationally oriented social welfare
-            organization delivering research, social programs, and assistive
-            solutions across diverse social and regulatory environments.
+            {t("description")}
           </motion.p>
           <motion.div variants={fadeInUp}>
-            <Button className="rounded-full px-8 py-6 text-base font-medium flex items-center gap-2 shadow-lg transition-all hover:scale-105 active:scale-95">
+            <Button className="rounded-full px-8 py-3 text-base font-medium flex items-center gap-2 shadow-lg transition-all hover:scale-105 active:scale-95">
               <Link href="/contact-us">
-                Get In Touch with Us
+                {t("button")}
               </Link><ArrowUpRight className="w-5 h-5" />
             </Button>
           </motion.div>
         </motion.div>
-        
         <motion.div
-          className="relative flex items-center justify-center gap-6 w-full md:w-1/2 h-[500px]"
+          className="relative flex items-center  w-[420px] justify-center gap-6 h-[500px]"
           initial="initial"
           animate="animate"
           variants={fadeInRight}
         >
           <motion.div
-            className="relative w-1/2 h-[450px] rounded-[100px] overflow-hidden shadow-2xl"
+            className="absolute -top-10 -left-10 h-[450px] rounded-[100px] overflow-hidden shadow-2xl w-[228px]"
             variants={scaleIn}
             transition={{ delay: 0.2, duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
           >
@@ -87,17 +86,16 @@ export default function Hero() {
               className="object-cover"
             />
           </motion.div>
-          
           <motion.div
-            className="absolute left-[40%] top-[60%] z-10 text-primary drop-shadow-lg"
+            className="absolute -right-48 bottom-0 z-10 text-primary "
             variants={scaleIn}
             transition={{ delay: 0.6, duration: 1 }}
           >
             <StarTwo className="w-12 h-12" />
           </motion.div>
-          
+
           <motion.div
-            className="relative w-[180px] h-[320px] rounded-[90px] overflow-hidden self-end mb-8 shadow-2xl"
+            className="absolute -right-10 w-[180px] h-[320px] rounded-[90px] overflow-hidden self-end mb-8 shadow-2xl"
             variants={scaleIn}
             transition={{ delay: 0.4, duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
           >
@@ -108,7 +106,6 @@ export default function Hero() {
               className="object-cover"
             />
           </motion.div>
-          
           <motion.div
             className="absolute top-10 right-10 text-primary drop-shadow-lg"
             variants={scaleIn}
