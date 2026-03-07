@@ -25,11 +25,13 @@ export default async function Page({
   // Enable static rendering
   setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: 'AfricaPage' });
+
   return (
     <div>
       <AfricaHero />
-      <FeatureSection content="Expanding Access to Inclusive Social Welfare and Assistive Technologies Across Africa. Welfare Plus supports inclusive development initiatives through regional partnerships that improve access to assistive technologies and social welfare programs." title={'Sub-Sahara Africa'} image={Workstation} alt="Man on wheel chair" />
-      <Impacts text={'Our Impacts Across Sub-Sahara Africa'} content={'Focused on improving access, affordability, and awareness of assistive technologies while supporting sustainable social development. \nCollaboration with academic institutions, government agencies, and international manufacturers to develop scalable social care solutions.'} btnText={'Partner with us'} />
+      <FeatureSection content={t('featureContent')} title={t('featureTitle')} image={Workstation} alt="Man on wheel chair" />
+      <Impacts text={t('impactsText')} content={t('impactsContent')} btnText={t('impactsBtnText')} />
       <ContactUs />
     </div>
   )

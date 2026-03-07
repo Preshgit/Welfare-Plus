@@ -9,6 +9,7 @@ import ManWheelChair from "@/assets/images/man_on_wheelchair.png"
 import StarOne from "@/assets/svg/star_one.svg"
 import StarTwo from "@/assets/svg/star_two.svg"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
@@ -35,6 +36,7 @@ const scaleIn = {
 }
 
 export default function Hero() {
+  const t = useTranslations("AboutUs.hero")
   return (
     <section className="relative bg-background overflow-hidden min-h-[90vh] flex items-center px-8">
       <div className="mx-auto max-w-full px-6 md:px-10 py-24 flex flex-col md:flex-row gap-16 items-center">
@@ -48,22 +50,20 @@ export default function Hero() {
             className={`${satoshi.className} text-foreground text-4xl md:text-5xl lg:text-[60px] font-medium leading-tight`}
             variants={fadeInUp}
           >
-            We&apos;re Scaling International{" "}
-            <span className="text-primary">Social Welfare</span>{" "}
-            through Research & Social Work.
+            {t("headingPre")}{" "}
+            <span className="text-primary">{t("headingHighlight")}</span>{" "}
+            {t("headingPost")}
           </motion.h1>
           <motion.p
             className={`${satoshi.className} text-muted-foreground w-4/5 text-[22px] md:text-xl leading-relaxed max-w-full`}
             variants={fadeInUp}
           >
-            Welfare Plus is an internationally oriented social welfare
-            organization delivering research, social programs, and assistive
-            solutions across diverse social and regulatory environments.
+            {t("description")}
           </motion.p>
           <motion.div variants={fadeInUp}>
             <Button className="rounded-full px-8 py-3 text-base font-medium flex items-center gap-2 shadow-lg transition-all hover:scale-105 active:scale-95">
               <Link href="/contact-us">
-                Get In Touch with Us
+                {t("button")}
               </Link><ArrowUpRight className="w-5 h-5" />
             </Button>
           </motion.div>

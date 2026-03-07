@@ -1,9 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { outfit } from "@/app/utils/fonts";
-
-const companyLinks = ["Home", "About us", "Europe", "Sub-Saharan Africa", "North America"];
-const supportLinks = ["Contact us", "Help"];
+import { useTranslations } from "next-intl";
 
 const socialIcons = {
   X: (
@@ -29,6 +27,17 @@ const socialIcons = {
 };
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
+  const companyLinks = [
+    t("companyLinks.home"),
+    t("companyLinks.about"),
+    t("companyLinks.europe"),
+    t("companyLinks.africa"),
+    t("companyLinks.northAmerica"),
+  ];
+  const supportLinks = [t("supportLinks.contact"), t("supportLinks.help")];
+
   return (
     <footer className={`${outfit.className} w-screen bg-[#3a3a3a] text-white font-sans gap-10 h-147.25 flex items-center flex-col justify-center `}>
       <div className="max-w-6xl mx-auto px-6 md:px-12 py-14 flex justify-between gap-x-48">
@@ -37,14 +46,13 @@ export default function Footer() {
             <Image src="/Logo.png" width={101} height={44} alt="logo" />
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
-            A private business entity based in Finland and affiliated with organizations across
-            regions for international and comparative social research.
+            {t("description")}
           </p>
         </div>
         <div className="grid grid-cols-3 w-full gap-5">
           <div className="w-full">
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
-              Company
+              {t("companyHeading")}
             </h4>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
@@ -61,7 +69,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
-              Support
+              {t("supportHeading")}
             </h4>
             <ul className="space-y-3">
               {supportLinks.map((link) => (
@@ -78,7 +86,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
-              Social
+              {t("socialHeading")}
             </h4>
             <div className="flex items-center gap-3">
               {Object.entries(socialIcons).map(([name, icon]) => (
@@ -100,12 +108,12 @@ export default function Footer() {
 
       <div className="max-w-6xl w-full mx-auto px-6 md:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="text-gray-500 text-xs">
-          © Welfare Plus. All Rights Reserved.
+          {t("copyright")}
         </p>
         <div className="flex items-center gap-1 text-xs text-gray-500">
-          <Link href="#" className="hover:text-orange-400 transition-colors duration-200">Privacy Policy</Link>
+          <Link href="#" className="hover:text-orange-400 transition-colors duration-200">{t("privacy")}</Link>
           <span>·</span>
-          <Link href="#" className="hover:text-orange-400 transition-colors duration-200">Terms and condition</Link>
+          <Link href="#" className="hover:text-orange-400 transition-colors duration-200">{t("terms")}</Link>
         </div>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 "use client"
 
 import { satoshi, outfit } from "@/app/utils/fonts"
+import { useTranslations } from "next-intl"
 
 interface ContactSectionProps {
   title: string
@@ -17,6 +18,7 @@ export default function ContactSection({
   telephone,
   whatsapp,
 }: ContactSectionProps) {
+  const t = useTranslations("ContactSection")
   return (
     <section className="w-full bg-background text-foreground">
       <div className="mx-auto max-w-[908.5px] px-6 md:px-12 lg:px-25 py-16 md:py-20 flex flex-col md:flex-row items-start md:items-end justify-between gap-12 md:gap-4">
@@ -30,14 +32,14 @@ export default function ContactSection({
           <p
             className={`${satoshi.className} text-lg md:text-xl lg:text-[24px] font-light leading-relaxed max-w-full md:w-101.75`}
           >
-            <span className="font-medium">Address:</span> {address}
+            <span className="font-medium">{t("addressLabel")}:</span> {address}
           </p>
         </div>
         <div
           className={`${satoshi.className} w-fit flex flex-col gap-3 text-left md:text-right md:basis-1/2`}
         >
           <p className="font-light">
-            <span className="font-light text-base">Email:</span>{" "}
+            <span className="font-light text-base">{t("emailLabel")}:</span>{" "}
             <a
               href={`mailto:${email}`}
               className="hover:text-primary transition-colors"
@@ -46,10 +48,10 @@ export default function ContactSection({
             </a>
           </p>
           <p className="font-light">
-            <span className="font-light text-base">Telephone:</span> {telephone}
+            <span className="font-light text-base">{t("telephoneLabel")}:</span> {telephone}
           </p>
           <p className="font-light">
-            <span className="font-light text-base">WhatsApp:</span> {whatsapp}
+            <span className="font-light text-base">{t("whatsappLabel")}:</span> {whatsapp}
           </p>
         </div>
       </div>

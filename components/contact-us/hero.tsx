@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from "next/image"
 import { motion } from "framer-motion"
 import { satoshi } from "@/app/utils/fonts"
+import { useTranslations } from "next-intl"
 import { ArrowUpRight } from "lucide-react"
 import { Button } from "../ui/button"
 import StarOne from "@/assets/svg/star_one.svg"
@@ -51,6 +52,7 @@ export default function CTASection({
   avatarTopRight,
   avatarBottomRight,
 }: CTASectionProps) {
+  const t = useTranslations("ContactHero")
   return (
     <section className="relative bg-background text-foreground overflow-hidden min-h-[80vh] flex items-center" style={{
       backgroundImage: "url(/Line.png)",
@@ -67,14 +69,13 @@ export default function CTASection({
             className={`${satoshi.className} font-medium text-4xl sm:text-5xl md:text-6xl lg:text-[72px] leading-tight`}
             variants={fadeInUp}
           >
-            We&apos;re here to <br className="hidden sm:block" />
-            answer any question you may <br className="hidden sm:block" />
-            have &{" "}
-            <span className="text-primary">collaborate</span> with you.
+            {t("headingPre")} <br className="hidden sm:block" />{" "}
+            <span className="text-primary">{t("headingHighlight")}</span>{" "}
+            {t("headingPost")}
           </motion.h2>
           <motion.div variants={fadeInUp}>
             <Button className="rounded-full px-10 py-4 text-lg md:text-xl shadow-xl transition-all hover:scale-105 active:scale-95">
-              Learn About Welfare Plus <ArrowUpRight className="ml-2" size={30} />
+              {t("button")} <ArrowUpRight className="ml-2" size={30} />
             </Button>
           </motion.div>
         </motion.div>

@@ -28,15 +28,17 @@ export default async function Page({
   // Enable static rendering
   setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: 'ContactPage' });
+
   return (
     <section style={{ backgroundImage: "url('/Line.png')" }}>
       <CTASection avatarBottomLeft={ManPotrait} avatarBottomRight={Potrait} avatarTopLeft={ManSmiling} avatarTopRight={ManHeadset} key="hero" />
       <ContactSection
-        title="Europe"
-        address="Juontotie 9D 18, 70150 Kuopio, North Savo, Finland."
-        email="info@welfareplus.fi"
-        telephone="+358 46 8857 552"
-        whatsapp="+358 44 915 097"
+        title={t('sectionTitle')}
+        address={t('address')}
+        email={t('email')}
+        telephone={t('telephone')}
+        whatsapp={t('whatsapp')}
       />
       <ContactForm />
     </section>

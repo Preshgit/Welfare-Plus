@@ -13,7 +13,9 @@ const slideTransition = {
   ease: [0.22, 1, 0.36, 1] as any
 }
 
-const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => (
+const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => {
+  const t = useTranslations("Homepage.hero")
+  return (
   <div className={`relative w-full h-full flex items-center justify-center overflow-hidden ${satoshi.className}`}>
     <motion.div
       initial={{ scale: 1.1 }}
@@ -61,12 +63,13 @@ const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; c
         </motion.div>
       </div>
       <div className="flex flex-col ml-auto w-fit space-y-3">
-        <p><i>“You may need social work at any time in the life cycle.”</i> – Social Work England</p>
-        <p><i>“The basis of social work lies in deficiencies in social systems.”</i> – Paul Tillich</p>
+        <p><i>{t("quote1")}</i></p>
+        <p><i>{t("quote2")}</i></p>
       </div>
     </div>
   </div>
-)
+  )
+}
 
 const SlideTwo = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => (
   <div className="relative w-full h-full flex items-center justify-center overflow-hidden">

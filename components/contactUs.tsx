@@ -3,36 +3,39 @@ import { Mail, Phone, MapPin } from "lucide-react"
 import { satoshi } from "@/app/utils/fonts"
 import { Button } from "./ui/button"
 import StarOne from "@/assets/svg/Star_1.svg"
-
-const contacts = [
-  {
-    icon: <Mail className="w-5 h-5 text-neutral-500" />,
-    label: "Email",
-    detail: "Office : welfare-plus@welfareplus.fi",
-  },
-  {
-    icon: <Phone className="w-5 h-5 text-neutral-500" />,
-    label: "Phone",
-    detail: "Office : +254 904 632 4224",
-  },
-  {
-    icon: <MapPin className="w-5 h-5 text-neutral-500" />,
-    label: "Location",
-    detail: "Kuopio, Finland Office",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function ContactUs() {
+  const t = useTranslations("ContactUsSection")
+
+  const contacts = [
+    {
+      icon: <Mail className="w-5 h-5 text-neutral-500" />,
+      label: t("emailLabel"),
+      detail: t("emailDetail"),
+    },
+    {
+      icon: <Phone className="w-5 h-5 text-neutral-500" />,
+      label: t("phoneLabel"),
+      detail: t("phoneDetail"),
+    },
+    {
+      icon: <MapPin className="w-5 h-5 text-neutral-500" />,
+      label: t("locationLabel"),
+      detail: t("locationDetail"),
+    },
+  ]
+
   return (
     <section className={`${satoshi.className} bg-background py-20 px-6`}>
       <div className="gap-y-10">
         <div className="flex flex-col items-center text-center mb-10">
           <div className="flex items-center gap-4 mb-3">
             <StarOne className="text-primary " />
-            <h2 className=" text-4xl font-semibold">Contact Us</h2>
+            <h2 className=" text-4xl font-semibold">{t("heading")}</h2>
             <StarOne className="text-primary " />
           </div>
-          <p className="text-foreground text-[22px]">Contact us to Become part of the Impact.</p>
+          <p className="text-foreground text-[22px]">{t("subtitle")}</p>
           <div className="flex items-center gap-5 mt-5">
             <a href="#" aria-label="X" className="text-primary hover:text-primary transition-colors">
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -71,9 +74,9 @@ export default function ContactUs() {
                   variant="plain"
                   className="rounded-full shadow-none border-primary  text-primary text-base px-6 gap-6 py-3 h-auto font-medium hover:border-primary hover:text-primary transition-colors"
                 >
-                  Contact us
+                  {t("button")}
                 </Button>
-                <span className="text-foreground/40 text-base">*available 24 hrs</span>
+                <span className="text-foreground/40 text-base">{t("available")}</span>
               </div>
             </div>
           ))}

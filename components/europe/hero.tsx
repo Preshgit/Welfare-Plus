@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useTranslations } from "next-intl"
 import HeadingOne from "../ui/typography/headingOne"
 
 const fadeInUp = {
@@ -24,6 +25,7 @@ const staggerContainer = {
 }
 
 const Hero = () => {
+  const t = useTranslations("EuropeHero")
   return (
     <motion.section
       className="relative w-full min-h-[60vh] flex flex-col items-center justify-center py-24 bg-background overflow-hidden"
@@ -37,7 +39,7 @@ const Hero = () => {
       >
         <motion.div variants={fadeInUp}>
           <HeadingOne
-            text="Europe's Hub for Inclusive Welfare Innovation"
+            text={t("heading")}
             className="text-4xl md:text-6xl lg:text-[72px] leading-tight font-medium"
           />
         </motion.div>
@@ -45,10 +47,7 @@ const Hero = () => {
           variants={fadeInUp}
           className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-normal max-w-4xl mx-auto leading-relaxed"
         >
-          Welfare Plus (in Finland) collaborates with international partners to represent
-          manufacturers of the best assistive technologies and independent living devices.
-          These partnerships support market access, distribution, and the implementation
-          of inclusive social welfare and development programs across Europe.
+          {t("description")}
         </motion.p>
 
         <motion.div

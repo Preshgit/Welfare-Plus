@@ -7,6 +7,7 @@ import { ArrowUpRightIcon } from "lucide-react"
 import HeadingTwo from "../ui/typography/headingTwo"
 import { Button } from "../ui/button"
 import { outfit } from "@/app/utils/fonts"
+import { useTranslations } from "next-intl"
 
 import WheelChair from "@/assets/images/wheelchair.png"
 import AssistiveSpoon from "@/assets/images/assistiveSpoon.png"
@@ -37,15 +38,16 @@ const images = [
 ]
 
 const Illustration = () => {
+  const t = useTranslations("Homepage.illustration")
   return (
     <section className="bg-background py-16 space-y-12 dark:border-b dark:border-b-primary/40">
       <div className="w-4/5 mx-auto text-center space-y-4">
         <HeadingTwo
-          text="Products & Services Illustration"
+          text={t("heading")}
           className="text-[60px] text-foreground"
         />
         <p className="text-[22px] text-foreground">
-          Assistive Chairs | Hearing Aids | Assistive Solutions | Mobility Aids | Support Systems
+          {t("description")}
         </p>
       </div>
 
@@ -76,7 +78,7 @@ const Illustration = () => {
             size="md"
             className={`${outfit.className} h-12 bg-primary w-fit flex items-center gap-2`}
           >
-            See More About Us
+            {t("button")}
             <ArrowUpRightIcon className="w-5 h-5 stroke-2" />
           </Button>
         </Link>
