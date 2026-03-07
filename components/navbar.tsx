@@ -42,7 +42,8 @@ const Navbar = () => {
       <div className="border-b w-full px-6 md:px-12 lg:px-25">
         <div className="max-w-6xl mx-auto flex items-center justify-between py-1">
           <Link href="/">
-            <Image src="/Logo.png" height={70} width={140} alt="logo" />
+            <Image src="/Logo.png" height={70} width={140} alt="logo" className="dark:hidden" />
+            <Image src="/logodark.png" height={70} width={140} alt="logo" className="hidden dark:block" />
           </Link>
           <ul className="hidden md:flex gap-x-5 items-center">
             {navLinks.map(({ href, label }) => {
@@ -64,7 +65,6 @@ const Navbar = () => {
             <Button onClick={() => router.push("contact-us")} variant="plain" className="border text-foreground shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
           </div>
           <div className="md:hidden flex items-center gap-2">
-            <LocaleSwitcher />
             <button
               className="p-2"
               onClick={() => setMenuOpen(!menuOpen)}
