@@ -39,9 +39,9 @@ export default function Footer() {
   const supportLinks = [t("supportLinks.contact"), t("supportLinks.help")];
 
   return (
-    <footer className={`${outfit.className} w-screen bg-[#3a3a3a] text-white font-sans gap-10 h-147.25 flex items-center flex-col justify-center `}>
-      <div className="max-w-6xl mx-auto px-6 md:px-12 py-14 flex justify-between gap-x-48">
-        <div className="lg:col-span-1">
+    <footer className={`${outfit.className} w-full bg-[#3a3a3a] text-white font-sans`}>
+      <div className="max-w-6xl mx-auto px-6 md:px-12 py-14 flex flex-col md:flex-row justify-between gap-10 md:gap-x-16 lg:gap-x-48">
+        <div className="md:max-w-xs">
           <div className="mb-4">
             <Image src="/Logo.png" width={101} height={44} alt="logo" />
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
             {t("description")}
           </p>
         </div>
-        <div className="grid grid-cols-3 w-full gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 w-full gap-8 md:gap-5">
           <div className="w-full">
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
               {t("companyHeading")}
