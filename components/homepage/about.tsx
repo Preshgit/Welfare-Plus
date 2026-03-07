@@ -20,9 +20,9 @@ const About = () => {
         <div className="text-center space-y-5">
           <Button variant="plain" className={`text-foreground h-[55.73px] w-[137.69px] border-gray-200 pl-[5.96px] pr-[17.91px] py-[7.96px] shadow-none border rounded-full`}><SparkleIcon className="fill-foreground w-[39.81px] h-[39.81px]" />{t("button")}</Button>
           <HeadingTwo text={t("title")} />
-          <p className="text-[28px] font-light text-foreground">{t("description")}</p>
+          <p className="text-base sm:text-xl lg:text-[28px] font-light text-foreground">{t("description")}</p>
         </div>
-        <div className="grid grid-cols-3 gap-x-10 divide-x">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-x-10 md:divide-x">
           <div className="space-y-5">
             <People />
             <div className="space-y-5">
