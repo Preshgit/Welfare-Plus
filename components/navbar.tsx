@@ -9,8 +9,10 @@ import { Menu, X, MailIcon, MapPinIcon, PhoneOutgoingIcon } from "lucide-react"
 import { Button } from "./ui/button"
 import LocaleSwitcher from "./localeSwitcher"
 import { interTight } from "@/app/utils/fonts"
+import { useRouter } from "next/navigation"
 
 const Navbar = () => {
+  const router = useRouter()
   const t = useTranslations("Navbar")
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -27,7 +29,7 @@ const Navbar = () => {
     <div className="w-screen flex sticky top-0 z-50 flex-col items-center bg-background text-foreground">
       <div className={`${interTight.className} font-medium border-b w-screen flex items-center px-10`}>
         <div className="hidden md:flex w-full max-w-6xl mx-auto px-6 md:px-12 py-3 justify-between items-center">
-          <ul className="flex justify-start text-sm text-gray-500 mx-auto">
+          <ul className="flex justify-start text-sm text-foreground mx-auto">
             <li className="pr-4 flex items-center gap-x-3"><span><MailIcon size={16} className="stroke-primary" /></span>{t("email")}</li>
             <li className="px-4 border-l border-gray-300 flex items-center gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
             <li className="pl-4 border-l border-gray-300 flex items-center gap-x-3"><span><PhoneOutgoingIcon size={16} className="stroke-primary" /></span>{t("phone")}</li>
@@ -59,7 +61,7 @@ const Navbar = () => {
           </ul>
           <div className="hidden md:flex items-center gap-3">
             <ModeToggle />
-            <Button variant="plain" className="border shadow-none py-3 px-6 text-foreground">{t("getInTouch")}</Button>
+            <Button onClick={() => router.push("contact-us")} variant="plain" className="border text-foreground shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
           </div>
           <div className="md:hidden flex items-center gap-2">
             <LocaleSwitcher />
@@ -93,7 +95,7 @@ const Navbar = () => {
           </ul>
           <div className="flex items-center gap-3">
             <ModeToggle />
-            <Button variant="plain" className="border shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
+            <Button onClick={() => router.push("/contact-us")} variant="plain" className="border shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
           </div>
           <ul className="flex flex-col gap-1 text-xs text-gray-500 border-t pt-3">
             <li>{t("email")}</li>

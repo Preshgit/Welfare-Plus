@@ -9,7 +9,7 @@ const Impacts = ({ text, content, btnText }: { text: string, content: string, bt
       <div className="space-y-5 text-center mx-auto">
         <HeadingThree text={text} className="text-primary!" />
         {content.split("\n").map((word, index) => (
-          <p key={index} className={`text-[30px] text-gray-500 font-light ${outfit.className}`}>
+          <p key={index} className={`text-[30px] text-foreground font-light ${outfit.className}`}>
             {word}
           </p>
         ))}

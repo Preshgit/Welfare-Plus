@@ -17,8 +17,8 @@ interface CTASectionProps {
 
 const fadeInUp = {
   initial: { opacity: 0, y: 50 },
-  animate: { 
-    opacity: 1, 
+  animate: {
+    opacity: 1,
     y: 0,
     transition: { duration: 1.4, ease: [0.16, 1, 0.3, 1] as any }
   }
@@ -26,8 +26,8 @@ const fadeInUp = {
 
 const scaleIn = {
   initial: { opacity: 0, scale: 0.5 },
-  animate: { 
-    opacity: 1, 
+  animate: {
+    opacity: 1,
     scale: 1,
     transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] as any }
   }
@@ -35,13 +35,13 @@ const scaleIn = {
 
 const floatAnimation = {
   initial: { y: 0 },
-  animate: { 
+  animate: {
     y: [-15, 15, -15],
-    transition: { 
-      duration: 8, 
-      repeat: Infinity, 
+    transition: {
+      duration: 8,
+      repeat: Infinity,
       ease: "easeInOut" as any
-    } 
+    }
   }
 }
 
@@ -67,71 +67,48 @@ export default function CTASection({
             className={`${satoshi.className} font-medium text-4xl sm:text-5xl md:text-6xl lg:text-[72px] leading-tight`}
             variants={fadeInUp}
           >
-            We're here to <br className="hidden sm:block" />
+            We&apos;re here to <br className="hidden sm:block" />
             answer any question you may <br className="hidden sm:block" />
             have &{" "}
             <span className="text-primary">collaborate</span> with you.
           </motion.h2>
           <motion.div variants={fadeInUp}>
-            <Button className="rounded-full px-10 py-7 text-lg md:text-xl shadow-xl transition-all hover:scale-105 active:scale-95">
-              Learn About Welfare Plus <ArrowUpRight className="ml-2" size={24} />
+            <Button className="rounded-full px-10 py-4 text-lg md:text-xl shadow-xl transition-all hover:scale-105 active:scale-95">
+              Learn About Welfare Plus <ArrowUpRight className="ml-2" size={30} />
             </Button>
           </motion.div>
         </motion.div>
-        
-        {/* Decorative Avatars */}
-        <motion.div
+        <div
           className="hidden lg:block absolute top-20 left-10 w-24 h-24 rounded-full overflow-hidden shadow-2xl border-4 border-background"
-          variants={floatAnimation}
-          initial="initial"
-          animate="animate"
-          transition={{ duration: 7, ease: "easeInOut", repeat: Infinity }}
         >
           <Image src={avatarTopLeft} alt="avatar" fill className="object-cover" />
-        </motion.div>
-        
-        <motion.div
+        </div>
+
+        <div
           className="hidden lg:block absolute bottom-20 left-20 w-32 h-32 rounded-full overflow-hidden shadow-2xl border-4 border-background"
-          variants={floatAnimation}
-          initial="initial"
-          animate="animate"
-          transition={{ delay: 1, duration: 9, ease: "easeInOut", repeat: Infinity }}
         >
           <Image src={avatarBottomLeft} alt="avatar" fill className="object-cover" />
-        </motion.div>
-        
-        <motion.div
-          className="absolute bottom-1/3 left-1/4 hidden lg:block text-primary drop-shadow-lg"
-          variants={scaleIn}
-          initial="initial"
-          animate="animate"
-          transition={{ delay: 0.5 }}
+        </div>
+
+        <div
+          className="absolute bottom-1/3 left-10 hidden lg:block text-primary drop-shadow-lg"
         >
           <StarOne className="w-12 h-12" />
-        </motion.div>
-        
-        <motion.div
+        </div>
+
+        <div
           className="hidden lg:block absolute top-24 right-10 w-28 h-28 rounded-full overflow-hidden shadow-2xl border-4 border-background"
-          variants={floatAnimation}
-          initial="initial"
-          animate="animate"
-          transition={{ delay: 1.5, duration: 8.5, ease: "easeInOut", repeat: Infinity }}
         >
           <Image src={avatarTopRight} alt="avatar" fill className="object-cover" />
-        </motion.div>
-        
-        <motion.div
+        </div>
+
+        <div
           className="hidden lg:block absolute bottom-32 right-20 w-20 h-20 rounded-full overflow-hidden shadow-2xl border-4 border-background"
-          variants={floatAnimation}
-          initial="initial"
-          animate="animate"
-          transition={{ delay: 2, duration: 10, ease: "easeInOut", repeat: Infinity }}
         >
           <Image src={avatarBottomRight} alt="avatar" fill className="object-cover" />
-        </motion.div>
-        
+        </div>
         <motion.div
-          className="hidden lg:block absolute right-1/4 top-1/4 text-primary drop-shadow-lg"
+          className="hidden lg:block absolute right-0 top-56 text-primary drop-shadow-lg"
           variants={scaleIn}
           initial="initial"
           animate="animate"
