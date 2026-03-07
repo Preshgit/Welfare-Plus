@@ -7,9 +7,6 @@ const withNextIntl = createNextIntlPlugin();
 const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
 
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: '/Welfare-Plus',
-  trailingSlash: true,
   // Only use static export for GitHub Pages, Vercel handles SSR natively
   ...(isGitHubPages && { output: 'export' }),
   // Only set basePath for GitHub Pages deployment
