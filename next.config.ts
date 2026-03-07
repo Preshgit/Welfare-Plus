@@ -3,12 +3,22 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
+// Determine if we're building for GitHub Pages (static export)
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+
 const nextConfig: NextConfig = {
   output: "export",
   basePath: '/Welfare-Plus',
   trailingSlash: true,
+  // Only use static export for GitHub Pages, Vercel handles SSR natively
+  ...(isGitHubPages && { output: 'export' }),
+  // Only set basePath for GitHub Pages deployment
+  ...(isGitHubPages && { basePath: '/Welfare-Plus' }),
+  // Only enable trailingSlash for GitHub Pages
+  ...(isGitHubPages && { trailingSlash: true }),
   images: {
-    unoptimized: true,
+    // Unoptimized images needed for static export, but can be optimized on Vercel
+    unoptimized: isGitHubPages,
   },
   turbopack: {
     rules: {
