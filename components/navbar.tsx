@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="border-b w-full px-6 md:px-12 lg:px-25">
-        <div className="max-w-6xl mx-auto flex items-center justify-between py-4">
+        <div className="max-w-6xl mx-auto flex items-center justify-between py-1">
           <Link href="/">
             <Image src="/Logo.png" height={70} width={140} alt="logo" />
           </Link>
