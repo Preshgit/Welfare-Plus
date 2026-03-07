@@ -34,7 +34,7 @@ const Hero = () => {
       animate="animate"
     >
       <motion.div
-        className="max-w-5xl px-6 text-center space-y-8 p-10 bg-red-500"
+        className="max-w-5xl px-6 text-center space-y-8 p-10"
         variants={staggerContainer}
       >
         <motion.div variants={fadeInUp}>

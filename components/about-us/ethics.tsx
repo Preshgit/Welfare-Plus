@@ -15,10 +15,10 @@ const Ethics = () => {
       <div className="space-y-5">
         <div className="w-full">
           <div className="w-4/5 mx-auto">
-            <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-[60px]!" />
+            <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-2xl! sm:text-4xl! lg:text-[60px]!" />
           </div>
         </div>
-        <div className={`${outfit.className} text-foreground text-[25px] w-full text-center font-extralight space-y-5`}>
+        <div className={`${outfit.className} text-foreground text-sm sm:text-base lg:text-[25px] w-full text-center font-extralight space-y-5`}>
           <p>{t("p1")}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>

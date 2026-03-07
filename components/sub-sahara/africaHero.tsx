@@ -72,7 +72,7 @@ const AfricaHero = () => {
             {t("description")}
           </motion.p>
         </motion.div>
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp} className="hidden md:block">
           <ImageGalleryStrip images={images} />
         </motion.div>
       </motion.div>

@@ -55,7 +55,7 @@ export default function Hero() {
             {t("headingPost")}
           </motion.h1>
           <motion.p
-            className={`${satoshi.className} text-muted-foreground w-4/5 text-[22px] md:text-xl leading-relaxed max-w-full`}
+            className={`${satoshi.className} text-muted-foreground w-full md:w-4/5 text-sm sm:text-base lg:text-[22px] leading-relaxed max-w-full`}
             variants={fadeInUp}
           >
             {t("description")}
@@ -69,7 +69,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="relative flex items-center  w-[420px] justify-center gap-6 h-[500px]"
+          className="relative hidden md:flex items-center w-[420px] justify-center gap-6 h-[500px]"
           initial="initial"
           animate="animate"
           variants={fadeInRight}

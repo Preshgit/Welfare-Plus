@@ -62,7 +62,7 @@ const MarqueeRow = ({ items, direction, speed = 30 }: MarqueeRowProps) => {
         {doubled.map((image, i) => (
           <div
             key={i}
-            className="relative flex-shrink-0 w-[383px] h-[291px] overflow-hidden group"
+            className="relative flex-shrink-0 w-[200px] h-[152px] sm:w-[280px] sm:h-[213px] lg:w-[383px] lg:h-[291px] overflow-hidden group"
           >
             <Image
               src={image.src}
@@ -93,12 +93,12 @@ const Illustration = () => {
         }
       `}</style>
 
-      <div className="w-4/5 mx-auto text-center space-y-4">
+      <div className="w-11/12 md:w-4/5 mx-auto text-center space-y-4">
         <HeadingTwo
           text={t("heading")}
-          className="text-[60px] text-foreground"
+          className="text-2xl sm:text-4xl lg:text-[60px] text-foreground"
         />
-        <p className="text-[22px] text-foreground">
+        <p className="text-sm sm:text-base lg:text-[22px] text-foreground">
           {t("description")}
         </p>
       </div>
