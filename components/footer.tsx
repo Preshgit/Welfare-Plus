@@ -43,7 +43,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 md:px-12 py-14 flex flex-col md:flex-row justify-between gap-10 md:gap-x-16 lg:gap-x-48">
         <div className="md:max-w-xs">
           <div className="mb-4">
-            <Image src="/Logo.png" width={101} height={44} alt="logo" />
+            <Link href="/">
+              <Image src="/Logo.png" width={101} height={44} alt="logo" className="dark:hidden" />
+              <Image src="/logodark.png" width={101} height={44} alt="logo" className="hidden dark:block" />
+            </Link>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
             {t("description")}

@@ -5,7 +5,7 @@ import { outfit } from "@/app/utils/fonts"
 
 const Impacts = ({ text, content, btnText }: { text: string, content: string, btnText: string }) => {
   return (
-    <section className="w-screen bg-linear-to-b font-medium px-16 md:px-25 dark:bg-background flex items-center justify-center">
+    <section className="w-screen bg-linear-to-b font-medium px-6 md:px-25 dark:bg-background flex items-center justify-center">
       <div className="space-y-5 text-center mx-auto">
         <HeadingThree text={text} className="text-primary!" />
         {content.split("\n").map((word, index) => (
@@ -13,7 +13,7 @@ const Impacts = ({ text, content, btnText }: { text: string, content: string, bt
             {word}
           </p>
         ))}
-        <Button variant="primary" className="gap-[10.95px] py-[14.6px] pl-[19.47px] pr-[15.82px]">
+        <Button variant="primary" className="gap-[10.95px] md:w-fit w-full py-[14.6px] pl-[19.47px] pr-[15.82px]">
           {btnText}
           <ArrowRightIcon />
         </Button>

@@ -52,18 +52,18 @@ export default function HubCard({
 }: HubCardProps) {
   return (
     <motion.section
-      className="h-screen flex px-15 flex-col items-center justify-center p-8"
+      className="h-screen flex px-6 md:px-15 flex-col items-center justify-center p-8"
       style={{ backgroundImage: "url('/Line.png')", backgroundSize: "cover" }}
       initial="initial"
       animate="animate"
     >
       <motion.div
-        className="relative w-full bg-transparent rounded-3xl shadow-xl p-6 border-2 h-150 bg-linear-to-r from-transparent to-primary/10"
+        className="relative flex w-full bg-transparent rounded-3xl shadow-xl p-6 border-2 h-150 bg-linear-to-r from-transparent to-primary/10"
         variants={scaleIn}
       >
-        <div className="relative h-full w-full overflow-hidden" style={{ minHeight: "260px" }}>
+        <div className="relative flex flex-col h-full w-full overflow-hidden" style={{ minHeight: "260px" }}>
           <motion.div
-            className="absolute top-14 h-fit left-0 w-full md:w-[600px] bg-[#F58634] p-8 md:p-[60.2px] rounded-2xl z-10 flex flex-col justify-center rounded-tr-none rounded-br-[10%]"
+            className="md:absolute top-14 h-fit left-0 w-full md:w-[600px] bg-[#F58634] p-8 md:p-[60.2px] rounded-2xl z-10 flex flex-col justify-center rounded-tr-none rounded-br-[10%]"
             variants={slideInLeft}
             transition={{ delay: 0.2 }}
           >
@@ -80,7 +80,7 @@ export default function HubCard({
             </motion.p>
           </motion.div>
           <motion.div
-            className="hidden md:block absolute h-full inset-y-0 right-0 w-3/5 overflow-hidden"
+            className="block md:absolute h-full md:inset-y-0 md:right-0 md:w-3/5 overflow-hidden"
             variants={slideInRight}
             transition={{ delay: 0.4 }}
           >

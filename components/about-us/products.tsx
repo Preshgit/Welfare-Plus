@@ -18,9 +18,9 @@ const ProductContainer = () => {
     <section className="py-15">
       <div className="space-y-5">
         <div className="w-full text-center">
-          <div className="w-4/5 mx-auto">
+          <div className="w-4/5 mx-auto space-y-5">
             <Button variant="plain" className={`h-[55.73px] w-[137.69px] border-gray-200 pl-[5.96px] pr-[17.91px] py-[7.96px] shadow-none border rounded-full text-foreground`}><SparkleIcon className="w-[39.81px] h-[39.81px] fill-foreground stroke-background" />{t("button")}</Button>
-            <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-2xl! sm:text-4xl! lg:text-[60px]!" />
+            <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-3xl! sm:text-4xl! lg:text-[60px]!" />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-x-10 items-center w-full">

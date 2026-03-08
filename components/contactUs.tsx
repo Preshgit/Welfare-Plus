@@ -35,7 +35,7 @@ export default function ContactUs() {
             <h2 className=" text-4xl font-semibold">{t("heading")}</h2>
             <StarOne className="text-primary " />
           </div>
-          <p className="text-foreground text-[22px]">{t("subtitle")}</p>
+          <p className="text-foreground text-[20px] md:text-[22px]">{t("subtitle")}</p>
           <div className="flex items-center gap-5 mt-5">
             <a href="#" aria-label="X" className="text-primary hover:text-primary transition-colors">
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -56,18 +56,18 @@ export default function ContactUs() {
             </a>
           </div>
         </div>
-        <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-5 px-2">
           {contacts.map(({ icon, label, detail }) => (
             <div
               key={label}
-              className="rounded-2xl w-90 border border-gray-300 py-10 flex flex-col px-10 gap-6"
+              className="rounded-2xl md:w-90 border border-gray-300 py-10 flex flex-col px-10 gap-6"
             >
               <div className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300">
                 {icon}
               </div>
               <div>
                 <p className="text-foreground font-semibold text-base mb-1">{label}</p>
-                <p className="text-foreground text-[18px]">{detail}</p>
+                <p className="text-foreground text-sm md:text-[18px]">{detail}</p>
               </div>
               <div className="flex items-center gap-3 mt-1">
                 <Button
@@ -76,7 +76,7 @@ export default function ContactUs() {
                 >
                   {t("button")}
                 </Button>
-                <span className="text-foreground/40 text-base">{t("available")}</span>
+                <span className="text-foreground/40 text-sm md:text-base">{t("available")}</span>
               </div>
             </div>
           ))}

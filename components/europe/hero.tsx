@@ -53,9 +53,7 @@ const Hero = () => {
         <motion.div
           variants={fadeInUp}
           className="flex justify-center pt-8"
-        >
-          {/* Potential CTA or decorative element can go here */}
-        </motion.div>
+        />
       </motion.div>
     </motion.section>
   )

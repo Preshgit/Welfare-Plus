@@ -16,58 +16,59 @@ const slideTransition = {
 const SlideOne = ({ title, subtitle, cta }: { title: string; subtitle: string; cta: string }) => {
   const t = useTranslations("Homepage.hero")
   return (
-  <div className={`relative w-full h-full flex items-center justify-center overflow-hidden ${satoshi.className}`}>
-    <motion.div
-      initial={{ scale: 1.1 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-      className="absolute inset-0"
-    >
-      <Image
-        src="/hero(2).png"
-        alt="Slide One Background"
-        fill
-        priority
-        className="object-cover brightness-50"
-      />
-    </motion.div>
-    <div className="relative z-10 max-w-6xl w-full gap-4.5 text-white text-left">
-      <div className="space-y-8">
-        <div>
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ...slideTransition, delay: 0.1 }}
-            className="text-4xl md:text-6xl lg:text-[60px] font-medium leading-tight mb-6"
+    <div className={`relative w-full h-full flex items-center justify-center overflow-hidden ${satoshi.className}`}>
+      <motion.div
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0"
+      >
+        <Image
+          src="/hero(2).png"
+          alt="Slide One Background"
+          fill
+          priority
+          className="object-cover brightness-50"
+        />
+      </motion.div>
+      <div className="relative z-10 sm:space-y-5 max-w-6xl w-full gap-4.5 text-white text-left">
+        <div className="space-y-8 px-3">
+          <div className="px-3">
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...slideTransition, delay: 0.1 }}
+              className="text-4xl md:text-6xl lg:text-[60px] font-medium leading-tight mb-6"
+            >
+              {title}
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...slideTransition, delay: 0.2 }}
+              className="text-lg md:text-xl lg:text-xl font-light max-w-3xl mb-10 text-white/90"
+            >
+              {subtitle}
+            </motion.p>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ ...slideTransition, delay: 0.3 }}
+            className="px-5"
           >
-            {title}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ...slideTransition, delay: 0.2 }}
-            className="text-lg md:text-xl lg:text-xl font-light max-w-3xl mb-10 text-white/90"
-          >
-            {subtitle}
-          </motion.p>
+            <Button size="lg" className="w-full md:w-fit bg-primary hover:bg-primary/90 text-white px-8 py-7 text-lg rounded-full shadow-lg transition-transform hover:scale-105 active:scale-95">
+              {cta}
+              <ArrowUpRight className="stroke-2 ml-2" size={24} />
+            </Button>
+          </motion.div>
         </div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ ...slideTransition, delay: 0.3 }}
-        >
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-7 text-lg rounded-full shadow-lg transition-transform hover:scale-105 active:scale-95">
-            {cta}
-            <ArrowUpRight className="stroke-2 ml-2" size={24} />
-          </Button>
-        </motion.div>
-      </div>
-      <div className="flex flex-col ml-auto w-fit space-y-3">
-        <p><i>{t("quote1")}</i></p>
-        <p><i>{t("quote2")}</i></p>
+        <div className="flex sm:mt-8 flex-col ml-auto px-3 md:px-0 w-fit space-y-3">
+          <p><i>{t("quote1")}</i></p>
+          <p><i>{t("quote2")}</i></p>
+        </div>
       </div>
     </div>
-  </div>
   )
 }
 
@@ -171,7 +172,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slidesCount)
-    }, 6000)
+    }, 6000000)
     return () => clearInterval(timer)
   }, [])
 
@@ -185,7 +186,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
+    <section className="relative h-screen w-full overflow-hidden space-y-5 bg-black">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}

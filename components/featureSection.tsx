@@ -18,7 +18,7 @@ export default function FeatureSection({
 }: FeatureSectionProps) {
   return (
     <section className={`${satoshi.className} bg-background text-foreground py-24`} style={{ backgroundImage: "url('/Line.png')" }}>
-      <div className="px-12 md:px-15">
+      <div className="md:px-15">
         <div className="flex flex-col justify-center items-center gap-6.5 px-6 text-center space-y-6">
           <div className="space-y-3 w-fit text-center">
             <h2

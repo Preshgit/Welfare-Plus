@@ -37,12 +37,11 @@ const Approach = () => {
   ];
   return (
     <section className="bg-primary flex items-center text-foreground py-10 pt-24">
-      <div className="space-y-10 w-5/6 mx-auto pb-10">
+      <div className="space-y-10 md:w-5/6 px-5 mx-auto pb-10">
         <div className="mx-auto flex flex-col justify-center items-center gap-y-10">
           <Button variant="plain" className={`${outfit.className} bg-white h-[55.73px] min-w-[137.69px] border-gray-200 pl-[5.96px] pr-[17.91px] py-[7.96px] shadow-none border rounded-full`}><SparkleIcon fill='black' className="w-[39.81px] h-[39.81px]" />{t("button")}</Button>
-          <HeadingTwo text={t("heading")} color="black" className="text-white!" />
-          <p className="text-[28px] font-normal text-center">{t("description")}</p>
-        </div>
+          <HeadingTwo text={t("heading")} color="black" className="text-white! text-center text-[40px] md:text-[60px]!" />
+          <p className="text-[20px] md:text-[28px] font-normal text-center">{t("description")}</p> </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
           {locations.map((loc) => (
             <div key={loc.title} className="rounded-2xl overflow-hidden flex flex-col">
