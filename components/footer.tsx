@@ -44,7 +44,7 @@ export default function Footer() {
         <div className="md:max-w-xs">
           <div className="mb-4">
             <Link href="/">
-              <Image src="/Logo.png" width={101} height={44} alt="logo" className="dark:hidden" />
+              <Image src="/logodark.png" width={101} height={44} alt="logo" className="dark:hidden" />
               <Image src="/logodark.png" width={101} height={44} alt="logo" className="hidden dark:block" />
             </Link>
           </div>

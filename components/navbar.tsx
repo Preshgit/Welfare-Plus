@@ -104,7 +104,7 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center gap-3">
               <ModeToggle />
-              <Button onClick={() => router.push("/contact-us")} variant="plain" className="border shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
+              <Button onClick={() => router.push("contact-us")} variant="plain" className="border shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
             </div>
             <ul className="flex flex-col gap-1 text-xs text-gray-500 border-t pt-3">
               <li>{t("email")}</li>
