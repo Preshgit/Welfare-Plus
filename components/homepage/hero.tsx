@@ -172,7 +172,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slidesCount)
-    }, 6000000)
+    }, 6000)
     return () => clearInterval(timer)
   }, [])
 
