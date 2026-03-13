@@ -1,11 +1,8 @@
 import { outfit, satoshi } from "@/app/utils/fonts"
 import SectionContainer from "../sectionContainer"
 import HeadingTwo from "../ui/typography/headingTwo"
-import HeadingFour from "../ui/typography/headingFour"
 import { useTranslations } from "next-intl"
 
-import PuzzleIcon from "@/assets/svg/puzzle1.svg"
-import LockIcon from "@/assets/svg/lock.svg"
 
 
 const Ethics = () => {
