@@ -7,12 +7,12 @@ import { useTranslations } from "next-intl"
 const ContactForm = () => {
   const t = useTranslations("ContactForm")
   return (
-    <div className="flex flex-col lg:flex-row bg-background items-center py-10 gap-8 lg:gap-x-5 px-5">
+    <div className="flex flex-col lg:flex-row bg-background items-center py-10 gap-8 lg:gap-x-5 px-5" id="contactForm">
       <div className="relative hidden lg:block w-150 flex-shrink-0">
         <Image src={MapImage} alt="map" height={600} width={600} />
       </div>
       <div className="space-y-5 flex flex-1 flex-col">
-        <h3 className="font-medium! max-w-md text-2xl sm:text-3xl lg:text-[65px]">{t("heading")} <span className='underline decoration-primary'>{t("headingHighlight")}</span> {t("headingPost")}</h3>
+        <h3 className="font-medium! max-w-md md:text-5xl sm:text-4xl lg:text-[65px]">{t("heading")} <span className='underline decoration-primary'>{t("headingHighlight")}</span> {t("headingPost")}</h3>
         <form className="space-y-5 divide-y w-full justify-self-end">
           <div className="flex items-center justify-between py-3 px-3 relative">
             <input type="text" placeholder={t("namePlaceholder")} className="w-full pl-10 py-2 border-none outline-none ring-0 focus:ring-0 focus:outline-none placeholder:text-gray-400" />

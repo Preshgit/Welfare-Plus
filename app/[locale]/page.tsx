@@ -20,8 +20,8 @@ export default async function Home({
       <Hero />
       <About />
       <Approach />
-      <Faq />
       <Illustration />
+      <Faq />
     </div>
   );
 }

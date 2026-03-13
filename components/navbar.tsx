@@ -1,5 +1,7 @@
 "use client"
 
+
+import WhatsAppIcon from "@/assets/svg/whatsapp-color-svgrepo-com.svg"
 import Image from "next/image"
 import { useState } from "react"
 import { useTranslations } from "next-intl"
@@ -32,7 +34,7 @@ const Navbar = () => {
           <ul className="flex justify-start text-sm text-foreground mx-auto">
             <li className="pr-4 flex items-center gap-x-3"><span><MailIcon size={16} className="stroke-primary" /></span>{t("email")}</li>
             <li className="px-4 border-l border-gray-300 flex items-center gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
-            <li className="pl-4 border-l border-gray-300 flex items-center gap-x-3"><span><PhoneOutgoingIcon size={16} className="stroke-primary" /></span>{t("phone")}</li>
+            <li className="pl-4 border-l border-gray-300 flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
           </ul>
         </div>
         <div className="flex items-center gap-6 ml-auto">

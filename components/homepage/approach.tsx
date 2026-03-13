@@ -1,4 +1,5 @@
-import { SparkleIcon, ArrowUpRightIcon, } from "lucide-react"
+"use client"
+import { ArrowUpRightIcon } from "lucide-react"
 import { Button } from "../ui/button"
 import HeadingTwo from "../ui/typography/headingTwo"
 import Image from "next/image"
@@ -8,9 +9,12 @@ import kuopioFinland from "@/assets/images/kuopio-finland.png"
 import subSaharanAfrica from "@/assets/images/sub-saharan-africa.png"
 import northAmerica from "@/assets/images/north-america.png"
 import { useTranslations } from "next-intl"
+import { useRouter } from "@/i18n/routing"
 
 const Approach = () => {
+  const router = useRouter()
   const t = useTranslations("Homepage.approach")
+  const about = useTranslations("About")
 
   const locations = [
     {
@@ -36,10 +40,9 @@ const Approach = () => {
     },
   ];
   return (
-    <section className="bg-primary flex items-center text-foreground py-10 pt-24">
-      <div className="space-y-10 md:w-5/6 px-5 mx-auto pb-10">
-        <div className="mx-auto flex flex-col justify-center items-center gap-y-10">
-          <Button variant="plain" className={`${outfit.className} bg-white h-[55.73px] min-w-[137.69px] border-gray-200 pl-[5.96px] pr-[17.91px] py-[7.96px] shadow-none border rounded-full`}><SparkleIcon fill='black' className="w-[39.81px] h-[39.81px]" />{t("button")}</Button>
+    <section className="bg-primary flex items-center text-foreground py-5 pt-12">
+      <div className="space-y-5 md:w-5/6 px-5 mx-auto pb-10">
+        <div className="mx-auto flex flex-col justify-center items-center gap-y-3">
           <HeadingTwo text={t("heading")} color="black" className="text-white! text-center text-[40px] md:text-[60px]!" />
           <p className="text-[20px] md:text-[28px] font-normal text-center">{t("description")}</p> </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
@@ -70,6 +73,12 @@ const Approach = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="w-full flex items-center justify-center">
+          <Button onClick={() => router.push("/about-us")} variant="colored" size="md" className={`${outfit.className} text-black bg-white h-12  w-fit`}>
+            {about("seeMore")}
+            <ArrowUpRightIcon className="stroke-3 font-medium text-[20px]" />
+          </Button>
         </div>
       </div>
     </section>

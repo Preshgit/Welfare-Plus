@@ -22,11 +22,11 @@ export default async function AboutUsPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  
+
   // Enable static rendering
   setRequestLocale(locale);
 
   return (
-    <div><Hero /><Story /><Mission /><Serve /><Ethics /><ProductContainer /></div>
+    <div><Story /><Mission /><Ethics /></div>
   )
 }
