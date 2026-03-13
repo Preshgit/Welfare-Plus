@@ -4,8 +4,10 @@ import { satoshi } from "@/app/utils/fonts"
 import { Button } from "./ui/button"
 import StarOne from "@/assets/svg/Star_1.svg"
 import { useTranslations } from "next-intl"
+import { useRouter } from "@/i18n/routing"
 
 export default function ContactUs() {
+  const router = useRouter()
   const t = useTranslations("ContactUsSection")
 
   const contacts = [
@@ -73,6 +75,7 @@ export default function ContactUs() {
                 <Button
                   variant="plain"
                   className="rounded-full shadow-none border-primary  text-primary text-base px-6 gap-6 py-3 h-auto font-medium hover:border-primary hover:text-primary transition-colors"
+                  onClick={() => router.push("/contact-us")}
                 >
                   {t("button")}
                 </Button>

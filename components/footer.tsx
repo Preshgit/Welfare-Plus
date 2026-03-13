@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import Image from "next/image"
 import { outfit } from "@/app/utils/fonts";
 import { useTranslations } from "next-intl";
@@ -30,13 +30,16 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   const companyLinks = [
-    t("companyLinks.home"),
-    t("companyLinks.about"),
-    t("companyLinks.europe"),
-    t("companyLinks.africa"),
-    t("companyLinks.northAmerica"),
+    { label: t("companyLinks.home"), href: "/" },
+    { label: t("companyLinks.about"), href: "/about-us" },
+    { label: t("companyLinks.europe"), href: "/europe" },
+    { label: t("companyLinks.africa"), href: "/sub-sahara-africa" },
+    { label: t("companyLinks.northAmerica"), href: "/united-states" },
   ];
-  const supportLinks = [t("supportLinks.contact"), t("supportLinks.help")];
+  const supportLinks = [
+    { label: t("supportLinks.contact"), href: "/contact-us" },
+    { label: t("supportLinks.help"), href: "/contact-us#contactForm" },
+  ];
 
   return (
     <footer className={`${outfit.className} w-full bg-[#3a3a3a] text-white font-sans`}>
@@ -59,12 +62,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
-                <li key={link}>
+                <li key={link.label}>
                   <Link
-                    href="#"
+                    href={link.href}
                     className="text-gray-400 text-sm hover:text-orange-400 transition-colors duration-200"
                   >
-                    {link}
+                    {link.label}
                   </Link>
                 </li>
               ))}
@@ -76,12 +79,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {supportLinks.map((link) => (
-                <li key={link}>
+                <li key={link.label}>
                   <Link
-                    href="#"
+                    href={link.href}
                     className="text-gray-400 text-sm hover:text-orange-400 transition-colors duration-200"
                   >
-                    {link}
+                    {link.label}
                   </Link>
                 </li>
               ))}
