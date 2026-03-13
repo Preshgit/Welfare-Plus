@@ -40,13 +40,13 @@
               "label": "Change language"
        },
        "Footer": {
-              "description": "A private business entity based in Finland and affiliated with organizations across regions for international and comparative social research.",
+              "description": "A private business entity based in Finland and affiliated with organizations across the world for international business and comparative social research.",
               "companyHeading": "Company",
               "supportHeading": "Support",
               "socialHeading": "Social",
               "copyright": "© Welfare Plus. All Rights Reserved.",
-              "privacy": "Privacy Policy",
-              "terms": "Terms and condition",
+              "privacy": "Translation Policy",
+              "terms": "Google terms and condition",
               "companyLinks": {
                      "home": "Home",
                      "about": "About us",
@@ -74,18 +74,36 @@
        "About": {
               "button": "About Us",
               "title": "Products and Services",
-              "description": "Welfare Plus Products and Services for Children, Youths, Adults (including war veterans), and the elderly across the globe.",
+              "description": "Welfare Plus Products and Services for Children, Youths, Adults, Mililtary Veterans, and the Elderly across the globe.",
               "research": {
                      "title": "Assistive Technology, Therapy Tools, and Independent Living Solutions.",
-                     "description": "Evidence-based research and advocacy to strengthen social welfare systems."
+                     "description": [
+                            "Independent living aids for older adults and veterans.",
+                            "Assistive devices for children with special needs.",
+                            "Mobility and rehabilitation tools.",
+                            "Therapy tools and adaptive equipment for persons with disabilities.",
+                            "Representation and distribution of international assistive technology manufacturers."
+                     ]
               },
               "products": {
                      "title": "Social Research, Program Development and Policy Advisory.",
-                     "description": "Facilitating access to global assistive solutions for diverse population groups."
+                     "description": [
+                            "Facilitating access to global assistive solutions for diverse population groups.",
+                            "Community-based social care and inclusion initiatives.",
+                            "Capacity building for social welfare institutions and practitioners.",
+                            "Comparative social welfare and social policy research.",
+                            "Baseline studies, evaluations, and impact assessments.",
+                            "Evidence-based policy advisory services."
+                     ]
               },
               "programs": {
-                     "title": "Advocacy, Safeguarding, and Social Security Promotion.",
-                     "description": "Holistic social care supporting access to basic human needs."
+                     "title": "Advocacy, Projects, Safeguarding, and Social Security Promotion.",
+                     "description": [
+                            "Advocacy for inclusive social welfare policies.",
+                            "Social security and safeguarding initiatives.",
+                            "Partnerships with governments, civil society, and private sector actors.",
+                            "Therapeutic Initiatives."
+                     ]
               },
               "seeMore": "See more in About Us"
        },
@@ -96,7 +114,7 @@
                      "slides": [
                             {
                                    "title": "International Initiatives for Holistic Wellbeing and Inclusive Social Development.",
-                                   "subtitle": "Facilitating access to basic social welfare needs and the Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic well-being.",
+                                   "subtitle": "Facilitating access to basic social welfare needs and Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic well-being.",
                                    "cta": "Learn More"
                             },
                             {
@@ -121,11 +139,11 @@
                      "heading": "Our Global Presence",
                      "description": "",
                      "learnMore": "Learn More",
-                     "location0Title": "Kuopio, Finland.",
-                     "location0Subtitle": "Europe Headquarters.",
+                     "location0Title": "City of Kuopio, Finland Europe.",
+                     "location0Subtitle": "Headquarters.",
                      "location1Title": "Sub-Saharan Africa",
                      "location1Subtitle": "Ikeja, Lagos Nigeria.",
-                     "location2Title": "North America + the Globe",
+                     "location2Title": "North America / The Globe",
                      "location2Subtitle": "The United States."
               },
               "illustration": {
@@ -146,7 +164,7 @@
                      "item3Question": "Are your solutions customizable?",
                      "item3Answer": "Yes, we offer customized assistive technology solutions tailored to specific population groups and regional needs.",
                      "item4Question": "How is data privacy handled?",
-                     "item4Answer": "Welfare Plus adheres to relevant national legal and regulatory frameworks and follows the code of conduct aligned with Social Work England's regulatory framework."
+                     "item4Answer": "Welfare Plus adheres to <b>Social Work England's</b> relevant national legal and regulatory frameworks the code of conduct, which are amenable to other country's extant regulatory requirements for practice in English."
               }
        },
        "AboutUs": {
@@ -159,17 +177,17 @@
               },
               "story": {
                      "button": "Our Story",
-                     "heading": "Welcome To Welfare Plus",
-                     "p1": "Welfare Plus is a Finland-based business organization affiliated to organizations abroad, and we are dedicated to improving wellbeing across countries and communities.",
-                     "p2": "We sell assistive technologies and independent living solutions that enable individuals - especially vulnerable populations - to live safely, independently, and with dignity. Welfare Plus also focuses on improving access to essential services such as housing, healthcare, education, employment, and social care.",
-                     "p3": "Our approach integrates generalist social work practice with international specialization and we support private sector actors, government organizations, civil society organizations, and communities to improve wellbeing in contemporary market-driven economies, where social welfare is jointly delivered by public institutions, businesses, civil society, and families.",
+                     "heading": "Welcome to Welfare Plus",
+                     "p1": "Welfare Plus is a Finland-based business organization affiliated to organizations abroad, and dedicated to improving wellbeing across countries and communities.",
+                     "p2": "We sell assistive technologies, therapy tools, and independent living solutions that enable individuals - especially vulnerable populations - to live safely, independently, and with dignity. Welfare Plus also focuses on improving access to essential services such as housing, healthcare, education, employment, and social care.",
+                     "p3": "Our approach integrates generalist social work practice with international specialization, and we support private sector actors, governments, or governmental organizations, civil societies, and communities to improve wellbeing in contemporary market-driven economies, where social welfare is jointly delivered by public institutions, businesses, civil society, and families.",
                      "p4": "Through partnerships with academia, governments, businesses, civil society organizations, and financial institutions, Welfare Plus pioneers access to general and customized assistive technologies and serves as an international representative for manufacturers. We also engage in advocacy for inclusive social security systems and safeguarding frameworks.",
                      "p5": "NB: Welfare Plus is non-segregating in dealing with government and political parties. As consultant, we are open to partnering with all levels of government, and political parties to help develop different welfare programs and initiatives for the people."
               },
               "ethics": {
                      "heading": "Professional Standards and Ethics",
-                     "p1": "For International and collaborative social care services and strategic social programs needing professional standards and data protection, Welfare Plus program director is registered with Social Work England (and has been registered for over one-and-a-half decades from when it was named General Social Care Council) and duly authorized to use the professional title 'Social Worker'.",
-                     "p2": "Therefore, Welfare Plus in-house international code of conduct for staff aligns overtly with the regulatory framework of Social Work England (established by the Children and Social Work 2017, and supported by the Social Workers Regulations 2018, as amended).",
+                     "p1": "For International and collaborative social care services and strategic social programs needing professional standards and data protection, Welfare Plus program director is registered with <b>Social Work England</b> (and has been in the register for over one-and-a-half decades from when it was named General Social Care Council) and duly authorized to use the professional title 'Social Worker'.",
+                     "p2": "Therefore, Welfare Plus in-house international code of conduct for staff (including therapists) aligns overtly with the regulatory framework of Social Work England (established by the Children and Social Work 2017, and supported by the Social Workers Regulations 2018, as amended).",
                      "p3": "In Finland, sub-Saharan Africa, and possibly in the United States and elsewhere, Welfare Plus adheres to relevant national legal and regulatory frameworks while promoting comparative, evidence-based, and ethically grounded social work practice."
               },
               "mission": {

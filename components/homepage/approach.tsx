@@ -5,9 +5,9 @@ import HeadingTwo from "../ui/typography/headingTwo"
 import Image from "next/image"
 import Link from "next/link"
 import { outfit } from "@/app/utils/fonts"
-import kuopioFinland from "@/assets/images/kuopio-finland.png"
-import subSaharanAfrica from "@/assets/images/sub-saharan-africa.png"
-import northAmerica from "@/assets/images/north-america.png"
+import kuopioFinland from "@/assets/images/kuopio.png"
+import subSaharanAfrica from "@/assets/images/lagos.png"
+import northAmerica from "@/assets/images/rest_of_the_world.png"
 import { useTranslations } from "next-intl"
 import { useRouter } from "@/i18n/routing"
 
@@ -22,21 +22,21 @@ const Approach = () => {
       alt: t("location0Title"),
       title: t("location0Title"),
       subtitle: t("location0Subtitle"),
-      href: "#",
+      href: "/europe",
     },
     {
       src: subSaharanAfrica,
       alt: t("location1Title"),
       title: t("location1Title"),
       subtitle: t("location1Subtitle"),
-      href: "#",
+      href: "/sub-sahara-africa",
     },
     {
       src: northAmerica,
       alt: t("location2Title"),
       title: t("location2Title"),
       subtitle: t("location2Subtitle"),
-      href: "#",
+      href: "/united-states",
     },
   ];
   return (
@@ -62,23 +62,17 @@ const Approach = () => {
                   <p className="text-white font-bold text-base leading-snug">{loc.title}</p>
                   <p className="text-white/60 text-base font-medium">{loc.subtitle}</p>
                 </div>
-                <Link
-                  href={loc.href}
-                  className="flex items-center gap-1 text-white font-normal whitespace-nowrap mt-0.5 hover:underline text-sm"
+                <Button
+                  onClick={() => router.push(loc.href)}
+                  className="flex p-0 shadow-none text-white items-center gap-1 text-white font-normal whitespace-nowrap mt-0.5 hover:underline text-sm"
                 >
                   {t("learnMore")}
                   <ArrowUpRightIcon className="stroke-2 font-medium text-[20px]" />
 
-                </Link>
+                </Button>
               </div>
             </div>
           ))}
-        </div>
-        <div className="w-full flex items-center justify-center">
-          <Button onClick={() => router.push("/about-us")} variant="colored" size="md" className={`${outfit.className} text-black bg-white h-12  w-fit`}>
-            {about("seeMore")}
-            <ArrowUpRightIcon className="stroke-3 font-medium text-[20px]" />
-          </Button>
         </div>
       </div>
     </section>

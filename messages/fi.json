@@ -77,15 +77,21 @@
     "description": "Welfare Plus on Suomeen sijoittuva liikeorganisaatio, joka on sidoksissa ulkomaisiin järjestöihin. Olemme sitoutuneet parantamaan hyvinvointia eri maissa ja yhteisöissä.",
     "research": {
       "title": "Tarjoamme Sosiaalityön tutkimusta",
-      "description": "Näyttöön perustuva tutkimus ja edunvalvonta sosiaalihuoltojärjestelmien vahvistamiseksi."
+      "description": [
+        "Näyttöön perustuva tutkimus ja edunvalvonta sosiaalihuoltojärjestelmien vahvistamiseksi."
+      ]
     },
     "products": {
       "title": "Myymme Apuvälinetuotteita ja -teknologioita,",
-      "description": "Helpottamassa globaalien apuvälineratkaisujen saatavuutta eri väestöryhmille."
+      "description": [
+        "Helpottamassa globaalien apuvälineratkaisujen saatavuutta eri väestöryhmille."
+      ]
     },
     "programs": {
       "title": "Fasilitoimme Sosiaalisten ohjelmien kehittämistä.",
-      "description": "Kokonaisvaltainen sosiaalihuolto, joka tukee perusinhimillisten tarpeiden saatavuutta."
+      "description": [
+        "Kokonaisvaltainen sosiaalihuolto, joka tukee perusinhimillisten tarpeiden saatavuutta."
+      ]
     },
     "seeMore": "Lue Lisää Meistä"
   },
@@ -146,7 +152,7 @@
       "item3Question": "Ovatko ratkaisunne räätälöitävissä?",
       "item3Answer": "Kyllä, tarjoamme räätälöityjä apuvälineratkaisuja, jotka on suunniteltu tietyille väestöryhmille ja alueellisiin tarpeisiin.",
       "item4Question": "Miten tietosuoja hoidetaan?",
-      "item4Answer": "Welfare Plus noudattaa asiaankuuluvia kansallisia oikeudellisia ja sääntelykehyksiä ja noudattaa Social Work Englandin sääntelykehykseen perustuvaa käytännesääntöä."
+      "item4Answer": "Welfare Plus noudattaa asiaankuuluvia kansallisia oikeudellisia ja sääntelykehyksiä ja noudattaa <b>Social Work England</b>in sääntelykehykseen perustuvaa käytännesääntöä."
     }
   },
   "AboutUs": {

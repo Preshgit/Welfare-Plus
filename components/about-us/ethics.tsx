@@ -19,7 +19,9 @@ const Ethics = () => {
           </div>
         </div>
         <div className={`${outfit.className} text-foreground text-sm sm:text-base lg:text-[25px] w-full text-center font-extralight space-y-5`}>
-          <p>{t("p1")}</p>
+          <p>{t.rich("p1", {
+            b: (chunks) => <span className="font-bold">{chunks}</span>
+          })}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>
         </div>

@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRightIcon } from "lucide-react"
 
@@ -113,7 +112,7 @@ const Illustration = () => {
 
       <div className="w-full flex items-center justify-center pt-6">
         <Button
-          onClick={() => router.push("/about-us")}
+          onClick={() => router.push("/europe")}
           variant="colored"
           size="md"
           className={`${outfit.className} h-12 bg-primary w-fit flex items-center gap-2`}
