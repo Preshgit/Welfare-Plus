@@ -33,7 +33,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
+    <section className="relative space-y-5 h-screen w-full overflow-hidden bg-black">
       {/* Background image slider */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -99,7 +99,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-16 z-20 flex gap-4">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-16 z-20 flex gap-4">
         {slides.map((_, i) => (
           <button
             key={i}
