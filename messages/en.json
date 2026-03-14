@@ -82,13 +82,12 @@
                             "Assistive devices for children with special needs.",
                             "Mobility and rehabilitation tools.",
                             "Therapy tools and adaptive equipment for persons with disabilities.",
-                            "Representation and distribution of international assistive technology manufacturers."
+                            "Manufacturers international representation and distribution of assistive technologies."
                      ]
               },
               "products": {
                      "title": "Social Research, Program Development and Policy Advisory.",
                      "description": [
-                            "Facilitating access to global assistive solutions for diverse population groups.",
                             "Community-based social care and inclusion initiatives.",
                             "Capacity building for social welfare institutions and practitioners.",
                             "Comparative social welfare and social policy research.",
@@ -102,10 +101,11 @@
                             "Advocacy for inclusive social welfare policies.",
                             "Social security and safeguarding initiatives.",
                             "Partnerships with governments, civil society, and private sector actors.",
-                            "Therapeutic Initiatives."
+                            "Therapeutic Initiatives.",
+                            "Facilitating access to global assistive solutions for diverse population groups."
                      ]
               },
-              "seeMore": "See more in About Us"
+              "seeMore": "See more"
        },
        "Homepage": {
               "hero": {
@@ -114,7 +114,7 @@
                      "slides": [
                             {
                                    "title": "International Initiatives for Holistic Wellbeing and Inclusive Social Development.",
-                                   "subtitle": "Facilitating access to basic social welfare needs and Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic well-being.",
+                                   "subtitle": "Facilitating access to basic social welfare needs and Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic wellbeing.",
                                    "cta": "Learn More"
                             },
                             {
@@ -129,7 +129,7 @@
                             },
                             {
                                    "title": "International Initiatives for Holistic Wellbeing and Inclusive Social Development.",
-                                   "subtitle": "Facilitating access to basic social welfare needs and the Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic well-being.",
+                                   "subtitle": "Facilitating access to basic social welfare needs and the Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic wellbeing.",
                                    "cta": "Learn More"
                             }
                      ]
@@ -142,14 +142,14 @@
                      "location0Title": "City of Kuopio, Finland Europe.",
                      "location0Subtitle": "Headquarters.",
                      "location1Title": "Sub-Saharan Africa",
-                     "location1Subtitle": "Ikeja, Lagos Nigeria.",
+                     "location1Subtitle": "Lagos Nigeria.",
                      "location2Title": "North America / The Globe",
                      "location2Subtitle": "The United States."
               },
               "illustration": {
                      "heading": "Products & Services Illustration",
                      "description": "Assistive Chairs | Hearing Aids | Assistive Solutions | Mobility Aids | Support Systems | Therapy Tools",
-                     "button": "See More About Us"
+                     "button": "See More"
               },
               "faq": {
                      "heading": "Frequently Asked Questions",
