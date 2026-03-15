@@ -30,9 +30,9 @@ export default async function Page({
 
   return (
     <div>
-      <HubCard description={t('hubDescription')} imageUrl={VirtualReality} title={t('hubTitle')} imageAlt='man with virtual reality glasses' locationLabel="U.S." key={'united states'} />
+      <HubCard address={t('hubAddress')} description={t('hubDescription')} imageUrl={VirtualReality} title={t('hubTitle')} imageAlt='man with virtual reality glasses' locationLabel="U.S." key={'united states'} />
       <FeatureSection content={t('featureContent')} title={t('featureTitle')} image={AssistiveChair} alt="Man on wheel chair" />
-      <Impacts text={t('impactsText')} content={t('impactsContent')} btnText={t('impactsBtnText')} />
+      <Impacts text={t('impactsText')} content={t('impactsContent')} btnText={t('impactsBtnText')} partnershipsText={t('impactPartnerships')} />
       <ContactUs />
     </div>
   )

@@ -32,7 +32,7 @@ export default async function Page({
     <div style={{ backgroundImage: "url('/Line.svg')" }}>
       <HubCard address={t('hubAddress')} description={t('hubDescription')} imageUrl={HandGrips} title={t('hubTitle')} imageAlt='man with virtual reality glasses' locationLabel="U.S." key={'united states'} />
       <FeatureSection content={t('featureContent')} title={t('featureTitle')} image={ManWheelChair} alt="Man on wheel chair" />
-      <Impacts text={t('impactsText')} content={t('impactsContent')} btnText={t('impactsBtnText')} />
+      <Impacts text={t('impactsText')} content={t('impactsContent')} btnText={t('impactsBtnText')} partnershipsText={t('impactPartnerships')} />
       <ContactUs />
     </div>
   )
