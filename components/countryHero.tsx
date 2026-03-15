@@ -9,6 +9,7 @@ import Image from "next/image"
 interface HubCardProps {
   title: string;
   description: string;
+  address: string;
   imageUrl: StaticImageData;
   imageAlt?: string;
   locationLabel: string;
@@ -45,6 +46,7 @@ const scaleIn = {
 
 export default function HubCard({
   title,
+  address,
   description,
   imageUrl,
   imageAlt = "Card image",
@@ -63,13 +65,14 @@ export default function HubCard({
       >
         <div className="relative flex flex-col h-full w-full overflow-hidden" style={{ minHeight: "260px" }}>
           <motion.div
-            className="md:absolute top-14 h-fit left-0 w-full md:w-[600px] bg-[#F58634] p-8 md:p-[60.2px] rounded-2xl z-10 flex flex-col justify-center rounded-tr-none rounded-br-[10%]"
+            className="space-y-3 md:absolute top-14 h-fit left-0 w-full md:w-[600px] bg-[#F58634] p-8 md:p-[60.2px] rounded-2xl z-10 flex flex-col justify-center rounded-tr-none rounded-br-[10%]"
             variants={slideInLeft}
             transition={{ delay: 0.2 }}
           >
             <HeadingTwo className="text-[8px] md:text-[50.1px]! text-white text-2xl font-bold leading-snug mb-3">
               {title}
             </HeadingTwo>
+            <p className="font-medium">{address}</p>
             <motion.p
               className="text-white/80 lg:text-base leading-relaxed"
               initial={{ opacity: 0 }}

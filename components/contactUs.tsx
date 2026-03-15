@@ -38,25 +38,6 @@ export default function ContactUs() {
             <StarOne className="text-primary " />
           </div>
           <p className="text-foreground text-[20px] md:text-[22px]">{t("subtitle")}</p>
-          <div className="flex items-center gap-5 mt-5">
-            <a href="#" aria-label="X" className="text-primary hover:text-primary transition-colors">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
-              </svg>
-            </a>
-            <a href="#" aria-label="Instagram" className="text-primary hover:text-primary transition-colors">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
-              </svg>
-            </a>
-            <a href="#" aria-label="YouTube" className="text-primary hover:text-primary transition-colors">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.1c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9.3l5.5 2.6-5.5 2.6z" />
-              </svg>
-            </a>
-          </div>
         </div>
         <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-5 px-2">
           {contacts.map(({ icon, label, detail }) => (
@@ -70,16 +51,6 @@ export default function ContactUs() {
               <div>
                 <p className="text-foreground font-semibold text-base mb-1">{label}</p>
                 <p className="text-foreground text-sm md:text-[18px]">{detail}</p>
-              </div>
-              <div className="flex items-center gap-3 mt-1">
-                <Button
-                  variant="plain"
-                  className="rounded-full shadow-none border-primary  text-primary text-base px-6 gap-6 py-3 h-auto font-medium hover:border-primary hover:text-primary transition-colors"
-                  onClick={() => router.push("/contact-us")}
-                >
-                  {t("button")}
-                </Button>
-                <span className="text-foreground/40 text-sm md:text-base">{t("available")}</span>
               </div>
             </div>
           ))}

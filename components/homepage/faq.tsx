@@ -54,7 +54,7 @@ const Faq = () => {
                 <AccordionTrigger className="font-semibold flex justify-between w-full!">{t("item4Question")}</AccordionTrigger>
                 <AccordionContent>
                   {t.rich("item4Answer", {
-                    b: (chunks) => <span className="font-bold">{chunks}</span>
+                    b: (chunks) => <span className="font-medium">{chunks}</span>
                   })}
                 </AccordionContent>
               </AccordionItem>

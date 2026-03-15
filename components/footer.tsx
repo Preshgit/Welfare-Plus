@@ -38,7 +38,6 @@ export default function Footer() {
   ];
   const supportLinks = [
     { label: t("supportLinks.contact"), href: "/contact-us" },
-    { label: t("supportLinks.help"), href: "/contact-us#contactForm" },
   ];
 
   return (
@@ -117,7 +116,7 @@ export default function Footer() {
           {t("copyright")}
         </p>
         <div className="flex items-center gap-1 text-xs text-gray-500">
-          <Link href="#" className="hover:text-orange-400 transition-colors duration-200">{t("privacy")}</Link>
+          <Link href="#" className="hover:text-orange-400 transition-colors duration-200">{t("privacy")}: </Link>
           <span>·</span>
           <Link href="#" className="hover:text-orange-400 transition-colors duration-200">{t("terms")}</Link>
         </div>

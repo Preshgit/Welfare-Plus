@@ -16,7 +16,7 @@ const Story = () => {
           <HeadingTwo text={t("heading")} className="font-light! text-foreground text-2xl! sm:text-4xl! lg:text-[60px]!" />
 
         </div>
-        <div className={`${outfit.className} text-base! sm:text-xl! lg:text-[30px]! text-foreground font-light text-center space-y-10`}>
+        <div className={`${outfit.className} text-base! sm:text-xl! lg:text-[30px]! text-foreground font-light text-justify space-y-10`}>
           <p>{t("p1")}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>

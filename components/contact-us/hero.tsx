@@ -86,7 +86,6 @@ export default function CTASection({
         <div
           className="absolute bottom-1/3 left-10 hidden lg:block text-primary drop-shadow-lg"
         >
-          <StarOne className="w-12 h-12" />
         </div>
 
         <div
@@ -107,7 +106,6 @@ export default function CTASection({
           animate="animate"
           transition={{ delay: 0.7 }}
         >
-          <StarTwo className="w-16 h-16" />
         </motion.div>
       </div>
     </section>
