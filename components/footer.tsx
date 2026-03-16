@@ -117,7 +117,6 @@ export default function Footer() {
         </p>
         <div className="flex items-center gap-1 text-xs text-gray-500">
           <Link href="#" className="hover:text-orange-400 transition-colors duration-200">{t("privacy")}: </Link>
-          <span>·</span>
           <Link href="#" className="hover:text-orange-400 transition-colors duration-200">{t("terms")}</Link>
         </div>
       </div>
