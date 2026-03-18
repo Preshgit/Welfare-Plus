@@ -3,7 +3,7 @@ import ContactUs from "@/components/contactUs"
 import FeatureSection from "@/components/featureSection"
 import Impacts from "@/components/impacts"
 import Workstation from "@/assets/images/man_wheelchair_mask.png"
-import HandGrips from "@/assets/images/handgrips.png"
+import HandGrips from "@/assets/images/sub_saharan.jpg"
 import HubCard from '@/components/countryHero';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {

@@ -2,6 +2,7 @@ import { Link } from "@/i18n/routing"
 import Image from "next/image"
 import { outfit } from "@/app/utils/fonts";
 import { useTranslations } from "next-intl";
+import { Button } from "./ui/button";
 
 const socialIcons = {
   X: (
@@ -87,6 +88,7 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <Button className="py-1 px-4">Get In Touch </Button>
             </ul>
           </div>
           <div>

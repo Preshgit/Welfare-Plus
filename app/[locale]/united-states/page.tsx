@@ -3,7 +3,7 @@ import ContactUs from "@/components/contactUs"
 import HubCard from "@/components/countryHero"
 import Impacts from "@/components/impacts"
 import AssistiveChair from "@/assets/images/assistive_chair.png"
-import VirtualReality from "@/assets/images/virtual_reality.png"
+import VirtualReality from "@/assets/images/usahero.png"
 import FeatureSection from "@/components/featureSection"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -22,7 +22,7 @@ export default async function Page({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  
+
   // Enable static rendering
   setRequestLocale(locale);
 

@@ -21,6 +21,7 @@ const Ethics = () => {
           })}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>
+          <p className="text-primary font-semibold">{t("p4")}</p>
         </div>
       </div>
     </SectionContainer>

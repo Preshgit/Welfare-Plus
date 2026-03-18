@@ -31,7 +31,7 @@
               "europe": "Europe",
               "africa": "Sub-Saharan Africa",
               "us": "North America",
-              "getInTouch": "Get In Touch",
+              "getInTouch": "Contact Us",
               "email": "info@welfareplus.fi",
               "address": "Kuopio, North Savo Region, Finland",
               "phone": "+358-44-911-5097"
@@ -61,16 +61,20 @@
        },
        "ContactUsSection": {
               "heading": "Contact Us",
-              "subtitle": "Contact us to become part of the impact.",
+              "subtitle": "Contact us for more information",
               "button": "Contact us",
               "available": "*available 24 hrs",
               "emailLabel": "Email",
               "emailDetail": "info@welfareplus.fi \n\t welfareplus@welfareplus.fi",
-              "africaAddress": "joelogunnaikestreet, Ikeja GRA Lagos",
+              "africaEmail": "africa@welfareplus.fi",
+              "africaAddress": "Welfare-Plus Nigeria Limited, Ogunnaike Street, Ikeja GRA, Lagos.",
               "africaPhone": "+234-904-632-4224",
+              "usPhone": "+1 801 --- 8451, \n\t +1 856 --- 3946.",
+              "usEmail": "unitedstates@welfareplus.fi",
+              "usAddress": "Salt Lake City, Houston, New York, etc.",
               "phoneLabel": "Phone",
               "phoneDetail": "Office: +358-46-885-7552",
-              "locationLabel": "Location",
+              "locationLabel": "Location(s)",
               "locationDetail": "Juontotie 9D 18, 70150 Kuopio, North Savo, Finland, Europe."
        },
        "About": {
@@ -81,8 +85,8 @@
                      "title": "Assistive Technology, Therapy Tools, and Independent Living Solutions.",
                      "description": [
                             "Simple independent living aids for older adults and veterans.",
-                            "Assistive devices for children with special needs.",
-                            "Mobility and rehabilitation tools.",
+                            "Assistive devices for children, and mobility and rehabilitation tools.",
+                            "Social work mobile applications and other related welfare technologies",
                             "Therapy tools and adaptive equipment for persons with disabilities.",
                             "Manufacturers international representation and distribution of assistive technologies."
                      ]
@@ -104,7 +108,7 @@
                             "Social security and safeguarding initiatives.",
                             "Partnerships with governments, civil society, and private sector actors.",
                             "Therapeutic Initiatives.",
-                            "Facilitating access to global assistive solutions for diverse population groups."
+                            "Facilitating access to social work specific tools and Mobile Apps"
                      ]
               },
               "seeMore": "See more"
@@ -116,7 +120,7 @@
                      "slides": [
                             {
                                    "title": "International Initiatives for Holistic Wellbeing and Inclusive Social Development.",
-                                   "subtitle": "Facilitating access to basic social welfare needs and Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic wellbeing.",
+                                   "subtitle": "Facilitating access to basic social welfare needs, technologies and Penta-Helix model of partnerships on social projects for sustainable development. And scaling up international social work research, advocacy, policies and programs for holistic wellbeing.",
                                    "cta": "Learn More"
                             },
                             {
@@ -141,7 +145,7 @@
                      "heading": "Our Global Presence",
                      "description": "",
                      "learnMore": "Learn More",
-                     "location0Title": "City of Kuopio, Finland Europe.",
+                     "location0Title": "City of Kuopio, Finland.",
                      "location0Subtitle": "Headquarters.",
                      "location1Title": "Sub-Saharan Africa",
                      "location1Subtitle": "Lagos Nigeria.",
@@ -182,7 +186,7 @@
                      "heading": "Welcome to Welfare Plus",
                      "p1": "Welfare Plus is a Finland-based business organization affiliated to organizations abroad, and dedicated to improving wellbeing across countries and communities.",
                      "p2": "We sell assistive technologies, therapy tools, and independent living solutions that enable individuals - especially vulnerable populations - to live safely, independently, and with dignity. Welfare Plus also focuses on improving access to essential services such as housing, healthcare, education, employment, and social care.",
-                     "p3": "Our approach integrates generalist social work practice with international specialization, and we support hospitals referrals, private sector actors, governments or governmental organizations, civil societies, and communities to improve wellbeing in contemporary market-driven economies, where social welfare is jointly delivered by public institutions, businesses, civil society, and families.",
+                     "p3": "Our approach integrates generalist social work practice with international specialization, and we support hospitals referrals, private sector actors, governments or governmental organizations, civil societies, and communities to improve wellbeing in contemporary market-driven economies, where social welfare is jointly delivered by families, public sectors, civil societies and recently private businesses.",
                      "p4": "Through partnerships with (teaching) hospitals, academia, governments, businesses, civil society organizations, and financial institutions, Welfare Plus pioneers access to general and customized assistive technologies and serves as an international representative for manufacturers. We also engage in advocacy for inclusive social security systems and safeguarding frameworks.",
                      "p5": "NB: Welfare Plus is non-segregating in dealing with government and political parties. In consultancy services, we are open to partnering with all levels of government, and political parties to help develop different welfare programs and initiatives for the people."
               },
@@ -190,7 +194,8 @@
                      "heading": "Professional Standards and Ethics",
                      "p1": "For International and collaborative social care services and strategic social programs needing professional standards and data protection, Welfare Plus president and program director is registered with <b>Social Work England</b> (and has been in the register for over one-and-a-half decades from when it was named <b>General Social Care Council</b>) and duly authorized to use the professional title 'Social Worker'.",
                      "p2": "Therefore, Welfare Plus in-house international code of conduct for staff (including therapists) aligns overtly with the regulatory framework of Social Work England (established by the Children and Social Work 2017, and supported by the Social Workers Regulations 2018, as amended).",
-                     "p3": "In Finland, sub-Saharan Africa, and possibly in the United States and elsewhere, Welfare Plus adheres to relevant national legal and regulatory frameworks in English (where provided) while promoting comparative, evidence-based, and ethically grounded social work practice."
+                     "p3": "In Finland, sub-Saharan Africa, and possibly in the United States and elsewhere, Welfare Plus adheres to relevant national legal and regulatory frameworks in English (where provided) while promoting comparative, evidence-based, and ethically grounded social work practice.",
+                     "p4": "Summarily, Welfare Plus advances humane scientific and technological developments, Godly Ethics rooted in social work historical foundation, and excellence in social work care practices."
               },
               "mission": {
                      "missionHeading": "Mission",
@@ -205,15 +210,15 @@
                      "programsHeading": "Social program development.",
                      "programsDescription": "Holistic social care supporting access to basic human needs.",
                      "productsHeading": "Assistive Products & Technologies",
-                     "productsDescription": "Facilitating access to global assistive solutions for diverse population groups."
+                     "productsDescription": "Facilitating access to social work specific tools and Mobile Applications"
               },
               "products": {
                      "button": "Our Products",
                      "heading": "Products and Services",
                      "subheading": "Assistive Technology and Independent Living Solutions",
                      "item0": "Independent living aids for older adults and veterans",
-                     "item1": "Assistive devices for children with special needs",
-                     "item2": "Mobility and rehabilitation tools",
+                     "item1": "Assistive devices for children and mobility and rehabilitation tools",
+                     "item2": "",
                      "item3": "Therapy tools and adaptive equipment for persons with disabilities",
                      "item4": "Representation and distribution of international assistive technology manufacturers"
               }
@@ -260,7 +265,7 @@
        },
        "AfricaPage": {
               "hubTitle": "Sub-Saharan Africa: Science and Culture",
-              "hubAddress": "In Lagos, Nigeria. Welfare Plus is in affiliation with Welfare-Plus Nigeria Limited by expanding access to inclusive social welfare and assistive technologies across Africa.",
+              "hubAddress": "In Lagos Nigeria, Welfare Plus is in affiliation with Welfare-Plus Nigeria Limited to expand access to inclusive social welfare and assistive technologies across Africa.",
               "hubDescription": "Welfare-Plus Nigeria Limited supports inclusive developement initiatives through regional partnerships that improve access to assistive technologies and social welfare progress.",
               "featureTitle": "Sub-Saharan Africa",
               "featureContent": "Welfare-Plus Nigeria Limited collaborates with Welfare Plus in Finland to represent international manufacturers of the best assistive technologies and independent living devices. \n These partnerships support market access, distribution and implementation of inclusive social welfare services and development programs across African countries.",
@@ -272,13 +277,13 @@
        "USPage": {
               "hubTitle": "USA: Science built on \"in God we trust.\"",
               "hubAddress": "",
-              "hubDescription": "Welfare Plus is expanding it's network across the globe to build partnerships development, research collaboration and co-ordination with international stakeholders in social innovation and assistive technology.",
+              "hubDescription": "Welfare Plus is exploring collaborations with welfare tools and social work Mobile Apps across the United States's time zones and the rest of the world.",
               "featureTitle": "United States:",
-              "featureContent": "Welfare Plus (in Finland) is exploring partnerships and coordinating agents in selected United States locations, including Texas, North Carolina, Virginia Beach, and New York, to strengthen international collaborations in assistive technology, therapy tools, social research, and social development programs.",
+              "featureContent": "Welfare Plus (in Finland) is exploring partnerships and coordinating agents in selected United States locations, including Utah, Texas, North Carolina, Virginia Beach, and New York, to strengthen international collaborations in assistive technology, therapy tools, social research, and social development programs in Africa.",
               "impactsText": "Products and Services",
               "impactsContent": "Europe serves as the innovation and coordination hub supporting global knowledge exchange and technology transfer. \n Collaboration with academic institutions, government agencies, and international manufacturers to develop scalable social care solutions.",
               "impactsBtnText": "Partner with us",
-              "impactPartnerships": "Collaboration with academic institutions, government agencies, and international manufacturers to develop scalable social care solutions."
+              "impactPartnerships": "Seeking engagement with schools of social work, social enterprises, social welfare and healthcare innovators and social policy stakeholders."
        },
        "ContactPage": {
               "sectionTitle": "Europe",
@@ -288,4 +293,3 @@
               "whatsapp": "+358-44-911-5097"
        }
 }
-

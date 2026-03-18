@@ -1,30 +1,43 @@
 "use client"
 import { Mail, Phone, MapPin } from "lucide-react"
 import { satoshi } from "@/app/utils/fonts"
-import { Button } from "./ui/button"
 import StarOne from "@/assets/svg/Star_1.svg"
 import { useTranslations } from "next-intl"
-import { useRouter } from "@/i18n/routing"
+import { usePathname } from "@/i18n/routing"
 
 export default function ContactUs() {
-  const router = useRouter()
   const t = useTranslations("ContactUsSection")
+  const pathname = usePathname()
+  const sectionPrefix = pathname === "/sub-sahara-africa" ? "africa" : pathname === "/united-states" ? "us" : null
+  const normalizeLineBreaks = (value: string) => value.replaceAll("\\n", "\n")
+  const resolveDetail = (
+    defaultKey: "emailDetail" | "phoneDetail" | "locationDetail",
+    sectionKey: "africaEmail" | "africaPhone" | "africaAddress" | "usEmail" | "usPhone" | "usAddress",
+  ) => {
+    if (sectionPrefix && sectionKey.startsWith(sectionPrefix) && t.has(sectionKey)) {
+      const sectionValue = normalizeLineBreaks(t(sectionKey)).trim()
+      if (sectionValue.length > 0) {
+        return sectionValue
+      }
+    }
+    return normalizeLineBreaks(t(defaultKey))
+  }
 
   const contacts = [
     {
       icon: <Mail className="w-5 h-5 text-neutral-500" />,
       label: t("emailLabel"),
-      detail: t("emailDetail"),
+      detail: resolveDetail("emailDetail", sectionPrefix === "us" ? "usEmail" : "africaEmail"),
     },
     {
       icon: <Phone className="w-5 h-5 text-neutral-500" />,
       label: t("phoneLabel"),
-      detail: t("phoneDetail"),
+      detail: resolveDetail("phoneDetail", sectionPrefix === "us" ? "usPhone" : "africaPhone"),
     },
     {
       icon: <MapPin className="w-5 h-5 text-neutral-500" />,
       label: t("locationLabel"),
-      detail: t("locationDetail"),
+      detail: resolveDetail("locationDetail", sectionPrefix === "us" ? "usAddress" : "africaAddress"),
     },
   ]
 
@@ -50,7 +63,7 @@ export default function ContactUs() {
               </div>
               <div>
                 <p className="text-foreground font-semibold text-base mb-1">{label}</p>
-                <p className="text-foreground text-sm md:text-[18px]">{detail}</p>
+                <p className="whitespace-pre-line text-foreground text-sm md:text-[18px]">{detail}</p>
               </div>
             </div>
           ))}

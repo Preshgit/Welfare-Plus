@@ -83,7 +83,7 @@ export default function HubCard({
             </motion.p>
           </motion.div>
           <motion.div
-            className="block md:absolute h-full md:inset-y-0 md:right-0 md:w-3/5 overflow-hidden"
+            className="block md:absolute rounded-sm h-full md:inset-y-0 md:right-0 md:w-3/5 overflow-hidden"
             variants={slideInRight}
             transition={{ delay: 0.4 }}
           >
