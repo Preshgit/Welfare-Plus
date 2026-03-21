@@ -18,6 +18,7 @@ const Navbar = () => {
   const t = useTranslations("Navbar")
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const isContactActive = pathname === "/contact-us"
 
   const navLinks = [
     { href: "/", label: t("home") },
@@ -64,7 +65,16 @@ const Navbar = () => {
           </ul>
           <div className="hidden md:flex items-center gap-3">
             <ModeToggle />
-            <Button onClick={() => router.push("/contact-us")} variant="plain" className="border text-foreground shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
+            <Button
+              onClick={() => router.push("/contact-us")}
+              variant="plain"
+              className={`py-3 px-6 flex-1 shadow-none ${isContactActive
+                  ? "border-primary bg-primary text-white font-semibold hover:bg-primary"
+                  : "border text-foreground hover:bg-primary hover:text-white"
+                }`}
+            >
+              {t("getInTouch")}
+            </Button>
           </div>
           <div className="md:hidden flex items-center gap-2">
             <button
@@ -105,7 +115,16 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center gap-3">
               <ModeToggle />
-              <Button onClick={() => router.push("/contact-us")} variant="plain" className="border shadow-none py-3 px-6 flex-1">{t("getInTouch")}</Button>
+              <Button
+                onClick={() => router.push("/contact-us")}
+                variant="plain"
+                className={`py-3 px-6 flex-1 shadow-none ${isContactActive
+                    ? "border-primary bg-primary text-white font-semibold hover:bg-primary"
+                    : "border text-foreground hover:bg-primary hover:text-white"
+                  }`}
+              >
+                {t("getInTouch")}
+              </Button>
             </div>
             <ul className="flex flex-col gap-1 text-xs text-gray-500 border-t pt-3">
               <li>{t("email")}</li>

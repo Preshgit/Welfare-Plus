@@ -45,6 +45,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body
         className={`${satoshi.className} ${outfit.className} antialiased`}
       >

@@ -88,7 +88,9 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-              <Button className="py-1 px-4">Get In Touch </Button>
+              <Link href="https://cal.com/welfare-plus/meeting" target="_blank" className="py-1 text-base text-gray-300 hover:text-orange-400 transition-colors duration-200">
+                Get In Touch
+              </Link>
             </ul>
           </div>
           <div>
@@ -112,7 +114,6 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-600 w-full" />
-
       <div className="max-w-6xl w-full mx-auto px-6 md:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="text-gray-500 text-xs">
           {t("copyright")}
