@@ -4,7 +4,7 @@ import FeatureSection from "@/components/featureSection"
 import Impacts from "@/components/impacts"
 import ManWheelChair from "@/assets/images/man_wheelchair.png"
 import HubCard from "@/components/countryHero"
-import HandGrips from "@/assets/images/handgrips.png"
+import HandGrips from "@/assets/images/sub_saharan.jpg"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

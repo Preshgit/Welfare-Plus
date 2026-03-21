@@ -3,6 +3,7 @@ import { ArrowRightIcon } from "lucide-react"
 import { Button } from "./ui/button"
 import HeadingThree from "./ui/typography/headingThree"
 import { useRouter } from "@/i18n/routing"
+import { outfit } from "@/app/utils/fonts"
 
 const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, content: string | Array<{ text: string }>, btnText: string, partnershipsText: string }) => {
   const isArray = Array.isArray(content);
@@ -10,7 +11,7 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
   const router = useRouter()
 
   return (
-    <section className="w-screen bg-linear-to-b font-medium px-6 md:px-25 dark:bg-background flex items-center justify-center">
+    <section className="py-14 w-screen bg-linear-to-b font-medium px-6 md:px-25 dark:bg-background flex items-center justify-center">
       <div className="space-y-10 text-center mx-auto">
         <div className="space-y-5">
           <HeadingThree text={"Partnerships"} className="text-primary!" />
@@ -22,6 +23,40 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
             <ArrowRightIcon />
           </Button>
         </div>
+        <div className="space-y-5 pt-5">
+          {content?.length > 0 && <HeadingThree text={text} className="text-primary!" />}
+
+          {isArray ? (
+            <ul className="space-y-3 w-fit mx-auto text-left">
+              {(content as Array<{ text: string }>).map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="mt-[14px] md:mt-[22px] h-1.5 w-1.5 rounded-full bg-foreground shrink-0" />
+                  <p className={`md:text-[30px] text-foreground font-light ${outfit.className} text-justify`}>
+                    {item.text}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          ) : isList ? (
+            <ul className="space-y-3 w-fit mx-auto text-left">
+              {(content as string).split('|').map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="mt-[14px] md:mt-[22px] h-1.5 w-1.5 rounded-full bg-foreground shrink-0" />
+                  <p className={`md:text-[30px] text-foreground font-light ${outfit.className} text-justify`}>
+                    {item.trim()}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            (content as string).split("\n").map((word, index) => (
+              <p key={index} className={`md:text-[30px] text-foreground font-light ${outfit.className}`}>
+                {word}
+              </p>
+            ))
+          )}
+        </div>
+
       </div>
     </section>
   )

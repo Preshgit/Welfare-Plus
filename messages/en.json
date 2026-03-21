@@ -86,7 +86,7 @@
                      "description": [
                             "Simple independent living aids for older adults and veterans.",
                             "Assistive devices for children, and mobility and rehabilitation tools.",
-                            "Social work mobile applications and other related welfare technologies",
+                            "Social work mobile applications and other related welfare technologies.",
                             "Therapy tools and adaptive equipment for persons with disabilities.",
                             "Manufacturers international representation and distribution of assistive technologies."
                      ]
@@ -108,7 +108,7 @@
                             "Social security and safeguarding initiatives.",
                             "Partnerships with governments, civil society, and private sector actors.",
                             "Therapeutic Initiatives.",
-                            "Facilitating access to social work specific tools and Mobile Apps"
+                            "Facilitating access to social work specific tools and Mobile Apps."
                      ]
               },
               "seeMore": "See more"
@@ -259,9 +259,9 @@
               "featureTitle": "Finland",
               "featureContent": "Welfare Plus facilitates business partnerships in assistive technology between Europe and Sub-Saharan Africa. The focus is on independent living aids and assistive devices for children with special needs, persons with disabilities, older adults, and veterans. Welfare Plus also conducts social research, advocacy, and promote evidence-based social care innovations.",
               "impactsText": "Services in Europe",
-              "impactsContent": "Social welfare and policy research|Assistive technology partnerships|Evidence-based social innovation|International collaboration programs| Related consultancy services",
+              "impactsContent": "Assistive technology partnerships|Social welfare and policy research|Evidence-based social innovation|International collaboration programs| Related consultancy services.",
               "impactsBtnText": "Partner with us",
-              "impactPartnerships": "Collaboration with teaching hospitals, academic institutions, government agencies, and international manufacturers to develop scalable social care solutions"
+              "impactPartnerships": "Collaboration with teaching hospitals, academic institutions, government agencies, and international manufacturers to develop scalable social care solutions."
        },
        "AfricaPage": {
               "hubTitle": "Sub-Saharan Africa: Science and Culture",
@@ -278,10 +278,10 @@
               "hubTitle": "USA: Science built on \"in God we trust.\"",
               "hubAddress": "",
               "hubDescription": "Welfare Plus is exploring collaborations with welfare tools and social work Mobile Apps across the United States's time zones and the rest of the world.",
-              "featureTitle": "United States:",
+              "featureTitle": "United States",
               "featureContent": "Welfare Plus (in Finland) is exploring partnerships and coordinating agents in selected United States locations, including Utah, Texas, North Carolina, Virginia Beach, and New York, to strengthen international collaborations in assistive technology, therapy tools, social research, and social development programs in Africa.",
               "impactsText": "Products and Services",
-              "impactsContent": "Europe serves as the innovation and coordination hub supporting global knowledge exchange and technology transfer. \n Collaboration with academic institutions, government agencies, and international manufacturers to develop scalable social care solutions.",
+              "impactsContent": "",
               "impactsBtnText": "Partner with us",
               "impactPartnerships": "Seeking engagement with schools of social work, social enterprises, social welfare and healthcare innovators and social policy stakeholders."
        },
