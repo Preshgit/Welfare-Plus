@@ -176,7 +176,8 @@
                      "heading": "Ammattistandardit ja etiikka",
                      "p1": "Kansainvälisiä ja yhteistyöhön perustuvia sosiaalihuoltopalveluita ja strategisia sosiaaliohjelmia varten, jotka edellyttävät ammattistandardeja ja tietosuojaa, Welfare Plusin ohjelmajohtaja on rekisteröity Social Work Englandiin (ja on ollut rekisteröitynä yli puolitoista vuosikymmentä siitä lähtien, kun se tunnettiin nimellä General Social Care Council) ja on asianmukaisesti valtuutettu käyttämään ammatillista titteliä 'Sosiaalityöntekijä'.",
                      "p2": "Siksi Welfare Plusin sisäinen kansainvälinen henkilöstön käytännesääntö on selvästi linjassa Social Work Englandin sääntelykehyksen kanssa (perustettu lailla Children and Social Work 2017, ja tuettu Social Workers Regulations 2018, sellaisena kuin sitä on muutettu).",
-                     "p3": "Suomessa, Sub-Saharan Afrikassa ja mahdollisesti Yhdysvalloissa ja muualla Welfare Plus noudattaa asiaankuuluvia kansallisia oikeudellisia ja sääntelykehyksiä samalla edistäen vertailevaa, näyttöön perustuvaa ja eettisesti perusteltua sosiaalityön käytäntöä."
+                     "p3": "Suomessa, Sub-Saharan Afrikassa ja mahdollisesti Yhdysvalloissa ja muualla Welfare Plus noudattaa asiaankuuluvia kansallisia oikeudellisia ja sääntelykehyksiä samalla edistäen vertailevaa, näyttöön perustuvaa ja eettisesti perusteltua sosiaalityön käytäntöä.",
+                     "p4": "Yhteenvetona Welfare Plus edistää inhimillistä tieteellistä ja teknologista kehitystä, sosiaalityön historialliseen perustaan nojaavaa eettisyyttä ja erinomaisuutta sosiaalihuollon käytännöissä."
               },
               "mission": {
                      "missionHeading": "Missio",
@@ -235,28 +236,36 @@
        },
        "EuropePage": {
               "hubTitle": "Euroopan keskus osallistavalle hyvinvointi-innovaatiolle",
+              "hubAddress": "Pääkonttori Suomessa",
               "hubDescription": "Sosiaalisen innovaation ja apuvälineteknologiakumppanuuksien edistäminen Euroopassa. Welfare Plus Eurooppa toimii kansainvälisen tutkimuksen, innovaation ja kumppanuuksien pääkonttoreina osallistavassa sosiaalihuollossa ja itsenäisen elämisen ratkaisuissa.",
               "featureTitle": "Suomi",
               "featureContent": "Welfare Plus helpottaa apuvälineteknologiakumppanuuksia Euroopan ja Sub-Saharan Afrikan välillä. Painopisteenamme ovat itsenäisen elämisen apuvälineet ja erityistä tukea tarvitsevien lasten, vammaisten, ikäihmisten ja veteraanien apuvälineet. Toteutamme myös sosiaalitutkimusta ja edunvalvontaa sekä edistämme näyttöön perustuvia sosiaalisen hoidon innovaatioita.",
               "impactsText": "Vaikutuksemme Euroopassa",
               "impactsContent": "Eurooppa toimii innovaatio- ja koordinaatiokeskuksena tukemassa globaalia tiedonvaihtoa ja teknologiansiirtoa. \n Yhteistyö akateemisten laitosten, valtion virastojen ja kansainvälisten valmistajien kanssa skaalautuvien sosiaalisten hoitoratkaisujen kehittämiseksi.",
-              "impactsBtnText": "Kumppanuus kanssamme"
+              "impactsBtnText": "Kumppanuus kanssamme",
+              "impactPartnerships": "Yhteistyö opetussairaaloiden, akateemisten laitosten, viranomaisten ja kansainvälisten valmistajien kanssa skaalautuvien sosiaalihuollon ratkaisujen kehittämiseksi."
        },
        "AfricaPage": {
+              "hubTitle": "Sub-Saharan Afrikka: Tiede ja kulttuuri",
+              "hubAddress": "Lagosissa, Nigeriassa Welfare Plus toimii yhteistyössä Welfare-Plus Nigeria Limitedin kanssa laajentaakseen osallistavan sosiaalihuollon ja apuvälineteknologioiden saatavuutta Afrikassa.",
+              "hubDescription": "Welfare-Plus Nigeria Limited tukee osallistavia kehitysaloitteita alueellisten kumppanuuksien kautta, jotka parantavat apuvälineteknologioiden saatavuutta ja sosiaalihuollon edistymistä.",
               "featureTitle": "Sub-Saharan Afrikka",
               "featureContent": "Laajentamassa osallistavan sosiaalihuollon ja apuvälineteknologioiden saatavuutta Afrikassa. Welfare Plus tukee osallistavia kehitysaloitteita alueellisten kumppanuuksien kautta, jotka parantavat apuvälineteknologioiden ja sosiaalihuolto-ohjelmien saatavuutta.",
               "impactsText": "Vaikutuksemme Sub-Saharan Afrikassa",
               "impactsContent": "Parantamassa apuvälineteknologioiden saatavuutta, kohtuuhintaisuutta ja tietoisuutta samalla tukemalla kestävää sosiaalista kehitystä. \nYhteistyö akateemisten laitosten, valtion virastojen ja kansainvälisten valmistajien kanssa skaalautuvien sosiaalisten hoitoratkaisujen kehittämiseksi.",
-              "impactsBtnText": "Kumppanuus kanssamme"
+              "impactsBtnText": "Kumppanuus kanssamme",
+              "impactsPartnerships": "Yhteistyö kansalaisjärjestöjen, sairaaloiden, akateemisten laitosten, yksityisen sektorin toimijoiden ja kehityskumppaneiden kanssa apuvälineteknologioiden saatavuuden, kohtuuhintaisuuden ja tietoisuuden parantamiseksi sekä kestävän sosiaalisen kehityksen tukemiseksi."
        },
        "USPage": {
               "hubTitle": "Yhdysvaltain keskus sosiaalihuollon innovaatiolle",
+              "hubAddress": "",
               "hubDescription": "Sosiaalisen innovaation ja apuvälineteknologiakumppanuuksien edistäminen Yhdysvalloissa. Welfare Plus tutkii kumppanuuksia ja koordinointia valituissa Yhdysvaltojen sijainneissa.",
               "featureTitle": "Yhdysvallat",
               "featureContent": "Welfare Plus (Suomessa) tutkii kumppanuuksia ja koordinoi agentteja valituissa Yhdysvaltojen sijainneissa, mukaan lukien Texas, Pohjois-Carolina, Virginia Beach ja New York, vahvistaakseen kansainvälistä yhteistyötä apuvälineteknologian, terapiavälineiden, sosiaalitutkimuksen ja sosiaalisen kehityksen ohjelmissa.",
               "impactsText": "Vaikutuksemme Yhdysvalloissa",
               "impactsContent": "Eurooppa toimii innovaatio- ja koordinaatiokeskuksena tukemassa globaalia tiedonvaihtoa ja teknologiansiirtoa. \n Yhteistyö akateemisten laitosten, valtion virastojen ja kansainvälisten valmistajien kanssa skaalautuvien sosiaalisten hoitoratkaisujen kehittämiseksi.",
-              "impactsBtnText": "Kumppanuus kanssamme"
+              "impactsBtnText": "Kumppanuus kanssamme",
+              "impactPartnerships": "Etsimme yhteistyötä sosiaalityön korkeakoulujen, sosiaalisten yritysten, sosiaalihuollon ja terveydenhuollon innovoijien sekä sosiaalipolitiikan sidosryhmien kanssa."
        },
        "ContactPage": {
               "sectionTitle": "Eurooppa",

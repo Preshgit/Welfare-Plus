@@ -1,6 +1,6 @@
 "use client"
 import { ArrowRightIcon } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, type Variants } from "framer-motion"
 import { Button } from "./ui/button"
 import HeadingThree from "./ui/typography/headingThree"
 import { useRouter } from "@/i18n/routing"
@@ -13,7 +13,7 @@ type ImpactContent = string | Array<ImpactTextItem | ImpactServiceItem>;
 const isServiceItem = (item: ImpactTextItem | ImpactServiceItem): item is ImpactServiceItem =>
   "title" in item && "description" in item;
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: {},
   show: {
     transition: {
@@ -22,7 +22,7 @@ const staggerContainer = {
   },
 };
 
-const popInItem = {
+const popInItem: Variants = {
   hidden: { opacity: 0, y: 16, scale: 0.98 },
   show: {
     opacity: 1,
