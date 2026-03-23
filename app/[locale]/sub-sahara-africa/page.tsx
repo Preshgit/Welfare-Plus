@@ -4,6 +4,7 @@ import FeatureSection from "@/components/featureSection"
 import Impacts from "@/components/impacts"
 import Workstation from "@/assets/images/man_wheelchair_mask.png"
 import WalkingAids from "@/assets/images/sub_saharan_hero.jpg"
+import WalkingAidsDark from "@/assets/images/sub_saharan_hero_dark.png"
 import HubCard from '@/components/countryHero';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -30,9 +31,9 @@ export default async function Page({
 
   return (
     <div>
-      <HubCard address={t('hubAddress')} description={t('hubDescription')} imageUrl={WalkingAids} title={t('hubTitle')} imageAlt='man with virtual reality glasses' locationLabel="U.S." key={'united states'} />
+      <HubCard address={t('hubAddress')} description={t('hubDescription')} darkImageUrl={WalkingAidsDark} imageUrl={WalkingAids} title={t('hubTitle')} imageAlt='man with virtual reality glasses' locationLabel="U.S." key={'united states'} />
       <FeatureSection content={t('featureContent')} title={t('featureTitle')} image={Workstation} alt="Man on wheel chair" />
-      <Impacts partnershipsText={t('impactsPartnerships')} text={t('impactsText')} content={t('impactsContent')} btnText={t('impactsBtnText')} />
+      <Impacts partnershipsText={t('impactsPartnerships')} text={t('impactsText')} content={t.raw('impactsContent')} btnText={t('impactsBtnText')} />
       <ContactUs />
     </div>
   )

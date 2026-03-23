@@ -1,12 +1,40 @@
 "use client"
 import { ArrowRightIcon } from "lucide-react"
+import { motion } from "framer-motion"
 import { Button } from "./ui/button"
 import HeadingThree from "./ui/typography/headingThree"
 import { useRouter } from "@/i18n/routing"
 import { outfit } from "@/app/utils/fonts"
 
-const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, content: string | Array<{ text: string }>, btnText: string, partnershipsText: string }) => {
+type ImpactTextItem = { text: string };
+type ImpactServiceItem = { id?: string; title: string; description: string };
+type ImpactContent = string | Array<ImpactTextItem | ImpactServiceItem>;
+
+const isServiceItem = (item: ImpactTextItem | ImpactServiceItem): item is ImpactServiceItem =>
+  "title" in item && "description" in item;
+
+const staggerContainer = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.16,
+    },
+  },
+};
+
+const popInItem = {
+  hidden: { opacity: 0, y: 16, scale: 0.98 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.38, ease: "easeOut" },
+  },
+};
+
+const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, content: ImpactContent, btnText: string, partnershipsText: string }) => {
   const isArray = Array.isArray(content);
+  const hasServiceShape = isArray && content.some(isServiceItem);
   const isList = typeof content === 'string' && content.includes('|');
   const router = useRouter()
 
@@ -25,35 +53,76 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
         </div>
         <div className="space-y-5 pt-5">
           {content?.length > 0 && <HeadingThree text={text} className="text-primary!" />}
-
-          {isArray ? (
-            <ul className="space-y-3 w-fit mx-auto text-left">
-              {(content as Array<{ text: string }>).map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+          {hasServiceShape ? (
+            <motion.ul
+              className="grid grid-cols-1 md:grid-cols-2 font-dm-sans py-5"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              {(content as Array<ImpactTextItem | ImpactServiceItem>).filter(isServiceItem).map(({ title, id, description }, index, services) => (
+                <motion.li
+                  key={id ?? `${title}-${index}`}
+                  variants={popInItem}
+                  className={`p-5 border-sidebar-border space-y-3 border-dashed ${index % 2 === 0 ? "md:border-r md:border-r-gray-200/40" : ""} ${index < services.length - 2 ? "md:border-b border-gray-100" : ""}`}
+                >
+                  <h4 className="text-left text-[25px] uppercase font-medium leading-[115.5%]">
+                    {title}
+                  </h4>
+                  <p className="font-outfit text-justify text-[20px] font-light text-gray-500 leading-relaxed">
+                    {description}
+                  </p>
+                </motion.li>
+              ))}
+            </motion.ul>
+          ) : isArray ? (
+            <motion.ul
+              className="space-y-3 w-fit mx-auto text-left"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              {(content as Array<ImpactTextItem | ImpactServiceItem>).map((item, index) => (
+                <motion.li key={index} variants={popInItem} className="flex items-start gap-3">
                   <span className="mt-[14px] md:mt-[22px] h-1.5 w-1.5 rounded-full bg-foreground shrink-0" />
                   <p className={`md:text-[30px] text-foreground font-light ${outfit.className} text-justify`}>
-                    {item.text}
+                    {"text" in item ? item.text : `${item.title}: ${item.description}`}
                   </p>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
           ) : isList ? (
-            <ul className="space-y-3 w-fit mx-auto text-left">
+            <motion.ul
+              className="space-y-3 w-fit mx-auto text-left"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+            >
               {(content as string).split('|').map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+                <motion.li key={index} variants={popInItem} className="flex items-start gap-3">
                   <span className="mt-[14px] md:mt-[22px] h-1.5 w-1.5 rounded-full bg-foreground shrink-0" />
                   <p className={`md:text-[30px] text-foreground font-light ${outfit.className} text-justify`}>
                     {item.trim()}
                   </p>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
           ) : (
-            (content as string).split("\n").map((word, index) => (
-              <p key={index} className={`md:text-[30px] text-foreground font-light ${outfit.className}`}>
-                {word}
-              </p>
-            ))
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              {(content as string).split("\n").map((word, index) => (
+                <motion.p key={index} variants={popInItem} className={`md:text-[30px] text-foreground font-light ${outfit.className}`}>
+                  {word}
+                </motion.p>
+              ))}
+            </motion.div>
           )}
         </div>
 

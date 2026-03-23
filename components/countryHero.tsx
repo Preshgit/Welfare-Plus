@@ -11,6 +11,7 @@ interface HubCardProps {
   description: string;
   address: string;
   imageUrl: StaticImageData;
+  darkImageUrl?: StaticImageData;
   imageAlt?: string;
   locationLabel: string;
 }
@@ -49,6 +50,7 @@ export default function HubCard({
   address,
   description,
   imageUrl,
+  darkImageUrl,
   imageAlt = "Card image",
   locationLabel,
 }: HubCardProps) {
@@ -91,8 +93,16 @@ export default function HubCard({
               src={imageUrl}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className={`object-cover ${darkImageUrl ? "dark:hidden" : ""}`}
             />
+            {darkImageUrl ? (
+              <Image
+                src={darkImageUrl}
+                alt={imageAlt}
+                fill
+                className="hidden object-cover dark:block"
+              />
+            ) : null}
           </motion.div>
         </div>
       </motion.div>

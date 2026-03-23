@@ -259,7 +259,32 @@
               "featureTitle": "Finland",
               "featureContent": "Welfare Plus facilitates business partnerships in assistive technology between Europe and Sub-Saharan Africa. The focus is on independent living aids and assistive devices for children with special needs, persons with disabilities, older adults, and veterans. Welfare Plus also conducts social research, advocacy, and promote evidence-based social care innovations.",
               "impactsText": "Services in Europe",
-              "impactsContent": "Assistive technology partnerships|Social welfare and policy research|Evidence-based social innovation|International collaboration programs| Related consultancy services.",
+              "impactsContent": [
+                     {
+                            "title": "WELFARE ASSISTIVE TECHNOLOGY",
+                            "description": "Facilitate wholesale and retail supply of varied aid devices, e.g., independent living, mobility, and orthopedics categories."
+                     },
+                     {
+                            "title": "IMPROVED CARE SERVICES & PRODUCTS",
+                            "description": "Advocate for affordable and best standard of intervention and aid services."
+                     },
+                     {
+                            "title": "INTERNATIONAL COLLABORATIONS",
+                            "description": "Enhance export and import of welfare tools and gadgets."
+                     },
+                     {
+                            "title": "SOCIAL WELFARE AND POLICY RESEARCH",
+                            "description": "Promoting research, advocacy, and policy on condition of socially vulnerable people."
+                     },
+                     {
+                            "title": "EVIDENCE-BASED INNOVATIONS",
+                            "description": "Generating cross disciplinary research on customized therapy tools."
+                     },
+                     {
+                            "title": "CONSULTANCY SERVICES",
+                            "description": "Advancing the systems of International Social Work (ISW) as a specialization."
+                     }
+              ],
               "impactsBtnText": "Partner with us",
               "impactPartnerships": "Collaboration with teaching hospitals, academic institutions, government agencies, and international manufacturers to develop scalable social care solutions."
        },
@@ -270,7 +295,32 @@
               "featureTitle": "Sub-Saharan Africa",
               "featureContent": "Welfare-Plus Nigeria Limited collaborates with Welfare Plus in Finland to represent international manufacturers of the best assistive technologies and independent living devices. \n These partnerships support market access, distribution and implementation of inclusive social welfare services and development programs across African countries.",
               "impactsText": "Services & Products in Sub-Saharan Africa",
-              "impactsContent": "Enhancing access to assistive technologies|Community-based social programs| Capacity building for social welfare institutions|Inclusive social development initiatives| Related consultancy services",
+              "impactsContent": [
+                     {
+                            "title": "PROMOTING ACCESS TO ASSISTIVE DEVICES",
+                            "description": "Collaborate with Welfare-Plus Nigeria Limited and Others across Africa for procurement, importation, distribution, marketing/sales,"
+                     },
+                     {
+                            "title": "ADVANCE SOCIAL DEVELOPMENT INITIATIVES",
+                            "description": "Collaboration with families, governments, INGOs, and private sectors to strengthen social development."
+                     },
+                     {
+                            "title": "A CAPACITY BUILDING PLATFORM",
+                            "description": "Awareness for social workers, doctors, nurses, therapists and others on affordable aid gadgets."
+                     },
+                     {
+                            "title": "SOCIAL WORK TECHNOLOGIES",
+                            "description": "Social work assistive gadgets, Mobile Apps for inclusive e-learning, and open distance education."
+                     },
+                     {
+                            "title": "COMMUNITY-BASED SOCIAL PROGRAMS",
+                            "description": "In Africa. research estimated 19-31 million live with disability in Nigeria alone!"
+                     },
+                     {
+                            "title": "CONSULTANCY SERVICES",
+                            "description": "Facilitating social work and social development impacts in Africa, in a multicultural approach."
+                     }
+              ],
               "impactsBtnText": "Partner with us",
               "impactsPartnerships": "Collaboration with NGOs, hospitals, academic institutions, private sector organizations and development partners to improve access, affordability and awareness of assistive technologies while supporting sustainable social development."
        },
