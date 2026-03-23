@@ -16,7 +16,7 @@ const slideTransition = {
 
 const slides = [
   { src: "/hero(2).png", alt: "Slide One Background" },
-  { src: "/hero-3(2).png", alt: "Slide Two Background" },
+  { src: "/hero-3(2).jpg", alt: "Slide Two Background" },
   { src: "/hero-2(1).png", alt: "Slide Three Background" },
 ]
 
