@@ -129,7 +129,7 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
                 <motion.li
                   key={id ?? `${title}-${index}`}
                   variants={popInItem}
-                  className={`p-5 border-sidebar-border space-y-3 border-dashed ${index % 2 === 0 ? "md:border-r md:border-r-gray-200/40" : ""} ${index < services.length - 2 ? "md:border-b border-gray-100" : ""}`}
+                  className={`p-2 border-sidebar-border space-y-3 border-dashed ${index % 2 === 0 ? "md:border-r md:border-r-gray-200/40" : ""} ${index < services.length - 2 ? "md:border-b border-gray-100" : ""}`}
                 >
                   <h4 className="text-left text-[25px] uppercase font-medium leading-[115.5%]">
                     {title}
