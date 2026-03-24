@@ -2,6 +2,7 @@
 
 import Image, { StaticImageData } from "next/image"
 import { satoshi } from "@/app/utils/fonts"
+import HeadingThree from "./ui/typography/headingThree"
 
 interface FeatureSectionProps {
   title: string
@@ -21,11 +22,8 @@ export default function FeatureSection({
       <div className="md:px-5">
         <div className="flex flex-col justify-center items-center gap-6.5 px-6 text-justify space-y-6">
           <div className="space-y-3 w-fit text-justify">
-            <h2
-              className={`${satoshi.className} text-justify! text-3xl md:text-4xl font-light text-foreground`}
-            >
-              {title}
-            </h2>
+            <HeadingThree text={title} className={`${satoshi.className} text-justify! text-3xl md:text-[64px]! font-light text-foreground`} />
+
             <div className="w-full h-[3px] bg-primary mx-auto rounded-full" />
           </div>
           <p

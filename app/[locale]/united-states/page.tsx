@@ -3,7 +3,7 @@ import ContactUs from "@/components/contactUs"
 import HubCard from "@/components/countryHero"
 import Impacts from "@/components/impacts"
 import AssistiveChair from "@/assets/images/assistive_chair.png"
-import VirtualRealityDark from "@/assets/images/usahero.png"
+import VirtualRealityDark from "@/assets/images/usahero.jpeg"
 import VirtualReality from "@/assets/images/usahero_light.jpg"
 import FeatureSection from "@/components/featureSection"
 

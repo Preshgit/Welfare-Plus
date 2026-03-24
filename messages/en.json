@@ -71,7 +71,7 @@
               "africaPhone": "+234-904-632-4224",
               "usPhone": "+1 801 --- 8451, \n\t +1 856 --- 3946.",
               "usEmail": "unitedstates@welfareplus.fi",
-              "usAddress": "Salt Lake City, Houston, New York, etc.",
+              "usAddress": "For contact locations: Simi Valley, Salt Lake City, Houston, New York, etc.",
               "phoneLabel": "Phone",
               "phoneDetail": "Office: +358-46-885-7552",
               "locationLabel": "Location(s)",
@@ -104,10 +104,10 @@
               "programs": {
                      "title": "Advocacy, Projects, Safeguarding, and Social Security Promotion.",
                      "description": [
-                            "Advocacy for inclusive social welfare policies.",
+                            "Advocacy for inclusive social welfare policies and social development.",
                             "Social security and safeguarding initiatives.",
                             "Partnerships with governments, civil society, and private sector actors.",
-                            "Therapeutic Initiatives.",
+                            "Behaviorial and poverty alleviation initiatives.",
                             "Facilitating access to social work specific tools and Mobile Apps."
                      ]
               },
@@ -255,7 +255,7 @@
        "EuropePage": {
               "hubTitle": "Europe: Science in Social Welfare's Hub",
               "hubAddress": "Headquartered in Finland",
-              "hubDescription": "Advancing social innovation and partnerships in assistive technology between the developed and third-world countries.",
+              "hubDescription": "Advancing social innovation and partnerships in assistive technology between the developed and the third-world countries.",
               "featureTitle": "Finland",
               "featureContent": "Welfare Plus facilitates business partnerships in assistive technology between Europe and Sub-Saharan Africa. The focus is on independent living aids and assistive devices for children with special needs, persons with disabilities, older adults, and veterans. Welfare Plus also conducts social research, advocacy, and promote evidence-based social care innovations.",
               "impactsText": "Services in Europe",
@@ -286,7 +286,7 @@
                      }
               ],
               "impactsBtnText": "Partner with us",
-              "impactPartnerships": "Collaboration with teaching hospitals, academic institutions, government agencies, and international manufacturers to develop scalable social care solutions."
+              "impactPartnerships": "Collaboration with teaching hospitals, academic institutions, government agencies, and international manufacturers to develop scalable social care solutions And opening of frontier markets to subsequently expand their scope of welfare coverage."
        },
        "AfricaPage": {
               "hubTitle": "Sub-Saharan Africa: Science and Culture",
@@ -298,11 +298,11 @@
               "impactsContent": [
                      {
                             "title": "PROMOTING ACCESS TO ASSISTIVE DEVICES",
-                            "description": "Collaborate with Welfare-Plus Nigeria Limited and Others across Africa for procurement, importation, distribution, marketing/sales,"
+                            "description": "Collaborate with Welfare-Plus Nigeria Limited and Others across Africa for procurement, importation, distribution, marketing and sales."
                      },
                      {
                             "title": "ADVANCE SOCIAL DEVELOPMENT INITIATIVES",
-                            "description": "Collaboration with families, governments, INGOs, and private sectors to strengthen social development."
+                            "description": "Collaboration with families, governments, INGOs, and private sectors to strengthen social development and poverty alleviation."
                      },
                      {
                             "title": "A CAPACITY BUILDING PLATFORM",
@@ -314,7 +314,7 @@
                      },
                      {
                             "title": "COMMUNITY-BASED SOCIAL PROGRAMS",
-                            "description": "In Africa. research estimated 19-31 million live with disability in Nigeria alone!"
+                            "description": "In Africa. research estimates 19-31 million live with disability in Nigeria alone! Who, when and what devices?"
                      },
                      {
                             "title": "CONSULTANCY SERVICES",
@@ -322,18 +322,18 @@
                      }
               ],
               "impactsBtnText": "Partner with us",
-              "impactsPartnerships": "Collaboration with NGOs, hospitals, academic institutions, private sector organizations and development partners to improve access, affordability and awareness of assistive technologies while supporting sustainable social development."
+              "impactsPartnerships": "Collaboration with NGOs, hospitals, academic institutions, private sector organizations and development partners to improve access, affordability and awareness of assistive technologies while supporting sustainable social development. Organizations dealing in related architectural and landscape designs’ products are collaborating with Welfare-Plus Nigeria Limited to accommodate the redesigning of African living spaces for assistive technologies and devices. You may see <a href='www.thom-ark.com' className='font-medium'>thom-ark</a>, for example."
        },
        "USPage": {
               "hubTitle": "USA: Science built on \"in God we trust.\"",
               "hubAddress": "",
-              "hubDescription": "Welfare Plus is exploring collaborations with welfare tools and social work Mobile Apps across the United States's time zones and the rest of the world.",
+              "hubDescription": "Welfare Plus is exploring collaborations with welfare tools and social work mobile app manufacturers and developers, respectively, across the United States's time zones and the rest of the world.",
               "featureTitle": "United States",
-              "featureContent": "Welfare Plus (in Finland) is exploring partnerships and coordinating agents in selected United States locations, including Utah, Texas, North Carolina, Virginia Beach, and New York, to strengthen international collaborations in assistive technology, therapy tools, social research, and social development programs in Africa.",
+              "featureContent": "Welfare Plus is leveraging contacts and partnerships in selected United States locations, including California, Utah, Texas, North Carolina, Virginia Beach, and New York, to strengthen international collaborations in assistive technology, therapy tools, social research, and social development programs in Africa.",
               "impactsText": "Products and Services",
               "impactsContent": "",
               "impactsBtnText": "Partner with us",
-              "impactPartnerships": "Seeking engagement with schools of social work, social enterprises, social welfare and healthcare innovators and social policy stakeholders."
+              "impactPartnerships": "Engaging schools of social work, social enterprises, social welfare and healthcare innovators and social policy stakeholders.\n  The goal is to make Africa access affordable products and services for independent living, special education, occupational and physical therapy, and assistive gadgets and technologies from North America, and possibly the rest of the world."
        },
        "ContactPage": {
               "sectionTitle": "Europe",

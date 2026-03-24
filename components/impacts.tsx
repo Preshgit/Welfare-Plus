@@ -1,6 +1,7 @@
 "use client"
 import { ArrowRightIcon } from "lucide-react"
 import { motion, type Variants } from "framer-motion"
+import type { ReactNode } from "react"
 import { Button } from "./ui/button"
 import HeadingThree from "./ui/typography/headingThree"
 import { useRouter } from "@/i18n/routing"
@@ -32,6 +33,78 @@ const popInItem: Variants = {
   },
 };
 
+const normalizePartnershipText = (text: string) => text.replace(/\\n/g, "\n");
+
+const getSafeHref = (href: string): string | null => {
+  const trimmedHref = href.trim();
+
+  if (!trimmedHref) return null;
+  if (trimmedHref.startsWith("/")) return trimmedHref;
+
+  const hasScheme = /^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(trimmedHref);
+  const normalizedHref = hasScheme ? trimmedHref : `https://${trimmedHref}`;
+
+  try {
+    const protocol = new URL(normalizedHref).protocol.toLowerCase();
+    if (protocol === "http:" || protocol === "https:" || protocol === "mailto:" || protocol === "tel:") {
+      return normalizedHref;
+    }
+  } catch {
+    return null;
+  }
+
+  return null;
+};
+
+const renderPartnershipText = (text: string): ReactNode[] => {
+  const lines = normalizePartnershipText(text).split("\n");
+  const renderedNodes: ReactNode[] = [];
+
+  lines.forEach((line, lineIndex) => {
+    let currentIndex = 0;
+
+    for (const match of line.matchAll(/<a\s+([^>]*?)>(.*?)<\/a>/gi)) {
+      const [fullTag, attributes = "", anchorText = ""] = match;
+      const matchIndex = match.index ?? 0;
+
+      if (matchIndex > currentIndex) {
+        renderedNodes.push(line.slice(currentIndex, matchIndex));
+      }
+
+      const hrefMatch = attributes.match(/href\s*=\s*(['"])(.*?)\1/i);
+      const safeHref = hrefMatch ? getSafeHref(hrefMatch[2]) : null;
+
+      if (safeHref) {
+        renderedNodes.push(
+          <a
+            key={`partnership-link-${lineIndex}-${matchIndex}`}
+            href={safeHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 font-medium"
+          >
+            {anchorText}
+          </a>
+        );
+      } else {
+        renderedNodes.push(anchorText);
+      }
+
+      currentIndex = matchIndex + fullTag.length;
+    }
+
+    if (currentIndex < line.length) {
+      renderedNodes.push(line.slice(currentIndex));
+    }
+
+    if (lineIndex < lines.length - 1) {
+      renderedNodes.push(<br key={`partnership-break-${lineIndex}`} />);
+    }
+  });
+
+  return renderedNodes;
+};
+
 const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, content: ImpactContent, btnText: string, partnershipsText: string }) => {
   const isArray = Array.isArray(content);
   const hasServiceShape = isArray && content.some(isServiceItem);
@@ -41,16 +114,7 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
   return (
     <section className="py-14 w-screen bg-linear-to-b font-medium px-6 md:px-25 dark:bg-background flex items-center justify-center">
       <div className="space-y-10 text-center mx-auto">
-        <div className="space-y-5">
-          <HeadingThree text={"Partnerships"} className="text-primary!" />
-          <p className="text-[30px] font-normal text-justify">
-            {partnershipsText}
-          </p>
-          <Button onClick={() => router.push("/contact-us/#contactForm")} variant="primary" className="gap-[10.95px] md:w-fit w-full py-[14.6px] pl-[19.47px] pr-[15.82px]">
-            {btnText}
-            <ArrowRightIcon />
-          </Button>
-        </div>
+
         <div className="space-y-5 pt-5">
           {content?.length > 0 && <HeadingThree text={text} className="text-primary!" />}
           {hasServiceShape ? (
@@ -125,7 +189,16 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
             </motion.div>
           )}
         </div>
-
+        <div className="space-y-5">
+          <HeadingThree text={"Partnerships"} className="text-primary!" />
+          <p className="text-[30px] font-normal text-justify">
+            {renderPartnershipText(partnershipsText)}
+          </p>
+          <Button onClick={() => router.push("/contact-us/#contactForm")} variant="primary" className="gap-[10.95px] md:w-fit w-full py-[14.6px] pl-[19.47px] pr-[15.82px]">
+            {btnText}
+            <ArrowRightIcon />
+          </Button>
+        </div>
       </div>
     </section>
   )

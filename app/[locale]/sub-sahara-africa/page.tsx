@@ -1,4 +1,4 @@
-import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { setRequestLocale, getTranslations, getMessages } from 'next-intl/server';
 import ContactUs from "@/components/contactUs"
 import FeatureSection from "@/components/featureSection"
 import Impacts from "@/components/impacts"
@@ -28,12 +28,19 @@ export default async function Page({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'AfricaPage' });
+  const messages = await getMessages({ locale });
+  const africaPageMessages = (messages as Record<string, Record<string, string> | undefined>).AfricaPage;
+  const partnershipsText =
+    africaPageMessages?.impactsPartnerships ??
+    africaPageMessages?.impactPartnerships ??
+    africaPageMessages?.impactPartnertships ??
+    "";
 
   return (
     <div>
       <HubCard address={t('hubAddress')} description={t('hubDescription')} darkImageUrl={WalkingAidsDark} imageUrl={WalkingAids} title={t('hubTitle')} imageAlt='man with virtual reality glasses' locationLabel="U.S." key={'united states'} />
       <FeatureSection content={t('featureContent')} title={t('featureTitle')} image={Workstation} alt="Man on wheel chair" />
-      <Impacts partnershipsText={t('impactsPartnerships')} text={t('impactsText')} content={t.raw('impactsContent')} btnText={t('impactsBtnText')} />
+      <Impacts partnershipsText={partnershipsText} text={t('impactsText')} content={t.raw('impactsContent')} btnText={t('impactsBtnText')} />
       <ContactUs />
     </div>
   )
