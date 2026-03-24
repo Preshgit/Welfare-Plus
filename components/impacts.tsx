@@ -191,7 +191,7 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
         </div>
         <div className="space-y-5">
           <HeadingThree text={"Partnerships"} className="text-primary!" />
-          <p className="text-[30px] font-normal text-justify">
+          <p className="text-[25px] lg:text-[30px] font-normal text-justify">
             {renderPartnershipText(partnershipsText)}
           </p>
           <Button onClick={() => router.push("/contact-us/#contactForm")} variant="primary" className="gap-[10.95px] md:w-fit w-full py-[14.6px] pl-[19.47px] pr-[15.82px]">
