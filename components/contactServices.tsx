@@ -33,13 +33,13 @@ const ContactServices: FC = () => {
           <div className="flex text-left flex-col gap-1.5 text-[0.9rem] text-black dark:text-slate-300/80">
             <p>
               We are available for calls on{" "}
-              <strong className="font-semibold text-white">
+              <strong className="font-semibold text-foreground">
                 Mondays &amp; Thursdays: 10am - 5pm.
               </strong>
             </p>
             <p>
               And we are available on{" "}
-              <strong className="font-semibold text-white">
+              <strong className="font-semibold text-foreground">
                 WhatsApp 24/6, Mondays to Saturdays.
               </strong>
             </p>

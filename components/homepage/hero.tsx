@@ -15,9 +15,9 @@ const slideTransition = {
 }
 
 const slides = [
-  { src: "/hero(2).png", alt: "Slide One Background" },
+  { src: "/hero.png", alt: "Slide One Background" },
   { src: "/hero-3(2).jpg", alt: "Slide Two Background" },
-  { src: "/hero-2(1).png", alt: "Slide Three Background" },
+  { src: "/hero2.png", alt: "Slide Three Background" },
 ]
 
 const Hero = () => {
@@ -34,7 +34,6 @@ const Hero = () => {
 
   return (
     <section className="relative space-y-5 h-screen w-full overflow-hidden bg-black">
-      {/* Background image slider */}
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -46,7 +45,7 @@ const Hero = () => {
         >
           <motion.div
             initial={{ scale: 1.1 }}
-            animate={{ scale: 1 }}
+            animate={{ scale: 1.1 }}
             transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
             className="absolute inset-0"
           >
