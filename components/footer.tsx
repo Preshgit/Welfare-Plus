@@ -37,7 +37,7 @@ export default function Footer() {
 
   return (
     <footer className={`${outfit.className} w-full bg-[#3a3a3a] text-white font-sans`}>
-      <div className="max-w-6xl mx-auto px-6 md:px-12 py-14 flex flex-col md:flex-row justify-between gap-10 md:gap-x-16 lg:gap-x-48">
+      <div className="max-w-6xl mx-auto px-6 md:px-0 py-14 flex flex-col md:flex-row justify-between gap-10 md:gap-x-16 lg:gap-x-48">
         <div className="md:max-w-xs">
           <div className="mb-4">
             <Link href="/">
@@ -50,7 +50,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 w-full gap-8 md:gap-5">
-          <div className="w-full">
+          <div className="w-full text-right">
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
               {t("companyHeading")}
             </h4>
@@ -67,7 +67,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div>
+          <div className="text-right">
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
               {t("supportHeading")}
             </h4>
@@ -87,11 +87,11 @@ export default function Footer() {
               </Link>
             </ul>
           </div>
-          <div>
+          <div className="text-right">
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
               {t("socialHeading")}
             </h4>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 justify-end">
               {socialLinks.map(({ name, href, icon }) => (
                 <Link
                   key={name}
@@ -108,7 +108,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
       <div className="border-t border-gray-600 w-full" />
       <div className="max-w-6xl w-full mx-auto px-6 md:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="text-gray-500 text-xs">

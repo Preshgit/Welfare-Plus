@@ -2,7 +2,7 @@
 
 import { ArrowUpRightIcon, SparkleIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { Link } from "@/i18n/routing"
+import { Link, useRouter } from "@/i18n/routing"
 import { Button } from "../ui/button"
 import HeadingTwo from "../ui/typography/headingTwo"
 import { outfit, satoshi } from "@/app/utils/fonts"
@@ -10,9 +10,9 @@ import HeadingFour from "../ui/typography/headingFour"
 import BusIcon from "@/assets/svg/bus.svg"
 import People from "@/assets/svg/people.svg"
 import UserIcon from "@/assets/svg/userr.svg"
-
 const About = () => {
   const t = useTranslations("About")
+  const router = useRouter()
 
   return (
     <section className={`${outfit.className} bg-background text-foreground flex justify-center  py-8 min-h-130 sm:px-5`}>
@@ -56,7 +56,7 @@ const About = () => {
             </div>
           </div>
         </div>
-
+        <Button className="px-8 py-4" onClick={() => router.push("/contact-us#contactForm")}>Get In Touch</Button>
       </div>
     </section>
   )

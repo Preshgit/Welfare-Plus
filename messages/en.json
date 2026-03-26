@@ -34,7 +34,7 @@
               "getInTouch": "Contact Us",
               "email": "info@welfareplus.fi",
               "address": "Kuopio, North Savo Region, Finland",
-              "phone": "+358-44-911-5097"
+              "phone": "+358-466-127-014"
        },
        "LocaleSwitcher": {
               "label": "Change language"
@@ -71,7 +71,7 @@
               "africaPhone": "+234-904-632-4224",
               "usPhone": "+1 801 --- 8451, \n\t +1 856 --- 3946.",
               "usEmail": "unitedstates@welfareplus.fi",
-              "usAddress": "For contact locations: Simi Valley, Salt Lake City, Houston, New York, etc.",
+              "usAddress": "C/O Contacts: Simi Valley, Salt Lake City, Houston, New York, etc.",
               "phoneLabel": "Phone",
               "phoneDetail": "Office: +358-46-885-7552",
               "locationLabel": "Location(s)",
@@ -153,7 +153,7 @@
                      "location2Subtitle": "The United States."
               },
               "illustration": {
-                     "heading": "Products & Services Illustration",
+                     "heading": "Products Illustration",
                      "description": "Assistive Chairs | Hearing Aids | Assistive Solutions | Mobility Aids | Support Systems | Therapy Tools",
                      "button": "See More"
               },
@@ -232,8 +232,8 @@
               "description": "Welfare Plus (in Finland) collaborates with Welfare-Plus Nigeria Limited to represent international manufacturers of the best assistive technologies and independent living devices. These partnerships support market access, distribution, and the implementation of inclusive social welfare and development programs across African countries."
        },
        "ContactHero": {
-              "headingPre": "We're here to answer any question you may have &",
-              "headingHighlight": "collaborate",
+              "headingPre": "We’re here to answer your questions and ",
+              "headingHighlight": "partner ",
               "headingPost": "with you.",
               "button": "Learn About Welfare Plus"
        },
