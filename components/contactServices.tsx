@@ -43,12 +43,6 @@ const ContactServices: FC = () => {
                 WhatsApp 24/6, Mondays to Saturdays.
               </strong>
             </p>
-            <p>
-              Post Office Box
-              P.O. Box: 11608, Ikeja,
-              (Postal Code: 100001),
-              Lagos, Nigeria.
-            </p>
           </div>
         </div>
       </div>
