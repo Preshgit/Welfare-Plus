@@ -38,7 +38,7 @@ const ContactServices: FC = () => {
               </strong>
             </p>
             <p>
-              And we are available on{" "}
+              We are also available on{" "}
               <strong className="font-semibold text-foreground">
                 WhatsApp 24/6, Mondays to Saturdays.
               </strong>
