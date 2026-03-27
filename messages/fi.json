@@ -66,6 +66,9 @@
               "available": "*saatavilla 24 h",
               "emailLabel": "Sähköposti",
               "emailDetail": "Toimisto : welfare-plus@welfareplus.fi",
+              "africaEmail": "africa@welfareplus.fi\n\n\t<span class=\"text-xs\" style=\"font-size: 10px;\">P.O. Box: 11608, Ikeja, (Postal Code: 100001), Lagos, Nigeria.</span>",
+              "africaAddress": "c/o Welfare-Plus Nigeria Limited, Ogunnaike Street, Ikeja GRA, Lagos.",
+              "africaPhone": "+234-904-632-4224",
               "phoneLabel": "Puhelin",
               "phoneDetail": "Toimisto : +254 904 632 4224",
               "locationLabel": "Sijainti",
@@ -269,7 +272,7 @@
        },
        "ContactPage": {
               "sectionTitle": "Eurooppa",
-              "address": "Juontotie 9D 18, 70150 Kuopio, Pohjois-Savo, Suomi.",
+              "address": "Juontotie 9D 18, 70150 Kuopio, Pohjois-Savo, Suomi.<br/><span class=\"text-xs\" style=\"font-size: 10px;\">P.O. Box: 11608, Ikeja, (Postal Code: 100001), Lagos, Nigeria.</span>",
               "email": "info@welfareplus.fi",
               "telephone": "+358 46 8857 552",
               "whatsapp": "+358 44 915 097"

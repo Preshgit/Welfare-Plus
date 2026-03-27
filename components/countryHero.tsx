@@ -74,9 +74,9 @@ export default function HubCard({
             <HeadingTwo className="text-[8px] md:text-[50.1px]! text-white text-2xl font-bold leading-snug mb-3">
               {title}
             </HeadingTwo>
-            <p className="font-medium">{address}</p>
+            <p className="font-medium text-justify">{address}</p>
             <motion.p
-              className="text-white lg:text-base leading-relaxed"
+              className="text-white text-justify lg:text-base leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 1 }}

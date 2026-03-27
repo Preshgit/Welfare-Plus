@@ -56,7 +56,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <Button className="px-8 py-4" onClick={() => router.push("/contact-us#contactForm")}>Get In Touch</Button>
+
+        <Button className="px-8 py-4" asChild><Link href="https://cal.com/welfare-plus/meeting" target="_blank">Get In Touch</Link></Button>
       </div>
     </section>
   )
