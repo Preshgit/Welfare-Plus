@@ -63,7 +63,7 @@ export default function ContactUs() {
               </div>
               <div>
                 <p className="text-foreground font-semibold text-base mb-1">{label}</p>
-                <p className="whitespace-pre-line text-foreground text-sm md:text-[18px]">{detail}</p>
+                <p className="whitespace-pre-line text-foreground text-sm md:text-[16px]">{detail}</p>
               </div>
             </div>
           ))}
