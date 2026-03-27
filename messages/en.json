@@ -66,14 +66,14 @@
               "available": "*available 24 hrs",
               "emailLabel": "Email",
               "emailDetail": "info@welfareplus.fi \n\t welfareplus@welfareplus.fi",
-              "africaEmail": "africa@welfareplus.fi\n\n\t<span class=\"text-xs\">P.O. Box: 11608, Ikeja, (Postal Code: 100001), Lagos, Nigeria.</span>",
+              "africaEmail": "africa@welfareplus.fi\n\n\t",
               "africaAddress": "c/o Welfare-Plus Nigeria Limited, Ogunnaike Street, Ikeja GRA, Lagos, Nigeria.",
               "africaPhone": "+234-904-632-4224",
               "usPhone": "+1 801 --- 8451, \n\t +1 856 --- 3946.",
               "usEmail": "unitedstates@welfareplus.fi",
               "usAddress": "c/o contacts in Simi Valley, Salt Lake City, Houston, New York, etc.",
               "phoneLabel": "Phone",
-              "phoneDetail": "Office: +358-46-612-7014, WhatsApp: +358-46-612-7014.",
+              "phoneDetail": "Office: +358-46-612-7014,\nWhatsApp: +358-46-612-7014.",
               "locationLabel": "Location(s)",
               "locationDetail": "Juontotie 9D 18, 70150 Kuopio, North Savo, Finland, Europe."
        },
@@ -337,7 +337,7 @@
        },
        "ContactPage": {
               "sectionTitle": "Europe",
-              "address": "Juontotie 9D 18, 70150 Kuopio, North Savo, Finland.<br/><span class=\"text-xs\">P.O. Box: 11608, Ikeja, (Postal Code: 100001), Lagos, Nigeria.</span>",
+              "address": "Juontotie 9D 18, 70150 Kuopio, North Savo, Finland",
               "email": "info@welfareplus.fi",
               "telephone": "+358-46-612-7014",
               "whatsapp": "+358-46-612-7014"

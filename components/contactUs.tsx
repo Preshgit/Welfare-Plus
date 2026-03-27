@@ -68,7 +68,7 @@ export default function ContactUs() {
                 <p className="text-foreground font-semibold text-base mb-1">{label}</p>
                 {detail.includes("<span") ? (
                   <p
-                    className="whitespace-pre-line text-foreground text-sm md:text-[16px]"
+                    className="whitespace-pre-line text-foreground text-sm md:text-[18px]"
                     dangerouslySetInnerHTML={{ __html: detail }}
                   />
                 ) : (
