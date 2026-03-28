@@ -23,6 +23,7 @@ const socialLinks = [
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const tGeneral = useTranslations("General");
 
   const companyLinks = [
     { label: t("companyLinks.home"), href: "/" },
@@ -83,7 +84,7 @@ export default function Footer() {
                 </li>
               ))}
               <Link href="https://cal.com/welfare-plus/meeting" target="_blank" className="py-1 text-base text-gray-300 hover:text-orange-400 transition-colors duration-200">
-                Get In Touch
+                {tGeneral("getInTouch")}
               </Link>
             </ul>
           </div>
