@@ -131,7 +131,7 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
                   variants={popInItem}
                   className={`p-2 border-sidebar-border space-y-3 border-dashed ${index % 2 === 0 ? "md:border-r md:border-r-gray-200/40" : ""} ${index < services.length - 2 ? "md:border-b border-gray-100" : ""}`}
                 >
-                  <h4 className="text-left text-[24px] sm:text-[28px] uppercase font-medium leading-[115.5%]">
+                  <h4 className="text-left text-[20px] sm:text-[28px] uppercase font-medium leading-[115.5%]">
                     {title}
                   </h4>
                   <p className="font-outfit text-justify text-[18px] sm:text-[22px] font-light text-gray-500 leading-relaxed">

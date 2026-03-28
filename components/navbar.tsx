@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
       <div className="border-b w-full px-6 md:px-12 lg:px-25">
         <div className="max-w-6xl mx-auto flex items-center justify-between py-1">
-          <Link href="/">
+          <Link href="/" onClick={() => setMenuOpen(false)}>
             <Image src="/Logo.png" height={70} width={140} alt="logo" className="dark:hidden" />
             <Image src="/logodark.png" height={70} width={140} alt="logo" className="hidden dark:block" />
           </Link>
@@ -116,7 +116,10 @@ const Navbar = () => {
             <div className="flex items-center gap-3">
               <ModeToggle />
               <Button
-                onClick={() => router.push("/contact-us")}
+                onClick={() => {
+                  router.push("/contact-us");
+                  setMenuOpen(false);
+                }}
                 variant="plain"
                 className={`py-3 px-6 flex-1 shadow-none ${isContactActive
                     ? "border-primary bg-primary text-white font-semibold hover:bg-primary"

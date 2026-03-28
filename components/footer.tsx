@@ -50,8 +50,8 @@ export default function Footer() {
             {t("description")}
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 w-full gap-8 md:gap-5">
-          <div className="w-full text-right">
+        <div className="grid grid-cols-1 sm:grid-cols-3 w-full gap-8 md:gap-5">
+          <div className="w-full sm:text-right">
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
               {t("companyHeading")}
             </h4>
@@ -68,7 +68,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="text-right">
+          <div className="sm:text-right">
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
               {t("supportHeading")}
             </h4>
@@ -88,11 +88,11 @@ export default function Footer() {
               </Link>
             </ul>
           </div>
-          <div className="text-right">
+          <div className="md:text-right">
             <h4 className="text-base font-semibold tracking-widest uppercase text-gray-300 mb-5">
               {t("socialHeading")}
             </h4>
-            <div className="flex items-center gap-3 justify-end">
+            <div className="flex items-center gap-3 sm:justify-end">
               {socialLinks.map(({ name, href, icon }) => (
                 <Link
                   key={name}
