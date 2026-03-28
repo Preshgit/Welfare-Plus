@@ -12,6 +12,7 @@ import People from "@/assets/svg/people.svg"
 import UserIcon from "@/assets/svg/userr.svg"
 const About = () => {
   const t = useTranslations("About")
+  const tGeneral = useTranslations("General")
   const router = useRouter()
 
   return (
@@ -57,7 +58,7 @@ const About = () => {
           </div>
         </div>
 
-        <Button className="px-8 py-4" asChild><Link href="https://cal.com/welfare-plus/meeting" target="_blank">Get In Touch</Link></Button>
+        <Button className="px-8 py-4" asChild><Link href="https://cal.com/welfare-plus/meeting" target="_blank">{tGeneral("getInTouch")}</Link></Button>
       </div>
     </section>
   )

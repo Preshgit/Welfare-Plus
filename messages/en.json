@@ -25,6 +25,11 @@
                      "description": "Get in touch with Welfare Plus for inquiries about our social welfare programs and assistive technologies."
               }
        },
+       "General": {
+              "redirecting": "Redirecting...",
+              "translate": "Translate:",
+              "getInTouch": "Get In Touch"
+       },
        "Navbar": {
               "home": "Home",
               "about": "About Us",
@@ -241,6 +246,7 @@
               "heading": "We'd love to",
               "headingHighlight": "hear",
               "headingPost": "from you!",
+              "description": "Have a question or inquiry? Reach out and we’ll respond within 24 hours.",
               "namePlaceholder": "Your name*",
               "emailPlaceholder": "Your email address*",
               "messagePlaceholder": "Your message*",
@@ -322,7 +328,7 @@
                      }
               ],
               "impactsBtnText": "Partner with us",
-              "impactsPartnerships": "Collaboration with NGOs, hospitals, academic institutions, private sector organizations and development partners to improve access, affordability and awareness of assistive technologies while supporting sustainable social development. Organizations dealing in related architectural and landscape designs’ products are collaborating with Welfare-Plus Nigeria Limited to accommodate the redesigning of African living spaces for assistive technologies and devices. You may see <a href='www.thom-ark.com' className='font-medium'>thom-ark.com</a>, for example."
+              "impactPartnerships": "Collaboration with NGOs, hospitals, academic institutions, private sector organizations and development partners to improve access, affordability and awareness of assistive technologies while supporting sustainable social development. Organizations dealing in related architectural and landscape designs’ products are collaborating with Welfare-Plus Nigeria Limited to accommodate the redesigning of African living spaces for assistive technologies and devices. You may see <a href='www.thom-ark.com' className='font-medium'>thom-ark.com</a>, for example."
        },
        "USPage": {
               "hubTitle": "USA: Science built on \"in God we trust\"",
@@ -341,5 +347,12 @@
               "email": "info@welfareplus.fi",
               "telephone": "+358-46-612-7014",
               "whatsapp": "+358-46-612-7014"
+       },
+       "ContactServices": {
+              "heading": "For Contact & Services",
+              "availabilityCalls": "We are available for calls on",
+              "availabilityCallsDays": "Mondays & Thursdays: 10am - 5pm.",
+              "availabilityWhatsApp": "We are also available on",
+              "availabilityWhatsAppDays": "WhatsApp 24/6, Mondays to Saturdays."
        }
 }

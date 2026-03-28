@@ -1,5 +1,7 @@
+"use client"
 import type { FC } from "react";
 import SectionContainer from "./sectionContainer";
+import { useTranslations } from "next-intl";
 
 const XIcon: FC<{ className?: string }> = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -22,25 +24,26 @@ const WhatsAppIcon: FC<{ className?: string }> = ({ className }) => (
 );
 
 const ContactServices: FC = () => {
+  const t = useTranslations("ContactServices");
   return (
     <SectionContainer>
       <div className="mx-auto flex max-w-7xl items-start justify-between gap-8">
         <div className="flex flex-col gap-4">
           <h2 className="text-4xl font-medium text-left tracking-tight text-black dark:text-white md:text-5xl">
-            For Contact &amp; Services
+            {t("heading")}
           </h2>
 
           <div className="flex text-left flex-col gap-1.5 text-[0.9rem] text-black dark:text-slate-300/80">
             <p>
-              We are available for calls on{" "}
+              {t("availabilityCalls")}{" "}
               <strong className="font-semibold text-foreground">
-                Mondays &amp; Thursdays: 10am - 5pm.
+                {t("availabilityCallsDays")}
               </strong>
             </p>
             <p>
-              We are also available on{" "}
+              {t("availabilityWhatsApp")}{" "}
               <strong className="font-semibold text-foreground">
-                WhatsApp 24/6, Mondays to Saturdays.
+                {t("availabilityWhatsAppDays")}
               </strong>
             </p>
 

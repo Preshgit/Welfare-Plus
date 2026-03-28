@@ -15,7 +15,7 @@ const ContactForm = () => {
       </div>
       <div className="space-y-5 flex flex-1 flex-col">
         <h3 className="font-medium! max-w-md text-[50px] lg:text-[65px]">{t("heading")} <span className='underline decoration-primary'>{t("headingHighlight")}</span> {t("headingPost")}</h3>
-        <p>Have a question or inquiry? Reach out and we’ll respond within 24 hours.</p>
+        <p>{t("description")}</p>
         <form className="space-y-5  w-full justify-self-end">
           <div className="flex items-center justify-between border-2 rounded-2xl  py-3 px-3 relative">
             <input type="text" placeholder={t("namePlaceholder")} className=" w-full outline-none ring-0 focus:ring-0 focus:outline-none placeholder:text-gray-400" />
