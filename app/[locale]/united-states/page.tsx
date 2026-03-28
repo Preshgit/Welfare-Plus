@@ -33,7 +33,7 @@ export default async function Page({
     <div>
       <HubCard address={t('hubAddress')} description={t('hubDescription')} darkImageUrl={VirtualRealityDark} imageUrl={VirtualReality} title={t('hubTitle')} imageAlt='man with virtual reality glasses' locationLabel="U.S." key={'united states'} />
       <FeatureSection content={t('featureContent')} title={t('featureTitle')} image={AssistiveChair} alt="Man on wheel chair" />
-      <Impacts text={t('impactsText')} content={t.raw('impactsContent')} btnText={t('impactsBtnText')} partnershipsText={t('impactPartnerships')} />
+      <Impacts text={t('impactsText')} content={t.raw('impactsContent')} btnText={t('impactsBtnText')} partnershipsText={t.raw('impactPartnerships')} />
       <ContactUs />
     </div>
   )

@@ -38,7 +38,7 @@ export default function Footer() {
 
   return (
     <footer className={`${outfit.className} w-full bg-[#3a3a3a] text-white font-sans`}>
-      <div className="max-w-6xl mx-auto px-6 md:px-0 py-14 flex flex-col md:flex-row justify-between gap-10 md:gap-x-16 lg:gap-x-48">
+      <div className="max-w-6xl mx-auto px-6 md:px-6 py-14 flex flex-col md:flex-row justify-between gap-10 md:gap-x-16 lg:gap-x-48">
         <div className="md:max-w-xs">
           <div className="mb-4">
             <Link href="/">
