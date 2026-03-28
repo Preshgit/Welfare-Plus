@@ -9,7 +9,7 @@ const ContactForm = () => {
   const t = useTranslations("ContactForm")
   return (
     <div className="flex flex-col lg:flex-row w-full bg-background items-center py-10 gap-8 lg:gap-x-5 px-5" id="contactForm">
-      <div className="relative block w-150 px-24 flex-shrink-0">
+      <div className="relative hidden lg:block w-150 px-24 flex-shrink-0">
         <Image src={MapImage} alt="map" height={900} width={600} className="dark:hidden" />
         <Image src={MapImageDark} alt="map" height={900} width={600} className="hidden dark:block" />
       </div>

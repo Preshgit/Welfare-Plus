@@ -70,7 +70,7 @@ const Hero = () => {
                 transition={{ ...slideTransition, delay: 0.1 }}
                 className="mb-6"
               >
-                <HeadingOne text={t("slides.0.title")} className="text-white! text-4xl! sm:text-6xl! lg:text-[100px]!" />
+                <HeadingOne text={t("slides.0.title")} className="text-white! text-4xl! sm:text-6xl! lg:text-[70px]!" />
               </motion.div>
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
