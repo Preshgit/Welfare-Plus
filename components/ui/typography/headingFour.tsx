@@ -10,7 +10,7 @@ const HeadingFour = React.forwardRef<HTMLHeadingElement, HeadingProps>(
         ref={ref}
         className={cn(
           satoshi.className,
-          "text-[38px] sm:text-[48px] lg:text-[60px] tracking-[-0.06em] leading-[108%]",
+          "text-[28px] sm:text-[40px] lg:text-[60px] tracking-[-0.06em] leading-[108%]",
           className
         )}
         style={{ color, fontWeight: weight || "400", ...style }}

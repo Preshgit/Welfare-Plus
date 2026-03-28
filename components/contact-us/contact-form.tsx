@@ -14,9 +14,9 @@ const ContactForm = () => {
         <Image src={MapImageDark} alt="map" height={900} width={600} className="hidden dark:block" />
       </div>
       <div className="space-y-5 flex flex-1 flex-col">
-        <h3 className="font-medium! max-w-md text-[50px] lg:text-[65px]">{t("heading")} <span className='underline decoration-primary'>{t("headingHighlight")}</span> {t("headingPost")}</h3>
-        <p>{t("description")}</p>
-        <form className="space-y-5  w-full justify-self-end">
+        <h3 className="font-medium! max-w-md text-[32px] sm:text-[48px] lg:text-[60px] leading-tight">{t("heading")} <span className='underline decoration-primary'>{t("headingHighlight")}</span> {t("headingPost")}</h3>
+        <p className="text-base sm:text-lg lg:text-[22px] font-light text-foreground/80">{t("description")}</p>
+        <form className="space-y-5 w-full">
           <div className="flex items-center justify-between border-2 rounded-2xl  py-3 px-3 relative">
             <input type="text" placeholder={t("namePlaceholder")} className=" w-full outline-none ring-0 focus:ring-0 focus:outline-none placeholder:text-gray-400" />
             <UserIcon className="dark:stroke-primary stroke-gray-500 " />

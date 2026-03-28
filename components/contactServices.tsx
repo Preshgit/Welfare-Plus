@@ -29,11 +29,11 @@ const ContactServices: FC = () => {
     <SectionContainer>
       <div className="mx-auto flex max-w-7xl items-start justify-between gap-8">
         <div className="flex flex-col gap-4">
-          <h2 className="text-4xl font-medium text-left tracking-tight text-black dark:text-white md:text-5xl">
+          <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-medium text-left tracking-tight text-black dark:text-white">
             {t("heading")}
           </h2>
 
-          <div className="flex text-left flex-col gap-1.5 text-[0.9rem] text-black dark:text-slate-300/80">
+          <div className="flex text-left flex-col gap-2 text-base sm:text-lg lg:text-[20px] text-black dark:text-slate-300/80 font-light">
             <p>
               {t("availabilityCalls")}{" "}
               <strong className="font-semibold text-foreground">

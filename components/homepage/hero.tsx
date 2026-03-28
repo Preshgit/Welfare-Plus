@@ -8,6 +8,7 @@ import { Button } from "../ui/button"
 import { satoshi } from "@/app/utils/fonts"
 import { ArrowUpRight } from "lucide-react"
 import { useRouter } from "@/i18n/routing"
+import HeadingOne from "../ui/typography/headingOne"
 
 const slideTransition = {
   duration: 1.2,
@@ -63,19 +64,19 @@ const Hero = () => {
         <div className="sm:space-y-0 max-w-6xl w-full gap-4.5 text-white text-left">
           <div className="space-y-3 px-3">
             <div className="px-3">
-              <motion.h1
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...slideTransition, delay: 0.1 }}
-                className="text-4xl md:text-6xl lg:text-[60px] font-medium leading-tight mb-6"
+                className="mb-6"
               >
-                {t("slides.0.title")}
-              </motion.h1>
+                <HeadingOne text={t("slides.0.title")} className="text-white! text-4xl sm:text-6xl lg:text-[100px]!" />
+              </motion.div>
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...slideTransition, delay: 0.2 }}
-                className="text-lg md:text-xl lg:text-xl font-light max-w-3xl mb-10 text-white/90"
+                className="text-base sm:text-lg lg:text-xl font-light max-w-3xl mb-10 text-white/90"
               >
                 {t("slides.0.subtitle")}
               </motion.p>

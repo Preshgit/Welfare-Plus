@@ -50,29 +50,29 @@ export default function ContactUs() {
         <div className="flex flex-col items-center text-center mb-10">
           <div className="flex items-center gap-4 mb-3">
             <StarOne className="text-primary " />
-            <h2 className=" text-4xl font-semibold">{t("heading")}</h2>
+            <h2 className="text-[28px] sm:text-[36px] md:text-[40px] font-semibold">{t("heading")}</h2>
             <StarOne className="text-primary " />
           </div>
-          <p className="text-foreground text-[20px] md:text-[22px]">{t("subtitle")}</p>
+          <p className="text-foreground text-base sm:text-lg lg:text-[22px] font-light">{t("subtitle")}</p>
         </div>
-        <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-5 px-2">
+        <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-5 px-2 justify-items-center">
           {contacts.map(({ icon, label, detail, key }) => (
             <div
               key={label}
-              className="rounded-2xl md:w-90 border border-gray-300 py-10 flex flex-col px-10 gap-6"
+              className="rounded-2xl w-full max-w-[360px] border border-gray-300 py-10 flex flex-col px-10 gap-6 h-full"
             >
-              <div className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300">
+              <div className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 shrink-0">
                 {icon}
               </div>
-              <div>
-                <p className="text-foreground font-semibold text-base mb-1">{label}</p>
+              <div className="flex-1">
+                <p className="text-foreground font-semibold text-base mb-2 uppercase tracking-wide">{label}</p>
                 {detail.includes("<span") ? (
                   <p
-                    className="whitespace-pre-line text-foreground text-sm md:text-[18px]"
+                    className="whitespace-pre-line text-foreground text-sm sm:text-base lg:text-[18px] font-light leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: detail }}
                   />
                 ) : (
-                  <p className="whitespace-pre-line text-foreground text-sm md:text-[16px]">{detail}</p>
+                  <p className="whitespace-pre-line text-foreground text-sm sm:text-base lg:text-[18px] font-light leading-relaxed">{detail}</p>
                 )}
               </div>
             </div>

@@ -58,7 +58,7 @@ export default function CTASection({
           variants={fadeInUp}
         >
           <motion.h2
-            className={`${satoshi.className} font-medium text-4xl sm:text-5xl md:text-6xl lg:text-[72px] leading-tight`}
+            className={`${satoshi.className} font-medium text-[32px] sm:text-[48px] md:text-[60px] lg:text-[72px]! leading-tight`}
             variants={fadeInUp}
           >
             {t("headingPre")} <br className="hidden sm:block" />{" "}

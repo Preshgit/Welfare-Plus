@@ -97,9 +97,9 @@ const Illustration = () => {
       <div className="w-11/12 md:w-4/5 mx-auto text-center space-y-4">
         <HeadingTwo
           text={t("heading")}
-          className="text-2xl sm:text-4xl lg:text-[60px] text-foreground"
+          className="text-[32px] sm:text-[48px] lg:text-[60px]! text-foreground"
         />
-        <p className="text-sm sm:text-base lg:text-[22px] text-foreground">
+        <p className="text-base sm:text-lg lg:text-[22px] text-foreground font-light max-w-4xl mx-auto">
           {t("description")}
         </p>
       </div>

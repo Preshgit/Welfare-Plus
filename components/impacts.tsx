@@ -131,10 +131,10 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
                   variants={popInItem}
                   className={`p-2 border-sidebar-border space-y-3 border-dashed ${index % 2 === 0 ? "md:border-r md:border-r-gray-200/40" : ""} ${index < services.length - 2 ? "md:border-b border-gray-100" : ""}`}
                 >
-                  <h4 className="text-left text-[25px] uppercase font-medium leading-[115.5%]">
+                  <h4 className="text-left text-[24px] sm:text-[28px] uppercase font-medium leading-[115.5%]">
                     {title}
                   </h4>
-                  <p className="font-outfit text-justify text-[20px] font-light text-gray-500 leading-relaxed">
+                  <p className="font-outfit text-justify text-[18px] sm:text-[22px] font-light text-gray-500 leading-relaxed">
                     {description}
                   </p>
                 </motion.li>
@@ -151,7 +151,7 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
               {(content as Array<ImpactTextItem | ImpactServiceItem>).map((item, index) => (
                 <motion.li key={index} variants={popInItem} className="flex items-start gap-3">
                   <span className="mt-[14px] md:mt-[22px] h-1.5 w-1.5 rounded-full bg-foreground shrink-0" />
-                  <p className={`md:text-[30px] text-foreground font-light ${outfit.className} text-justify`}>
+                  <p className={`text-[24px] md:text-[30px] text-foreground font-light ${outfit.className} text-justify`}>
                     {"text" in item ? item.text : `${item.title}: ${item.description}`}
                   </p>
                 </motion.li>
@@ -167,8 +167,8 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
             >
               {(content as string).split('|').map((item, index) => (
                 <motion.li key={index} variants={popInItem} className="flex items-start gap-3">
-                  <span className="mt-[14px] md:mt-[22px] h-1.5 w-1.5 rounded-full bg-foreground shrink-0" />
-                  <p className={`md:text-[30px] text-foreground font-light ${outfit.className} text-justify`}>
+                  <span className="mt-[14px] md:md:mt-[22px] h-1.5 w-1.5 rounded-full bg-foreground shrink-0" />
+                  <p className={`text-[24px] md:text-[30px] text-foreground font-light ${outfit.className} text-justify`}>
                     {item.trim()}
                   </p>
                 </motion.li>
@@ -182,7 +182,7 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
               viewport={{ once: true, amount: 0.2 }}
             >
               {(content as string).split("\n").map((word, index) => (
-                <motion.p key={index} variants={popInItem} className={`md:text-[30px] text-foreground font-light ${outfit.className}`}>
+                <motion.p key={index} variants={popInItem} className={`text-[24px] md:text-[30px] text-foreground font-light ${outfit.className}`}>
                   {word}
                 </motion.p>
               ))}
@@ -191,7 +191,7 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
         </div>
         <div className="space-y-5">
           <HeadingThree text={"Partnerships"} className="text-primary!" />
-          <p className="text-[25px] lg:text-[30px] font-normal text-justify">
+          <p className="text-[20px] sm:text-[24px] lg:text-[30px] font-normal text-justify">
             {renderPartnershipText(partnershipsText)}
           </p>
           <Button onClick={() => router.push("/contact-us/#contactForm")} variant="primary" className="gap-[10.95px] md:w-fit w-full py-[14.6px] pl-[19.47px] pr-[15.82px]">
