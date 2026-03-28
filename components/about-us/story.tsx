@@ -10,10 +10,10 @@ const Story = () => {
     <SectionContainer>
       <div className=" mx-auto space-y-5">
         <div className="flex flex-wrap items-center gap-3 justify-center">
-          <HeadingTwo text={t("heading")} className="font-normal! text-foreground text-2xl! sm:text-4xl! lg:text-[60px]!" />
+          <HeadingTwo text={t("heading")} className="font-normal! text-foreground text-[32px] sm:text-[48px] lg:text-[60px]!" />
 
         </div>
-        <div className={`${outfit.className} text-base! sm:text-xl! lg:text-[30px]! text-foreground font-extralight text-justify space-y-10`}>
+        <div className={`${outfit.className} text-base sm:text-lg lg:text-[24px] text-foreground font-extralight text-justify space-y-10`}>
           <p>{t("p1")}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>

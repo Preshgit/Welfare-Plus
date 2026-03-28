@@ -10,6 +10,7 @@ import StarOne from "@/assets/svg/star_one.svg"
 import StarTwo from "@/assets/svg/star_two.svg"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
+import HeadingOne from "../ui/typography/headingOne"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
@@ -46,16 +47,17 @@ export default function Hero() {
           animate="animate"
           variants={fadeInLeft}
         >
-          <motion.h1
-            className={`${satoshi.className} text-foreground text-4xl md:text-5xl lg:text-[60px] font-medium leading-tight`}
+          <motion.div
             variants={fadeInUp}
           >
-            {t("headingPre")}{" "}
-            <span className="text-primary">{t("headingHighlight")}</span>{" "}
-            {t("headingPost")}
-          </motion.h1>
+            <HeadingOne className="text-foreground text-[32px] sm:text-[48px] lg:text-[72px]! font-medium leading-tight">
+              {t("headingPre")}{" "}
+              <span className="text-primary">{t("headingHighlight")}</span>{" "}
+              {t("headingPost")}
+            </HeadingOne>
+          </motion.div>
           <motion.p
-            className={`${satoshi.className} text-muted-foreground w-full md:w-4/5 text-sm sm:text-base lg:text-[22px] leading-relaxed max-w-full`}
+            className={`${satoshi.className} text-muted-foreground w-full md:w-4/5 text-base lg:text-[24px] leading-relaxed max-w-full font-light`}
             variants={fadeInUp}
           >
             {t("description")}

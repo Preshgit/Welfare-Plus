@@ -12,10 +12,10 @@ const Ethics = () => {
       <div className="space-y-5">
         <div className="w-full">
           <div className="w-4/5 mx-auto">
-            <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-2xl! sm:text-4xl! lg:text-[60px]!" />
+            <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-[32px] sm:text-[48px] lg:text-[60px]!" />
           </div>
         </div>
-        <div className={`${outfit.className} text-foreground text-sm sm:text-base lg:text-[30px] w-full text-justify font-extralight space-y-5`}>
+        <div className={`${outfit.className} text-foreground text-base sm:text-lg lg:text-[24px] w-full text-justify font-extralight space-y-5`}>
           <p>{t.rich("p1", {
             b: (chunks) => <span className="font-medium">{chunks}</span>
           })}</p>

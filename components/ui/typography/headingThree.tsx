@@ -10,7 +10,7 @@ const HeadingThree = React.forwardRef<HTMLHeadingElement, HeadingProps>(
         ref={ref}
         className={cn(
           satoshi.className,
-          "text-[40px] sm:text-[52px] lg:text-[64px] tracking-[-0.06em] leading-[108%]",
+          "text-[32px] sm:text-[48px] lg:text-[64px] tracking-[-0.06em] leading-[108%]",
           className
         )}
         style={{ color, fontWeight: weight || "400", ...style }}

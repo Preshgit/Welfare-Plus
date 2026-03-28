@@ -19,8 +19,8 @@ const About = () => {
     <section className={`${outfit.className} bg-background text-foreground flex justify-center  py-8 min-h-130 sm:px-5`}>
       <div className="md:w-5/6 md:px-0 px-5 mx-auto flex flex-col justify-center items-center gap-y-10 h-fit">
         <div className="space-y-5 flex flex-col items-center">
-          <HeadingTwo className="text-[40px] text-center md:text-left md:text-[40px] lg:text-[60px]!" text={t("title")} />
-          <p className="text-base sm:text-xl lg:text-[28px] text-center  font-light text-foreground">{t("description")}</p>
+          <HeadingTwo className="text-[32px] sm:text-[48px] lg:text-[60px]! text-center md:text-left" text={t("title")} />
+          <p className="text-base sm:text-xl lg:text-[24px] text-center font-light text-foreground max-w-4xl">{t("description")}</p>
         </div>
         <div className="grid sm:justify-items-center grid-cols-1 md:grid-cols-3 gap-8 md:gap-x-10 md:divide-x">
           <div className="space-y-5 flex md:items-start items-center flex-col">

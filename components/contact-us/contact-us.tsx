@@ -24,15 +24,14 @@ export default function ContactSection({
       <div className="mx-auto max-w-[908.5px] px-6 md:px-12 lg:px-25 py-16 md:py-20 flex flex-col md:flex-row items-start md:items-end justify-between gap-12 md:gap-4">
         <div className="border-l-2 border-primary pl-5 flex flex-col gap-4 md:basis-1/2 max-w-xl">
           <h2
-            className={`${satoshi.className} font-light text-3xl md:text-4xl lg:text-[48px] leading-tight`}
+            className={`${satoshi.className} font-light text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px]! leading-tight`}
           >
             {title}
           </h2>
 
           <p
-            className={`${satoshi.className} text-lg md:text-xl lg:text-[24px] font-light leading-relaxed max-w-full md:w-101.75`}
+            className={`${satoshi.className} text-base sm:text-lg lg:text-[24px] font-light leading-relaxed max-w-full md:w-101.75`}
           >
-            <span className="font-medium">{t("addressLabel")}:</span>{" "}
             <span className="font-medium">{t("addressLabel")}:</span> {address}
           </p>
         </div>

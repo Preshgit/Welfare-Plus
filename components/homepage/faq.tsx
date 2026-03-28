@@ -18,9 +18,9 @@ const Faq = () => {
       <div className="w-11/12 md:w-4/5 px-2 mx-auto space-y-10 flex flex-col items-center lg:items-start">
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-x-5 w-full">
           <div className="w-full lg:w-4/5 space-y-3 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <HeadingTwo text={t("heading")} className="text-4xl sm:text-3xl lg:text-[64px]!" />
+            <HeadingTwo text={t("heading")} className="text-[32px] sm:text-[48px] lg:text-[64px]!" />
             <div className="space-y-4 flex w-full flex-col items-center lg:items-start">
-              <p>{t("stillGotQuestion")}</p>
+              <p className="text-base sm:text-lg lg:text-xl font-light">{t("stillGotQuestion")}</p>
               <Button onClick={() => router.push("/contact-us#contactForm")} className="bg-black w-3/5 text-white dark:bg-primary  md:w-fit py-3 px-6">{t("getInTouch")}</Button>
             </div>
           </div>

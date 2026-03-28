@@ -20,16 +20,16 @@ const ProductContainer = () => {
         <div className="w-full text-justify">
           <div className="w-4/5 mx-auto space-y-5">
             <Button variant="plain" className={`h-[55.73px] w-[137.69px] border-gray-200 pl-[5.96px] pr-[17.91px] py-[7.96px] shadow-none border rounded-full text-foreground`}><SparkleIcon className="w-[39.81px] h-[39.81px] fill-foreground stroke-background" />{t("button")}</Button>
-            <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-3xl! sm:text-4xl! lg:text-[60px]!" />
+            <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-[32px] sm:text-[48px] lg:text-[60px]!" />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-x-10 items-center w-full">
-          <div className="w-full lg:w-175.25 h-auto lg:h-157.5">
-            <Image width={701} height={630} className="object-cover" src={FingerGrip} alt="our products" />
+          <div className="w-full lg:w-1/2 h-auto">
+            <Image width={701} height={630} className="object-cover w-full h-auto" src={FingerGrip} alt="our products" />
           </div>
-          <div className="p-5 lg:p-10 space-y-10 w-full lg:w-2/5 flex items-center justify-center flex-col">
-            <HeadingThree className="font-normal text-xl! sm:text-2xl! lg:text-[40px]!">{t("subheading")}</HeadingThree>
-            <ul className={`${satoshi.className} space-y-3 [&>li]:flex [&>li]:items-start [&>li]:gap-2`}>
+          <div className="p-5 lg:p-10 space-y-10 w-full lg:w-1/2 flex items-center justify-center flex-col">
+            <HeadingThree className="font-normal text-[24px] sm:text-[32px] lg:text-[40px]!">{t("subheading")}</HeadingThree>
+            <ul className={`${satoshi.className} space-y-3 [&>li]:flex [&>li]:items-start [&>li]:gap-2 text-base sm:text-lg lg:text-[22px] font-light`}>
               <li><CheckCircle /><span>{t("item0")}</span></li>
               <li><CheckCircle /><span>{t("item1")}</span></li>
               <li><CheckCircle /><span>{t("item2")}</span></li>
