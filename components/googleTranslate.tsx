@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 declare global {
   interface Window {
@@ -11,6 +12,7 @@ declare global {
 
 export default function GoogleTranslate() {
   const initialized = useRef(false);
+  const t = useTranslations('General');
 
   useEffect(() => {
     // Prevent multiple initializations
@@ -41,7 +43,7 @@ export default function GoogleTranslate() {
 
   return (
     <div className="flex items-center gap-2">
-      <span className="text-xs text-gray-500 hidden lg:inline-block">Translate:</span>
+      <span className="text-xs text-gray-500 hidden lg:inline-block">{t('translate')}</span>
       <div id="google_translate_element" className="google-translate-container" />
     </div>
   );

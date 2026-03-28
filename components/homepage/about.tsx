@@ -2,7 +2,7 @@
 
 import { ArrowUpRightIcon, SparkleIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { Link } from "@/i18n/routing"
+import { Link, useRouter } from "@/i18n/routing"
 import { Button } from "../ui/button"
 import HeadingTwo from "../ui/typography/headingTwo"
 import { outfit, satoshi } from "@/app/utils/fonts"
@@ -10,49 +10,55 @@ import HeadingFour from "../ui/typography/headingFour"
 import BusIcon from "@/assets/svg/bus.svg"
 import People from "@/assets/svg/people.svg"
 import UserIcon from "@/assets/svg/userr.svg"
-
 const About = () => {
   const t = useTranslations("About")
+  const tGeneral = useTranslations("General")
+  const router = useRouter()
 
   return (
-    <section className={`${outfit.className} bg-background text-foreground flex justify-center items-center py-24 pb-10 min-h-157.5`}>
-      <div className="w-5/6 mx-auto flex flex-col justify-center items-center gap-y-10">
-        <div className="text-center space-y-5">
-          <Button variant="plain" className={`text-foreground h-[55.73px] w-[137.69px] border-gray-200 pl-[5.96px] pr-[17.91px] py-[7.96px] shadow-none border rounded-full`}><SparkleIcon className="fill-foreground w-[39.81px] h-[39.81px]" />{t("button")}</Button>
-          <HeadingTwo text={t("title")} />
-          <p className="text-base sm:text-xl lg:text-[28px] font-light text-foreground">{t("description")}</p>
+    <section className={`${outfit.className} bg-background text-foreground flex justify-center  py-8 min-h-130 sm:px-5`}>
+      <div className="md:w-5/6 md:px-0 px-5 mx-auto flex flex-col justify-center items-center gap-y-10 h-fit">
+        <div className="space-y-5 flex flex-col items-center">
+          <HeadingTwo className="text-[40px] text-center md:text-left md:text-[40px] lg:text-[60px]!" text={t("title")} />
+          <p className="text-base sm:text-xl lg:text-[28px] text-center  font-light text-foreground">{t("description")}</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-x-10 md:divide-x">
-          <div className="space-y-5">
-            <People />
-            <div className="space-y-5">
-              <HeadingFour className='w-4/5! text-[25px]! font-bold!' text={t("research.title")} />
-              <p className={`${satoshi.className} text-foreground font-normal text-[18px]`}>{t("research.description")}</p>
-            </div>
-          </div>
-          <div className="space-y-5">
+        <div className="grid sm:justify-items-center grid-cols-1 md:grid-cols-3 gap-8 md:gap-x-10 md:divide-x">
+          <div className="space-y-5 flex md:items-start items-center flex-col">
             <BusIcon />
-            <div className="space-y-5">
-              <HeadingFour className='text-[25px]! font-bold!' text={t("products.title")} />
-              <p className={`${satoshi.className} text-foreground font-normal text-[18px]`}>{t("products.description")}</p>
+            <div className="space-y-5 flex flex-col">
+              <HeadingFour className='text-center md:text-left text-[25px]! font-bold!' text={t("research.title")} />
+              <ul className={`${satoshi.className} list-disc list-inside space-y-2 text-foreground font-normal text-[18px]`}>
+                {t.raw("research.description").map((item: string, index: number) => (
+                  <li key={index} className="leading-relaxed">{item}</li>
+                ))}
+              </ul>
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-5 flex md:items-start items-center flex-col">
+            <People />
+            <div className="space-y-5 flex flex-col items-center">
+              <HeadingFour className='text-[25px]! text-center md:text-left font-bold!' text={t("products.title")} />
+              <ul className={`${satoshi.className} list-disc list-inside space-y-2 text-foreground font-normal text-[18px]`}>
+                {t.raw("products.description").map((item: string, index: number) => (
+                  <li key={index} className="leading-relaxed">{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="space-y-5 flex md:items-start items-center flex-col">
             <UserIcon />
-            <div className="space-y-5">
-              <HeadingFour className="text-[25px]! font-bold!" text={t("programs.title")} />
-              <p className={`${satoshi.className} text-foreground font-normal text-[18px]`}>{t("programs.description")}</p>
+            <div className="space-y-5 flex flex-col items-center">
+              <HeadingFour className="text-[25px]! text-center md:text-left font-bold!" text={t("programs.title")} />
+              <ul className={`${satoshi.className} list-disc list-inside space-y-2 text-foreground font-normal text-[18px]`}>
+                {t.raw("programs.description").map((item: string, index: number) => (
+                  <li key={index} className="leading-relaxed">{item}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center">
-          <Link href="/about-us">
-            <Button variant="colored" size="md" className={`${outfit.className} h-12 bg-primary w-fit`}>
-              {t("seeMore")}
-              <ArrowUpRightIcon className="stroke-3 font-medium text-[20px]" />
-            </Button>
-          </Link>
-        </div>
+
+        <Button className="px-8 py-4" asChild><Link href="https://cal.com/welfare-plus/meeting" target="_blank">{tGeneral("getInTouch")}</Link></Button>
       </div>
     </section>
   )

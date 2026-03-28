@@ -4,9 +4,10 @@ import CTASection from '@/components/contact-us/hero';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 
 import ManHeadset from "@/assets/images/manHeadset.png"
-import ManSmiling from "@/assets/images/man_smiling.png"
-import ManPotrait from "@/assets/images/man_potrait.png"
-import Potrait from "@/assets/images/Ellipse 71.png"
+import ManSmiling from "@/assets/images/Ellipse_70.png"
+import ManPotrait from "@/assets/images/old_wheelchair.png"
+import Potrait from "@/assets/images/Ellipse_71.png"
+import ContactServices from '@/components/contactServices';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -41,6 +42,7 @@ export default async function Page({
         whatsapp={t('whatsapp')}
       />
       <ContactForm />
+      <ContactServices />
     </section>
   )
 }

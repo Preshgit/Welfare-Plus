@@ -38,8 +38,8 @@ const scaleIn = {
 export default function Hero() {
   const t = useTranslations("AboutUs.hero")
   return (
-    <section className="relative bg-background overflow-hidden min-h-[90vh] flex items-center px-8">
-      <div className="mx-auto max-w-full px-6 md:px-10 py-24 flex flex-col md:flex-row gap-16 items-center">
+    <section className="relative bg-background overflow-hidden min-h-[90vh] flex items-center px-5">
+      <div className="mx-auto max-w-full px-0 md:px-10 py-24 flex flex-col md:flex-row gap-16 items-center">
         <motion.div
           className="space-y-8 w-full"
           initial="initial"
@@ -61,7 +61,7 @@ export default function Hero() {
             {t("description")}
           </motion.p>
           <motion.div variants={fadeInUp}>
-            <Button className="rounded-full px-8 py-3 text-base font-medium flex items-center gap-2 shadow-lg transition-all hover:scale-105 active:scale-95">
+            <Button className="w-full md:w-fit rounded-full px-8 py-3 text-base font-medium flex items-center gap-2 shadow-lg transition-all hover:scale-105 active:scale-95">
               <Link href="/contact-us">
                 {t("button")}
               </Link><ArrowUpRight className="w-5 h-5" />
@@ -69,7 +69,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="relative hidden md:flex items-center w-[420px] justify-center gap-6 h-[500px]"
+          className="relative md:flex items-center hidden lg:w-[420px] justify-center gap-6 h-[500px]"
           initial="initial"
           animate="animate"
           variants={fadeInRight}

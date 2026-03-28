@@ -32,6 +32,7 @@ export default function ContactSection({
           <p
             className={`${satoshi.className} text-lg md:text-xl lg:text-[24px] font-light leading-relaxed max-w-full md:w-101.75`}
           >
+            <span className="font-medium">{t("addressLabel")}:</span>{" "}
             <span className="font-medium">{t("addressLabel")}:</span> {address}
           </p>
         </div>

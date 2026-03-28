@@ -1,11 +1,8 @@
 import { outfit, satoshi } from "@/app/utils/fonts"
 import SectionContainer from "../sectionContainer"
 import HeadingTwo from "../ui/typography/headingTwo"
-import HeadingFour from "../ui/typography/headingFour"
 import { useTranslations } from "next-intl"
 
-import PuzzleIcon from "@/assets/svg/puzzle1.svg"
-import LockIcon from "@/assets/svg/lock.svg"
 
 
 const Ethics = () => {
@@ -18,10 +15,13 @@ const Ethics = () => {
             <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-foreground! text-2xl! sm:text-4xl! lg:text-[60px]!" />
           </div>
         </div>
-        <div className={`${outfit.className} text-foreground text-sm sm:text-base lg:text-[25px] w-full text-center font-extralight space-y-5`}>
-          <p>{t("p1")}</p>
+        <div className={`${outfit.className} text-foreground text-sm sm:text-base lg:text-[30px] w-full text-justify font-extralight space-y-5`}>
+          <p>{t.rich("p1", {
+            b: (chunks) => <span className="font-medium">{chunks}</span>
+          })}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>
+          <p className="text-primary font-light">{t("p4")}</p>
         </div>
       </div>
     </SectionContainer>

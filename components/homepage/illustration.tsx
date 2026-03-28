@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRightIcon } from "lucide-react"
 
@@ -21,6 +20,7 @@ import Comb from "@/assets/images/comb.png"
 import FingerLaptop from "@/assets/images/fingerLaptop.png"
 import HandAssistant from "@/assets/images/handAssistant.png"
 import Meal from "@/assets/images/meal.png"
+import { useRouter } from "@/i18n/routing"
 
 const row1 = [
   { src: WheelChair, alt: "Person using a wheelchair indoors" },
@@ -62,7 +62,7 @@ const MarqueeRow = ({ items, direction, speed = 30 }: MarqueeRowProps) => {
         {doubled.map((image, i) => (
           <div
             key={i}
-            className="relative flex-shrink-0 w-[200px] h-[152px] sm:w-[280px] sm:h-[213px] lg:w-[383px] lg:h-[291px] overflow-hidden group"
+            className="relative flex-shrink-0 w-[200px] h-[102px] sm:w-[280px] sm:h-[213px] lg:w-[383px] lg:h-[150px] overflow-hidden group"
           >
             <Image
               src={image.src}
@@ -79,6 +79,7 @@ const MarqueeRow = ({ items, direction, speed = 30 }: MarqueeRowProps) => {
 }
 
 const Illustration = () => {
+  const router = useRouter()
   const t = useTranslations("Homepage.illustration")
   return (
     <section className="bg-background py-16 space-y-12 dark:border-b dark:border-b-primary/40">
@@ -110,16 +111,15 @@ const Illustration = () => {
       </div>
 
       <div className="w-full flex items-center justify-center pt-6">
-        <Link href="/about-us">
-          <Button
-            variant="colored"
-            size="md"
-            className={`${outfit.className} h-12 bg-primary w-fit flex items-center gap-2`}
-          >
-            {t("button")}
-            <ArrowUpRightIcon className="w-5 h-5 stroke-2" />
-          </Button>
-        </Link>
+        <Button
+          onClick={() => router.push("/europe")}
+          variant="colored"
+          size="md"
+          className={`${outfit.className} h-12 bg-primary w-fit flex items-center gap-2`}
+        >
+          {t("button")}
+          <ArrowUpRightIcon className="w-5 h-5 stroke-2" />
+        </Button>
       </div>
     </section>
   )

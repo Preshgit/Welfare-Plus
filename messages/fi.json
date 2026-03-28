@@ -1,262 +1,358 @@
 {
-  "Metadata": {
-    "home": {
-      "title": "Welfare Plus | Kokonaisvaltainen hyvinvointi ja sosiaalinen kehitys",
-      "description": "Voimaannutamme huomisen maailmaa kansainvälisten aloitteiden kautta kokonaisvaltaisen hyvinvoinnin ja osallistavan sosiaalisen kehityksen puolesta."
-    },
-    "about": {
-      "title": "Meistä | Welfare Plus",
-      "description": "Lue lisää Welfare Plus -organisaatiosta, joka on omistautunut hyvinvoinnin parantamiseen eri maissa ja yhteisöissä."
-    },
-    "europe": {
-      "title": "Eurooppa-hubi | Welfare Plus",
-      "description": "Tutkimme osallistavia hyvinvointiinnovaatioita ja apuvälineratkaisuja Euroopan maissa."
-    },
-    "africa": {
-      "title": "Sub-Saharan Afrikan hubi | Welfare Plus",
-      "description": "Welfare Plus Nigeria Limited: Edustamme kansainvälisiä apuvälineteknologioiden valmistajia Afrikassa."
-    },
-    "us": {
-      "title": "Yhdysvaltain hubi | Welfare Plus",
-      "description": "Sosiaalihuollon aloitteet ja apuvälineohjelmat Yhdysvalloissa."
-    },
-    "contact": {
-      "title": "Ota yhteyttä | Welfare Plus",
-      "description": "Ota yhteyttä Welfare Plusiin tiedustellaksesi sosiaalihuolto-ohjelmistamme ja apuvälineteknologioistamme."
-    }
-  },
-  "Navbar": {
-    "home": "Koti",
-    "about": "Meistä",
-    "europe": "Eurooppa",
-    "africa": "Sub-Saharan Afrikka",
-    "us": "Yhdysvallat",
-    "getInTouch": "Ota yhteyttä",
-    "email": "info@welfareplus.com",
-    "address": "Ikeja, Lagos, Nigeria",
-    "phone": "+234 9023-6129-26"
-  },
-  "LocaleSwitcher": {
-    "label": "Vaihda kieltä"
-  },
-  "Footer": {
-    "description": "Suomeen perustuva yksityinen yritys, joka on yhteistyössä organisaatioiden kanssa eri alueilla kansainvälisen ja vertailevan sosiaalitutkimuksen parissa.",
-    "companyHeading": "Yritys",
-    "supportHeading": "Tuki",
-    "socialHeading": "Sosiaalinen",
-    "copyright": "© Welfare Plus. Kaikki oikeudet pidätetään.",
-    "privacy": "Tietosuojakäytäntö",
-    "terms": "Käyttöehdot",
-    "companyLinks": {
-      "home": "Koti",
-      "about": "Meistä",
-      "europe": "Eurooppa",
-      "africa": "Sub-Saharan Afrikka",
-      "northAmerica": "Pohjois-Amerikka"
-    },
-    "supportLinks": {
-      "contact": "Ota yhteyttä",
-      "help": "Ohje"
-    }
-  },
-  "ContactUsSection": {
-    "heading": "Ota yhteyttä",
-    "subtitle": "Ota yhteyttä ja tule osaksi vaikutusta.",
-    "button": "Ota yhteyttä",
-    "available": "*saatavilla 24 h",
-    "emailLabel": "Sähköposti",
-    "emailDetail": "Toimisto : welfare-plus@welfareplus.fi",
-    "phoneLabel": "Puhelin",
-    "phoneDetail": "Toimisto : +254 904 632 4224",
-    "locationLabel": "Sijainti",
-    "locationDetail": "Kuopion toimisto, Suomi"
-  },
-  "About": {
-    "button": "Meistä",
-    "title": "Löydä Mitä Teemme",
-    "description": "Welfare Plus on Suomeen sijoittuva liikeorganisaatio, joka on sidoksissa ulkomaisiin järjestöihin. Olemme sitoutuneet parantamaan hyvinvointia eri maissa ja yhteisöissä.",
-    "research": {
-      "title": "Tarjoamme Sosiaalityön tutkimusta",
-      "description": "Näyttöön perustuva tutkimus ja edunvalvonta sosiaalihuoltojärjestelmien vahvistamiseksi."
-    },
-    "products": {
-      "title": "Myymme Apuvälinetuotteita ja -teknologioita,",
-      "description": "Helpottamassa globaalien apuvälineratkaisujen saatavuutta eri väestöryhmille."
-    },
-    "programs": {
-      "title": "Fasilitoimme Sosiaalisten ohjelmien kehittämistä.",
-      "description": "Kokonaisvaltainen sosiaalihuolto, joka tukee perusinhimillisten tarpeiden saatavuutta."
-    },
-    "seeMore": "Lue Lisää Meistä"
-  },
-  "Homepage": {
-    "hero": {
-      "quote1": "\"Sosiaalityötä voi tarvita milloin tahansa elämänkaaressa.\" – Social Work England",
-      "quote2": "\"Sosiaalityön perusta löytyy sosiaalisten järjestelmien puutteista.\" – Paul Tillich",
-      "slides": [
-        {
-          "title": "Kansainväliset aloitteet kokonaisvaltaisen hyvinvoinnin ja osallistavan sosiaalisen kehityksen puolesta.",
-          "subtitle": "Helpottamassa perussosiaalisten tarpeiden saatavuutta ja Penta-Helix-kumppanuusmallia sosiaaliprojekteissa kestävää kehitystä varten. Sekä laajentamassa kansainvälistä sosiaalityön tutkimusta, edunvalvontaa, politiikkaa ja ohjelmia kokonaisvaltaisen hyvinvoinnin saavuttamiseksi.",
-          "cta": "Lue lisää"
-        },
-        {
-          "title": "\"Sosiaalityön perusta löytyy sosiaalisten järjestelmien puutteista.\" – Paul Tillich",
-          "subtitle": "",
-          "cta": "Lue lisää"
-        },
-        {
-          "title": "\"Sosiaalityötä voi tarvita milloin tahansa elämänkaaressa.\" – Social Work England",
-          "subtitle": "",
-          "cta": "Lue lisää"
-        },
-        {
-          "title": "Kansainväliset aloitteet kokonaisvaltaisen hyvinvoinnin ja osallistavan sosiaalisen kehityksen puolesta.",
-          "subtitle": "Helpottamassa perussosiaalisten tarpeiden saatavuutta ja Penta-Helix-kumppanuusmallia sosiaaliprojekteissa kestävää kehitystä varten. Sekä laajentamassa kansainvälistä sosiaalityön tutkimusta, edunvalvontaa, politiikkaa ja ohjelmia kokonaisvaltaisen hyvinvoinnin saavuttamiseksi.",
-          "cta": "Lue lisää"
-        }
-      ]
-    },
-    "approach": {
-      "button": "Globaali ulottuvuus",
-      "heading": "Globaali lähestymistapamme",
-      "description": "Penta-Helix-yhteistyömallia hyödyntäen Welfare Plus edistää kestävää sosiaalista kehitystä kumppanuuksien kautta, jotka yhdistävät innovaation, politiikan ja yhteisöosallistumisen.",
-      "learnMore": "Lue lisää",
-      "location0Title": "Kuopio, Suomi.",
-      "location0Subtitle": "Eurooppa.",
-      "location1Title": "Sub-Saharan Afrikka",
-      "location1Subtitle": "Ikeja, Lagos Nigeriassa.",
-      "location2Title": "Pohjois-Amerikka",
-      "location2Subtitle": "Yhdysvallat."
-    },
-    "illustration": {
-      "heading": "Tuotteiden ja palveluiden esittely",
-      "description": "Apuvälinetuolit | Kuulolaitteet | Apuvälineratkaisut | Liikkumisen apuvälineet | Tukijärjestelmät",
-      "button": "Lue lisää meistä"
-    },
-    "faq": {
-      "heading": "Usein kysytyt kysymykset",
-      "stillGotQuestion": "Onko sinulla vielä jotain mielessä?",
-      "getInTouch": "Ota yhteyttä",
-      "item0Question": "Mikä on Welfare Plus",
-      "item0Answer": "Welfare Plus on Suomeen sijoittuva liikeorganisaatio, joka on sidoksissa ulkomaisiin järjestöihin. Se on omistautunut parantamaan hyvinvointia eri maissa ja yhteisöissä sosiaalityön tutkimuksen, apuvälinetuotteiden ja sosiaalisten ohjelmien kehittämisen kautta.",
-      "item1Question": "Miten voin hyötyä Welfare Plusin palveluista?",
-      "item1Answer": "Voit hyötyä apuvälineteknologiatuotteistamme, sosiaalityön tutkimuksesta, ohjelmatyöstä ja kumppanuuksista, jotka tukevat osallistavaa sosiaalihuoltoa.",
-      "item2Question": "Miten liityn Welfare Plusin jäseneksi?",
-      "item2Answer": "Ota yhteyttä verkkosivustomme tai sähköpostin kautta tutkiaksesi kumppanuus- ja yhteistyömahdollisuuksia.",
-      "item3Question": "Ovatko ratkaisunne räätälöitävissä?",
-      "item3Answer": "Kyllä, tarjoamme räätälöityjä apuvälineratkaisuja, jotka on suunniteltu tietyille väestöryhmille ja alueellisiin tarpeisiin.",
-      "item4Question": "Miten tietosuoja hoidetaan?",
-      "item4Answer": "Welfare Plus noudattaa asiaankuuluvia kansallisia oikeudellisia ja sääntelykehyksiä ja noudattaa Social Work Englandin sääntelykehykseen perustuvaa käytännesääntöä."
-    }
-  },
-  "AboutUs": {
-    "hero": {
-      "headingPre": "Skaalaamme kansainvälistä",
-      "headingHighlight": "Sosiaalihuoltoa",
-      "headingPost": "tutkimuksen ja sosiaalityön kautta.",
-      "description": "Welfare Plus on kansainvälisesti suuntautunut sosiaalihuollon organisaatio, joka tarjoaa tutkimusta, sosiaalisia ohjelmia ja apuvälineratkaisuja erilaisissa sosiaalisissa ja sääntelyympäristöissä.",
-      "button": "Ota yhteyttä"
-    },
-    "story": {
-      "button": "Tarinaamme",
-      "heading": "Tervetuloa",
-      "p1": "Welfare Plus on Suomeen sijoittuva liikeorganisaatio, joka on sidoksissa ulkomaisiin järjestöihin. Olemme sitoutuneet parantamaan hyvinvointia eri maissa ja yhteisöissä.",
-      "p2": "Myymme apuvälineteknologioita ja itsenäisen elämisen ratkaisuja, jotka mahdollistavat yksilöiden – erityisesti haavoittuvien väestöryhmien – turvallisen, itsenäisen ja arvokkaan elämän. Welfare Plus keskittyy myös parantamaan pääsyä välttämättömiin palveluihin, kuten asumiseen, terveydenhuoltoon, koulutukseen, työllistymiseen ja sosiaalihuoltoon.",
-      "p3": "Lähestymistapamme yhdistää yleisen sosiaalityön käytännön kansainväliseen erikoistumiseen. Tuemme yksityisen sektorin toimijoita, hallitusorganisaatioita, kansalaisjärjestöjä ja yhteisöjä hyvinvoinnin parantamisessa nykyaikaisissa markkinatalousjärjestelmissä, joissa sosiaalihuolto on julkisten laitosten, yritysten, kansalaisyhteiskunnan ja perheiden yhteisesti tuottamaa.",
-      "p4": "Akateemisten laitosten, hallitusten, yritysten, kansalaisjärjestöjen ja rahoituslaitosten kanssa tehtävän yhteistyön kautta Welfare Plus urauurtaa yleisten ja räätälöityjen apuvälineteknologioiden saatavuutta ja toimii valmistajien kansainvälisenä edustajana. Osallistumme myös edunvalvontaan osallistavien sosiaaliturva- ja suojelukehysten puolesta.",
-      "p5": "Huom: Welfare Plus ei harjoita syrjintää hallituksen ja poliittisten puolueiden kanssa asioidessaan. Konsulttina olemme avoimia kumppanuudelle kaikkien hallintotasojen ja poliittisten puolueiden kanssa auttaaksemme kehittämään erilaisia hyvinvointiohjelmia ja -aloitteita ihmisille."
-    },
-    "ethics": {
-      "heading": "Ammattistandardit ja etiikka",
-      "p1": "Kansainvälisiä ja yhteistyöhön perustuvia sosiaalihuoltopalveluita ja strategisia sosiaaliohjelmia varten, jotka edellyttävät ammattistandardeja ja tietosuojaa, Welfare Plusin ohjelmajohtaja on rekisteröity Social Work Englandiin (ja on ollut rekisteröitynä yli puolitoista vuosikymmentä siitä lähtien, kun se tunnettiin nimellä General Social Care Council) ja on asianmukaisesti valtuutettu käyttämään ammatillista titteliä 'Sosiaalityöntekijä'.",
-      "p2": "Siksi Welfare Plusin sisäinen kansainvälinen henkilöstön käytännesääntö on selvästi linjassa Social Work Englandin sääntelykehyksen kanssa (perustettu lailla Children and Social Work 2017, ja tuettu Social Workers Regulations 2018, sellaisena kuin sitä on muutettu).",
-      "p3": "Suomessa, Sub-Saharan Afrikassa ja mahdollisesti Yhdysvalloissa ja muualla Welfare Plus noudattaa asiaankuuluvia kansallisia oikeudellisia ja sääntelykehyksiä samalla edistäen vertailevaa, näyttöön perustuvaa ja eettisesti perusteltua sosiaalityön käytäntöä."
-    },
-    "mission": {
-      "missionHeading": "Missio",
-      "missionText": "Edistää osallistavia sosiaalihuoltojärjestelmiä, laajentaa apuvälineteknologioiden saatavuutta ja edistää kokonaisvaltaista hyvinvointia tutkimuksen, kumppanuuksien ja innovatiivisten sosiaaliohjelmien kautta.",
-      "visionHeading": "Visio",
-      "visionText": "Maailma, jossa kaikilla ihmisillä – iästä, kyvyistä tai sijainnista riippumatta – on pääsy välttämättömiin sosiaalihuoltopalveluihin ja mahdollisuuksiin elää itsenäisesti ja arvokkaasti."
-    },
-    "serve": {
-      "heading": "Kenelle palvelemme",
-      "researchHeading": "Sosiaalityön tutkimus.",
-      "researchDescription": "Näyttöön perustuva tutkimus ja edunvalvonta sosiaalihuoltojärjestelmien vahvistamiseksi.",
-      "programsHeading": "Sosiaalisten ohjelmien kehittäminen.",
-      "programsDescription": "Kokonaisvaltainen sosiaalihuolto, joka tukee perusinhimillisten tarpeiden saatavuutta.",
-      "productsHeading": "Apuvälinetuotteet ja -teknologiat",
-      "productsDescription": "Globaalien apuvälineratkaisujen saatavuuden helpottaminen eri väestöryhmille."
-    },
-    "products": {
-      "button": "Tuotteemme",
-      "heading": "Tuotteet ja palvelut",
-      "subheading": "Apuvälineteknologia ja itsenäisen elämisen ratkaisut",
-      "item0": "Itsenäisen elämisen apuvälineet ikääntyneille ja veteraaneille",
-      "item1": "Apuvälineet erityistä tukea tarvitseville lapsille",
-      "item2": "Liikkumisen ja kuntoutuksen välineet",
-      "item3": "Terapiavälineet ja mukautuvat laitteet vammaisille henkilöille",
-      "item4": "Kansainvälisten apuvälinevalmistajien edustus ja jakelu"
-    }
-  },
-  "EuropeHero": {
-    "heading": "Euroopan keskus osallistavalle hyvinvointi-innovaatiolle",
-    "description": "Welfare Plus (Suomessa) tekee yhteistyötä kansainvälisten kumppaneiden kanssa edustaakseen parhaiden apuvälineteknologioiden ja itsenäisen elämisen laitteiden valmistajia. Nämä kumppanuudet tukevat markkinoille pääsyä, jakelua ja osallistavan sosiaalihuollon ja kehitysohjelmien toteuttamista eri puolilla Eurooppaa."
-  },
-  "AfricaHero": {
-    "heading": "Afrikan keskus osallistavalle hyvinvointi-innovaatiolle",
-    "description": "Welfare Plus (Suomessa) tekee yhteistyötä Welfare-Plus Nigeria Limitedin kanssa edustamaan kansainvälisiä parhaiden apuvälineteknologioiden ja itsenäisen elämisen laitteiden valmistajia. Nämä kumppanuudet tukevat markkinoille pääsyä, jakelua ja osallistavan sosiaalihuollon ja kehitysohjelmien toteuttamista Afrikan maiden välillä."
-  },
-  "ContactHero": {
-    "headingPre": "Olemme täällä vastaamaan kaikkiin kysymyksiisi ja",
-    "headingHighlight": "tekemään yhteistyötä",
-    "headingPost": "kanssasi.",
-    "button": "Lue lisää Welfare Plusista"
-  },
-  "ContactForm": {
-    "heading": "Haluaisimme",
-    "headingHighlight": "kuulla",
-    "headingPost": "sinusta!",
-    "namePlaceholder": "Nimesi*",
-    "emailPlaceholder": "Sähköpostiosoitteesi*",
-    "messagePlaceholder": "Viestisi*",
-    "button": "Lähetä viesti"
-  },
-  "ContactSection": {
-    "addressLabel": "Osoite",
-    "emailLabel": "Sähköposti",
-    "telephoneLabel": "Puhelin",
-    "whatsappLabel": "WhatsApp"
-  },
-  "EuropePage": {
-    "hubTitle": "Euroopan keskus osallistavalle hyvinvointi-innovaatiolle",
-    "hubDescription": "Sosiaalisen innovaation ja apuvälineteknologiakumppanuuksien edistäminen Euroopassa. Welfare Plus Eurooppa toimii kansainvälisen tutkimuksen, innovaation ja kumppanuuksien pääkonttoreina osallistavassa sosiaalihuollossa ja itsenäisen elämisen ratkaisuissa.",
-    "featureTitle": "Suomi",
-    "featureContent": "Welfare Plus helpottaa apuvälineteknologiakumppanuuksia Euroopan ja Sub-Saharan Afrikan välillä. Painopisteenamme ovat itsenäisen elämisen apuvälineet ja erityistä tukea tarvitsevien lasten, vammaisten, ikäihmisten ja veteraanien apuvälineet. Toteutamme myös sosiaalitutkimusta ja edunvalvontaa sekä edistämme näyttöön perustuvia sosiaalisen hoidon innovaatioita.",
-    "impactsText": "Vaikutuksemme Euroopassa",
-    "impactsContent": "Eurooppa toimii innovaatio- ja koordinaatiokeskuksena tukemassa globaalia tiedonvaihtoa ja teknologiansiirtoa. \n Yhteistyö akateemisten laitosten, valtion virastojen ja kansainvälisten valmistajien kanssa skaalautuvien sosiaalisten hoitoratkaisujen kehittämiseksi.",
-    "impactsBtnText": "Kumppanuus kanssamme"
-  },
-  "AfricaPage": {
-    "featureTitle": "Sub-Saharan Afrikka",
-    "featureContent": "Laajentamassa osallistavan sosiaalihuollon ja apuvälineteknologioiden saatavuutta Afrikassa. Welfare Plus tukee osallistavia kehitysaloitteita alueellisten kumppanuuksien kautta, jotka parantavat apuvälineteknologioiden ja sosiaalihuolto-ohjelmien saatavuutta.",
-    "impactsText": "Vaikutuksemme Sub-Saharan Afrikassa",
-    "impactsContent": "Parantamassa apuvälineteknologioiden saatavuutta, kohtuuhintaisuutta ja tietoisuutta samalla tukemalla kestävää sosiaalista kehitystä. \nYhteistyö akateemisten laitosten, valtion virastojen ja kansainvälisten valmistajien kanssa skaalautuvien sosiaalisten hoitoratkaisujen kehittämiseksi.",
-    "impactsBtnText": "Kumppanuus kanssamme"
-  },
-  "USPage": {
-    "hubTitle": "Yhdysvaltain keskus sosiaalihuollon innovaatiolle",
-    "hubDescription": "Sosiaalisen innovaation ja apuvälineteknologiakumppanuuksien edistäminen Yhdysvalloissa. Welfare Plus tutkii kumppanuuksia ja koordinointia valituissa Yhdysvaltojen sijainneissa.",
-    "featureTitle": "Yhdysvallat",
-    "featureContent": "Welfare Plus (Suomessa) tutkii kumppanuuksia ja koordinoi agentteja valituissa Yhdysvaltojen sijainneissa, mukaan lukien Texas, Pohjois-Carolina, Virginia Beach ja New York, vahvistaakseen kansainvälistä yhteistyötä apuvälineteknologian, terapiavälineiden, sosiaalitutkimuksen ja sosiaalisen kehityksen ohjelmissa.",
-    "impactsText": "Vaikutuksemme Yhdysvalloissa",
-    "impactsContent": "Eurooppa toimii innovaatio- ja koordinaatiokeskuksena tukemassa globaalia tiedonvaihtoa ja teknologiansiirtoa. \n Yhteistyö akateemisten laitosten, valtion virastojen ja kansainvälisten valmistajien kanssa skaalautuvien sosiaalisten hoitoratkaisujen kehittämiseksi.",
-    "impactsBtnText": "Kumppanuus kanssamme"
-  },
-  "ContactPage": {
-    "sectionTitle": "Eurooppa",
-    "address": "Juontotie 9D 18, 70150 Kuopio, Pohjois-Savo, Suomi.",
-    "email": "info@welfareplus.fi",
-    "telephone": "+358 46 8857 552",
-    "whatsapp": "+358 44 915 097"
-  }
+       "Metadata": {
+              "home": {
+                     "title": "Welfare Plus | Kokonaisvaltainen hyvinvointi ja sosiaalinen kehitys",
+                     "description": "Voimaannutamme huomisen maailmaa kansainvälisten aloitteiden kautta kokonaisvaltaisen hyvinvoinnin ja osallistavan sosiaalisen kehityksen puolesta."
+              },
+              "about": {
+                     "title": "Meistä | Welfare Plus",
+                     "description": "Lue lisää Welfare Plus -organisaatiosta, joka on omistautunut hyvinvoinnin parantamiseen eri maissa ja yhteisöissä."
+              },
+              "europe": {
+                     "title": "Eurooppa-hubi | Welfare Plus",
+                     "description": "Tutkimme osallistavia hyvinvointiinnovaatioita ja apuvälineratkaisuja Euroopan maissa."
+              },
+              "africa": {
+                     "title": "Sub-Saharan Afrikan hubi | Welfare Plus",
+                     "description": "Welfare Plus Nigeria Limited: Edustamme kansainvälisiä apuvälineteknologioiden valmistajia Afrikassa."
+              },
+              "us": {
+                     "title": "Yhdysvaltain hubi | Welfare Plus",
+                     "description": "Sosiaalihuollon aloitteet ja apuvälineohjelmat Yhdysvalloissa."
+              },
+              "contact": {
+                     "title": "Ota yhteyttä | Welfare Plus",
+                     "description": "Ota yhteyttä Welfare Plusiin tiedustellaksesi sosiaalihuolto-ohjelmistamme ja apuvälineteknologioistamme."
+              }
+       },
+       "General": {
+              "redirecting": "Uudelleenohjataan...",
+              "translate": "Käännä:",
+              "getInTouch": "Ota yhteyttä"
+       },
+       "Navbar": {
+              "home": "Koti",
+              "about": "Meistä",
+              "europe": "Eurooppa",
+              "africa": "Sub-Saharan Afrikka",
+              "us": "Pohjois-Amerikka",
+              "getInTouch": "Ota yhteyttä",
+              "email": "info@welfareplus.fi",
+              "address": "Kuopio, Pohjois-Savon maakunta, Suomi",
+              "phone": "+358-46-612-7014"
+       },
+       "LocaleSwitcher": {
+              "label": "Vaihda kieltä"
+       },
+       "Footer": {
+              "description": "Suomeen perustuva yksityinen yritys, joka on yhteistyössä organisaatioiden kanssa eri puolilla maailmaa kansainvälisen liiketoiminnan ja vertailevan sosiaalitutkimuksen parissa.",
+              "companyHeading": "Yritys",
+              "supportHeading": "Tuki",
+              "socialHeading": "Sosiaalinen",
+              "copyright": "© 2026 Welfare Plus. Kaikki oikeudet pidätetään.",
+              "privacy": "Käännöskäytäntö",
+              "terms": "Googlen käyttöehdot",
+              "companyLinks": {
+                     "home": "Koti",
+                     "about": "Meistä",
+                     "europe": "Eurooppa",
+                     "africa": "Sub-Saharan Afrikka",
+                     "northAmerica": "Pohjois-Amerikka"
+              },
+              "supportLinks": {
+                     "contact": "Ota yhteyttä",
+                     "help": "Ohje"
+              }
+       },
+       "ContactUsSection": {
+              "heading": "Ota yhteyttä",
+              "subtitle": "Ota yhteyttä saadaksesi lisätietoja",
+              "button": "Ota yhteyttä",
+              "available": "*saatavilla 24 h",
+              "emailLabel": "Sähköposti",
+              "emailDetail": "info@welfareplus.fi \n\t welfareplus@welfareplus.fi",
+              "africaEmail": "africa@welfareplus.fi\n\n\t",
+              "africaAddress": "c/o Welfare-Plus Nigeria Limited, Joel Ogunnaike Street, Ikeja GRA, Lagos, Nigeria.",
+              "africaPhone": "+234-904-632-4224",
+              "usPhone": "+1 801 --- 8451, \n\t +1 856 --- 3946.",
+              "usEmail": "unitedstates@welfareplus.fi",
+              "usAddress": "c/o yhteystiedot: Simi Valley, Salt Lake City, Houston, New York jne.",
+              "phoneLabel": "Puhelin",
+              "phoneDetail": "Toimisto: +358-46-612-7014,\nWhatsApp: +358-46-612-7014.",
+              "locationLabel": "Sijainti",
+              "locationDetail": "Juontotie 9D 18, 70150 Kuopio, Pohjois-Savo, Suomi, Eurooppa."
+       },
+       "About": {
+              "button": "Meistä",
+              "title": "Tuotteet ja palvelut",
+              "description": "Welfare Plus -tuotteet ja -palvelut lapsille, nuorille, aikuisille, sotaveteraaneille ja ikääntyneille ympäri maailmaa.",
+              "research": {
+                     "title": "Apuvälineteknologia, terapiatyökalut ja itsenäisen elämisen ratkaisut.",
+                     "description": [
+                            "Yksinkertaiset itsenäisen asumisen apuvälineet ikääntyneille ja veteraaneille.",
+                            "Apuvälineet lapsille sekä liikkumisen ja kuntoutuksen työkalut.",
+                            "Sosiaalityön mobiilisovellukset ja muut niihin liittyvät hyvinvointiteknologiat.",
+                            "Terapian työkalut ja mukautuvat laitteet vammaisille henkilöille.",
+                            "Valmistajien kansainvälinen edustus ja apuvälineteknologioiden jakelu."
+                     ]
+              },
+              "products": {
+                     "title": "Sosiaaliset tutkimukset, ohjelmien kehittäminen ja poliittinen neuvonta.",
+                     "description": [
+                            "Yhteisöpohjaiset sosiaalihuollon ja osallisuuden aloitteet.",
+                            "Sosiaalihuollon laitosten ja ammattilaisten kapasiteetin vahvistaminen.",
+                            "Vertaileva sosiaalihuollon ja sosiaalipolitiikan tutkimus.",
+                            "Perusselvitykset, arvioinnit ja vaikutusten arvioinnit.",
+                            "Näyttöön perustuvat poliittiset neuvontapalvelut."
+                     ]
+              },
+              "programs": {
+                     "title": "Edunvalvonta, projektit, suojelu ja sosiaaliturvan edistäminen.",
+                     "description": [
+                            "Osallistavan sosiaalipolitiikan ja sosiaalisen kehityksen edunvalvonta.",
+                            "Sosiaaliturva- ja suojelualoitteet.",
+                            "Kumppanuudet hallitusten, kansalaisyhteiskunnan ja yksityisen sektorin kanssa.",
+                            "Käyttäytymiseen ja köyhyyden lievittämiseen liittyvät aloitteet.",
+                            "Pääsyn helpottaminen sosiaalityön työkaluihin ja mobiilisovelluksiin."
+                     ]
+              },
+              "seeMore": "Lue lisää"
+       },
+       "Homepage": {
+              "hero": {
+                     "quote1": "\"Sosiaalityötä voi tarvita milloin tahansa elämänkaaressa.\" – Social Work England",
+                     "quote2": "\"Sosiaalityön perusta löytyy sosiaalisten järjestelmien puutteista.\" – Paul Tillich",
+                     "slides": [
+                            {
+                                   "title": "Kansainväliset aloitteet kokonaisvaltaisen hyvinvoinnin ja osallistavan sosiaalisen kehityksen puolesta",
+                                   "subtitle": "Helpottamassa apuvälineteknologioiden, perusinhimillisten tarpeiden ja Penta-Helix-kumppanuusmallin saatavuutta sosiaaliprojekteissa kestävää kehitystä varten. Sekä laajentamassa kansainvälatä sosiaalityön tutkimusta, edunvalvontaa, politiikkaa ja ohjelmia kokonaisvaltaisen hyvinvoinnin saavuttamiseksi.",
+                                   "cta": "Lue lisää"
+                            },
+                            {
+                                   "title": "\"Sosiaalityön perusta löytyy sosiaalisten järjestelmien puutteista.\" – Paul Tillich",
+                                   "subtitle": "",
+                                   "cta": "Lue lisää"
+                            },
+                            {
+                                   "title": "\"Sosiaalityötä voi tarvita milloin tahansa elämänkaaressa.\" – Social Work England",
+                                   "subtitle": "",
+                                   "cta": "Lue lisää"
+                            },
+                            {
+                                   "title": "Kansainväliset aloitteet kokonaisvaltaisen hyvinvoinnin ja osallistavan sosiaalisen kehityksen puolesta.",
+                                   "subtitle": "Helpottamassa perussosiaalisten tarpeiden saatavuutta ja Penta-Helix-kumppanuusmallia sosiaaliprojekteissa kestävää kehitystä varten. Sekä laajentamassa kansainvälistä sosiaalityön tutkimusta, edunvalvontaa, politiikkaa ja ohjelmia kokonaisvaltaisen hyvinvoinnin saavuttamiseksi.",
+                                   "cta": "Lue lisää"
+                            }
+                     ]
+              },
+              "approach": {
+                     "button": "Globaali ulottuvuus",
+                     "heading": "Globaali läsnäolomme",
+                     "description": "",
+                     "learnMore": "Lue lisää",
+                     "location0Title": "Kuopion kaupunki, Suomi.",
+                     "location0Subtitle": "Pääkonttori.",
+                     "location1Title": "Sub-Saharan Afrikka",
+                     "location1Subtitle": "Lagos Nigeria.",
+                     "location2Title": "Pohjois-Amerikka / Globaali",
+                     "location2Subtitle": "Yhdysvallat."
+              },
+              "illustration": {
+                     "heading": "Tuotteiden esittely",
+                     "description": "Apuvälinetuolit | Kuulolaitteet | Apuvälineratkaisut | Liikkumisen apuvälineet | Tukijärjestelmät | Terapiatyökalut",
+                     "button": "Lue lisää"
+              },
+              "faq": {
+                     "heading": "Usein kysytyt kysymykset",
+                     "stillGotQuestion": "Onko sinulla vielä jotain mielessä?",
+                     "getInTouch": "Ota yhteyttä",
+                     "item0Question": "Mikä on Welfare Plus",
+                     "item0Answer": "Welfare Plus on Suomeen sijoittuva liikeorganisaatio, joka on sidoksissa ulkomaisiin järjestöihin. Se on omistautunut parantamaan hyvinvointia eri maissa ja yhteisöissä sosiaalityön tutkimuksen, apuvälinetuotteiden ja sosiaalisten ohjelmien kehittämisen kautta.",
+                     "item1Question": "Miten voin hyötyä Welfare Plusin palveluista?",
+                     "item1Answer": "Voit hyötyä apuvälineteknologiatuotteistamme, sosiaalityön tutkimuksesta, ohjelmatyöstä ja kumppanuuksista, jotka tukevat osallistavaa sosiaalihuoltoa.",
+                     "item2Question": "Miten liityn Welfare Plusin jäseneksi?",
+                     "item2Answer": "Ota yhteyttä verkkosivustomme tai sähköpostin kautta tutkiaksesi kumppanuus- ja yhteistyömahdollisuuksia.",
+                     "item3Question": "Ovatko ratkaisunne räätälöitävissä?",
+                     "item3Answer": "Kyllä, tarjoamme räätälöityjä apuvälineratkaisuja, jotka on suunniteltu tietyille väestöryhmille ja alueellisiin tarpeisiin.",
+                     "item4Question": "Miten tietosuoja hoidetaan?",
+                     "item4Answer": "Welfare Plus noudattaa <b>Social Work Englandin</b> asiaankuuluvia kansallisia oikeudellisia ja sääntelykehyksiä sekä käytännesääntöjä, jotka ovat sovellettavissa muiden maiden vastaaviin sääntelyvaatimuksiin englanniksi."
+              }
+       },
+       "AboutUs": {
+              "hero": {
+                     "headingPre": "Skaalaamme kansainvälistä",
+                     "headingHighlight": "Sosiaalihuoltoa",
+                     "headingPost": "tutkimuksen ja sosiaalityön kautta.",
+                     "description": "Welfare Plus on kansainvälisesti suuntautunut sosiaalihuollon organisaatio, joka tarjoaa tutkimusta, sosiaalisia ohjelmia ja apuvälineratkaisuja erilaisissa sosiaalisissa ja sääntelyympäristöissä.",
+                     "button": "Ota yhteyttä meihin"
+              },
+              "story": {
+                     "button": "Tarinamme",
+                     "heading": "Tervetuloa Welfare Plusiin",
+                     "p1": "Welfare Plus on Suomeen sijoittuva liikeorganisaatio, joka on sidoksissa ulkomaisiin järjestöihin. Olemme sitoutuneet parantamaan hyvinvointia eri maissa ja yhteisöissä. Suomi toimii yrityksen pääkonttorina kansainväliselle sosiaalihuollon tutkimukselle ja apuvälineratkaisuille.",
+                     "p2": "Myymme apuvälineteknologioita, terapiatyökaluja ja itsenäisen elämisen ratkaisuja, jotka mahdollistavat yksilöiden – erityisesti haavoittuvien väestöryhmien – turvallisen, itsenäisen ja arvokkaan elämän. Welfare Plus keskittyy myös parantamaan pääsyä välttämättömiin palveluihin, kuten asumiseen, terveydenhuoltoon, koulutukseen, työllistymiseen ja sosiaalihuoltoon.",
+                     "p3": "Lähestymistapamme yhdistää yleisen sosiaalityön käytännön kansainväliseen erikoistumiseen. Tuemme sairaaloiden lähetteitä, yksityisen sektorin toimijoita, hallituksia tai valtion organisaatioita, kansalaisyhteiskuntaa ja yhteisöjä hyvinvoinnin parantamiseksi nykyaikaisissa markkinatalousjärjestelmissä. Sosiaalihuoltoa tuottavat nykyään yhdessä perheet, julkinen sektori, kansalaisyhteiskunta ja yksityiset yritykset.",
+                     "p4": "(Opetus)sairaaloiden, akatemian, hallitusten, yritysten, kansalaisjärjestöjen ja rahoituslaitosten kanssa tehtävän yhteistyön kautta Welfare Plus urauurtaa yleisten ja räätälöityjen apuvälineteknologioiden saatavuutta ja toimii valmistajien kansainvälisenä edustajana. Osallistumme myös edunvalvontaan osallistavien sosiaaliturvajärjestelmien ja suojelukehysten puolesta.",
+                     "p5": "HUOM: Welfare Plus ei harjoita syrjintää asioidessaan hallitusten tai poliittisten puolueiden kanssa. Konsultointipalveluissa olemme avoimia kumppanuudelle kaikkien hallintotasojen ja poliittisten puolueiden kanssa auttaaksemme kehittämään erilaisia hyvinvointiohjelmia ihmisille."
+              },
+              "ethics": {
+                     "heading": "Ammattistandardit ja etiikka",
+                     "p1": "Priorisoimme ammattistandardeja ja tietosuojaa. Welfare Plusin presidentti ja ohjelmajohtaja on rekisteröity <b>Social Work Englandiin</b> (hän on ollut rekisterissä yli puolitoista vuosikymmentä siitä lähtien, kun sen nimi oli <b>General Social Care Council</b>) ja hänellä on oikeus käyttää ammattinimikettä 'Sosiaalityöntekijä'.",
+                     "p2": "Tämän vuoksi Welfare Plusin sisäinen kansainvälinen henkilöstön käytännesääntö (mukaan lukien terapeutit) on selvästi linjassa Social Work Englandin sääntelykehyksen kanssa (perustettu lailla Children and Social Work 2017 ja tuettu Social Workers Regulations 2018, sellaisena kuin se on muutettu). Hyödynnämme sääntelykehyksen kansainvälistä merkitystä.",
+                     "p3": "Suomessa, Sub-Saharan Afrikassa ja mahdollisesti Yhdysvalloissa ja muualla Welfare Plus noudattaa asiaankuuluvia kansallisia oikeudellisia ja sääntelykehyksiä englanniksi (mikäli saatavilla). Tämän seurauksena yritys edistää eettisesti perusteltua vertailevaa tutkimusta ja näyttöön perustuvaa sosiaalityön käytäntöä.",
+                     "p4": "Yhteenvetona Welfare Plus edistää inhimillistä tieteellistä ja teknologista kehitystä, sosiaalityön historialliseen perustaan nojaavaa eettisyyttä ja erinomaisuutta sosiaalihuollon käytännöissä. Anna meidän ansaita luottamuksesi."
+              },
+              "mission": {
+                     "missionHeading": "Missio",
+                     "missionText": "Edistää osallistavia sosiaalihuoltojärjestelmiä, laajentaa apuvälineteknologioiden saatavuutta ja edistää kokonaisvaltaista hyvinvointia tutkimuksen, kumppanuuksien ja innovatiivisten sosiaaliohjelmien kautta.",
+                     "visionHeading": "Visio",
+                     "visionText": "Maailma, jossa kaikilla ihmisillä – iästä, kyvyistä tai sijainnista riippumatta – on pääsy välttämättömiin sosiaalihuoltopalveluihin ja mahdollisuuksiin elää itsenäisesti ja arvokkaasti."
+              },
+              "serve": {
+                     "heading": "Kenelle palvelemme",
+                     "researchHeading": "Sosiaalityön tutkimus.",
+                     "researchDescription": "Näyttöön perustuva tutkimus ja edunvalvonta sosiaalihuoltojärjestelmien vahvistamiseksi.",
+                     "programsHeading": "Sosiaalisten ohjelmien kehittäminen.",
+                     "programsDescription": "Kokonaisvaltainen sosiaalihuolto, joka tukee perusinhimillisten tarpeiden saatavuutta.",
+                     "productsHeading": "Apuvälinetuotteet ja -teknologiat",
+                     "productsDescription": "Pääsyn helpottaminen sosiaalityön työkaluihin ja mobiilisovelluksiin."
+              },
+              "products": {
+                     "button": "Tuotteemme",
+                     "heading": "Tuotteet ja palvelut",
+                     "subheading": "Apuvälineteknologia ja itsenäisen elämisen ratkaisut",
+                     "item0": "Itsenäisen elämisen apuvälineet ikääntyneille ja veteraaneille",
+                     "item1": "Apuvälineet lapsille sekä liikkumisen ja kuntoutuksen työkalut",
+                     "item2": "Liikkumisen ja kuntoutuksen välineet",
+                     "item3": "Terapiavälineet ja mukautuvat laitteet vammaisille henkilöille",
+                     "item4": "Kansainvälisten apuvälinevalmistajien edustus ja jakelu"
+              }
+       },
+       "EuropeHero": {
+              "heading": "Euroopan keskus osallistavalle hyvinvointi-innovaatiolle",
+              "description": "Welfare Plus (Suomessa) tekee yhteistyötä kansainvälisten kumppaneiden kanssa edustaakseen parhaiden apuvälineteknologioiden ja itsenäisen elämisen laitteiden valmistajia. Nämä kumppanuudet tukevat markkinoille pääsyä, jakelua ja osallistavan sosiaalihuollon ja kehitysohjelmien toteuttamista eri puolilla Eurooppaa."
+       },
+       "AfricaHero": {
+              "heading": "Afrikan keskus osallistavalle hyvinvointi-innovaatiolle",
+              "description": "Welfare Plus (Suomessa) tekee yhteistyötä Welfare-Plus Nigeria Limitedin kanssa edustamaan kansainvälisiä parhaiden apuvälineteknologioiden ja itsenäisen elämisen laitteiden valmistajia. Nämä kumppanuudet tukevat markkinoille pääsyä, jakelua ja osallistavan sosiaalihuollon ja kehitysohjelmien toteuttamista Afrikan maiden välillä."
+       },
+       "ContactHero": {
+              "headingPre": "Olemme täällä vastaamassa kysymyksiisi ja ",
+              "headingHighlight": "tekemässä yhteistyötä ",
+              "headingPost": "kanssasi.",
+              "button": "Lue lisää Welfare Plusista"
+       },
+       "ContactForm": {
+              "heading": "Haluaisimme",
+              "headingHighlight": "kuulla",
+              "headingPost": "sinusta!",
+              "description": "Onko sinulla kysyttävää? Ota yhteyttä, niin vastaamme 24 tunnin kuluessa.",
+              "namePlaceholder": "Nimesi*",
+              "emailPlaceholder": "Sähköpostiosoitteesi*",
+              "messagePlaceholder": "Viestisi*",
+              "button": "Lähetä viesti"
+       },
+       "ContactSection": {
+              "addressLabel": "Osoite",
+              "emailLabel": "Sähköposti",
+              "telephoneLabel": "Puhelin",
+              "whatsappLabel": "WhatsApp"
+       },
+       "EuropePage": {
+              "hubTitle": "Eurooppa: Tiede sosiaalihuollon keskuksessa",
+              "hubAddress": "Pääkonttori Suomessa",
+              "hubDescription": "Sosiaalisen innovaation ja apuvälineteknologiakumppanuuksien edistäminen kehittyneiden ja kehitysmaiden välillä.",
+              "featureTitle": "Suomi",
+              "featureContent": "Welfare Plus helpottaa apuvälineteknologiakumppanuuksia Euroopan ja Sub-Saharan Afrikan välillä. Painopisteenä ovat itsenäisen elämisen apuvälineet ja apuvälineet erityistukea tarvitseville lapsille, vammaisille, ikääntyneille ja veteraaneille. Welfare Plus tekee myös sosiaalitutkimusta, edunvalvontaa ja edistää näyttöön perustuvia sosiaalihuollon innovaatioita.",
+              "impactsText": "Palvelut Euroopassa",
+              "impactsContent": [
+                     {
+                            "title": "HYVINVOINNIN APUVÄLINETEKNOLOGIA",
+                            "description": "Helpotamme erilaisten apuvälineiden, kuten itsenäisen asumisen, liikkumisen ja ortopedian laitteiden tukku- ja vähittäismyyntiä."
+                     },
+                     {
+                            "title": "PARANNETUT HOITOPALVELUT JA -TUOTTEET",
+                            "description": "Ajammme edullisia ja parhaiden standardien mukaisia interventioita ja apupalveluita."
+                     },
+                     {
+                            "title": "KANSAINVÄLINEN YHTEISTYÖ",
+                            "description": "Vahvistamme hyvinvointityökalujen ja -laitteiden vientiä ja tuontia."
+                     },
+                     {
+                            "title": "SOSIAALIHUOLLON JA SOSIAALIPOLITIIKAN TUTKIMUS",
+                            "description": "Edistämme tutkimusta, edunvalvontaa ja politiikkaa sosiaalisesti haavoittuvien ihmisten tilanteen parantamiseksi."
+                     },
+                     {
+                            "title": "NÄYTTÖÖN PERUSTUVAT INNOVAATIOT",
+                            "description": "Tuotamme poikkitieteellistä tutkimusta räätälöidyistä terapiatyökaluista."
+                     },
+                     {
+                            "title": "KONSULTOINTIPALVELUT",
+                            "description": "Edistämme kansainvälistä sosiaalityötä (ISW) erikoisalana."
+                     }
+              ],
+              "impactsBtnText": "Tule kumppaniksemme",
+              "impactPartnerships": "Yhteistyö opetussairaaloiden, akateemisten laitosten, valtion virastojen ja kansainvälisten valmistajien kanssa skaalautuvien sosiaalihuollon ratkaisujen kehittämiseksi. Sekä uusien markkinoiden avaaminen sosiaalihuollon kattavuuden laajentamiseksi."
+       },
+       "AfricaPage": {
+              "hubTitle": "Sub-Saharan Afrikka: Tiede ja kulttuuri",
+              "hubAddress": "Lagosissa Welfare Plus toimii yhteistyössä Welfare-Plus Nigeria Limitedin kanssa laajentaakseen osallistavan sosiaalihuollon ja apuvälineteknologioiden saatavuutta Afrikassa. Welfare-Plus Nigeria tukee myös kotimaista valmistusta alueellisten kumppanuuksien kautta.",
+              "hubDescription": "",
+              "featureTitle": "Sub-Saharan Afrikka",
+              "featureContent": "Welfare-Plus Nigeria Limited tekee yhteistyötä Suomen Welfare Plusin kanssa edustaakseen kansainvälisiä parhaiden apuvälineteknologioiden ja itsenäisen elämisen laitteiden valmistajia. Nämä kumppanuudet tukevat markkinoille pääsyä, jakelua ja osallistavien sosiaalipalveluiden ja kehitysohjelmien toteuttamista Afrikan maissa.",
+              "impactsText": "Palvelut ja tuotteet Sub-Saharan Afrikassa",
+              "impactsContent": [
+                     {
+                            "title": "APUVÄLINEIDEN SAATAVUUDEN EDISTÄMINEN",
+                            "description": "Yhteistyö Welfare-Plus Nigeria Limitedin ja muiden afrikkalaisten toimijoiden kanssa hankinnassa, maahantuonnissa, jakelussa, markkinoinnissa ja myynnissä."
+                     },
+                     {
+                            "title": "SOSIAALISEN KEHITYKSEN ALOITTEIDEN EDISTÄMINEN",
+                            "description": "Yhteistyö perheiden, hallitusten, kansainvälisten kansalaisjärjestöjen ja yksityisen sektorin kanssa sosiaalisen kehityksen ja köyhyyden lievittämisen vahvistamiseksi."
+                     },
+                     {
+                            "title": "KAPASITEETIN VAHVISTAMISALUSTA",
+                            "description": "Tietoisuuden lisääminen sosiaalityöntekijöille, lääkäreille, sairaanhoitajille, terapeuteille ja muille edullisista apuvälineistä."
+                     },
+                     {
+                            "title": "SOSIAALITYÖN TEKNOLOGIAT",
+                            "description": "Sosiaalityön apuvälineet, mobiilisovellukset osallistavaan verkko-oppimiseen ja avoin etäopetus."
+                     },
+                     {
+                            "title": "YHTEISÖPOHJAISET SOSIAALIOHJELMAT",
+                            "description": "Afrikassa arvioiden mukaan pelkästään Nigeriassa 19–31 miljoonaa ihmistä elää vamman kanssa! Ketkä, milloin ja millaisia laitteita tarvitaan?"
+                     },
+                     {
+                            "title": "KONSULTOINTIPALVELUT",
+                            "description": "Fasilitoimme sosiaalityön ja sosiaalisen kehityksen vaikutuksia Afrikassa monikulttuurisella lähestymistavalla."
+                     }
+              ],
+              "impactsBtnText": "Tule kumppaniksemme",
+              "impactPartnerships": "Yhteistyö kansalaisjärjestöjen, sairaaloiden, akateemisten laitosten, yksityisen sektorin toimijoiden ja kehityskumppaneiden kanssa apuvälineteknologioiden saatavuuden, kohtuuhintaisuuden ja tietoisuuden parantamiseksi sekä kestävän sosiaalisen kehityksen tukemiseksi. Arkkitehtuuri- ja maisemasuunnitteluun liittyvät yritykset tekevät yhteistyötä Welfare-Plus Nigeria Limitedin kanssa afrikkalaisten elintilojen uudelleensuunnittelemiseksi apuvälineteknologioita varten. Katso esimerkiksi <a href='www.thom-ark.com' className='font-medium'>thom-ark.com</a>."
+       },
+       "USPage": {
+              "hubTitle": "USA: Tiede perustuen periaatteeseen \"in God we trust\"",
+              "hubAddress": "",
+              "hubDescription": "Welfare Plus tutkii yhteistyötä apuvälinevalmistajien ja sosiaalityön mobiilisovelluskehittäjien kanssa Yhdysvalloissa ja muualla maailmassa.",
+              "featureTitle": "Yhdysvallat",
+              "featureContent": "Welfare Plus hyödyntää kontakteja ja kumppanuuksia valituissa Yhdysvaltojen paikoissa, kuten Kaliforniassa, Utahissa, Texasissa, Pohjois-Carolinassa, Virginia Beachilla ja New Yorkissa, vahvistaakseen kansainvälistä yhteistyötä apuvälineteknologiassa, terapiatyökaluissa, sosiaalitutkimuksessa ja sosiaalisen kehityksen ohjelmissa Afrikassa.",
+              "impactsText": "Tuotteet ja palvelut",
+              "impactsContent": "",
+              "impactsBtnText": "Tule kumppaniksemme",
+              "impactPartnerships": "Yhteistyö sosiaalityön koulujen, valmistajien ja asiaankuuluvien yritysten, sosiaalisten yritysten, sosiaalihuollon ja terveydenhuollon innovoijien sekä sosiaalipolitiikan sidosryhmien kanssa. Tavoitteena on mahdollistaa Afrikan pääsy laadukkaisiin apuvälineisiin, sosiaalityön mobiilisovelluksiin tai teknologioihin ja edullisiin palveluihin vammaisille henkilöille Pohjois-Amerikasta ja muualta maailmasta."
+       },
+       "ContactPage": {
+              "sectionTitle": "Eurooppa",
+              "address": "Juontotie 9D 18, 70150 Kuopio, Pohjois-Savo, Suomi",
+              "email": "info@welfareplus.fi",
+              "telephone": "+358-46-612-7014",
+              "whatsapp": "+358-46-612-7014"
+       },
+       "ContactServices": {
+              "heading": "Yhteydenotot ja palvelut",
+              "availabilityCalls": "Olemme tavoitettavissa puhelimitse",
+              "availabilityCallsDays": "maanantaisin ja torstaisin: klo 10–17.",
+              "availabilityWhatsApp": "Olemme myös tavoitettavissa",
+              "availabilityWhatsAppDays": "WhatsAppissa 24/6, maanantaista lauantaihin."
+       }
 }

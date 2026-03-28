@@ -18,27 +18,26 @@ const Serve = () => {
             <HeadingTwo text={t("heading")} className="mx-auto font-normal! text-2xl! sm:text-4xl! lg:text-[60px]!" />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-x-10 md:divide-x py-10">
-          <div className="space-y-5">
+        <div className="grid  divide-primary grid-cols-1 md:grid-cols-3 gap-8 md:gap-x-10 md:divide-x py-10">
+          <div className="space-y-5 flex md:items-start items-center flex-col">
             <PuzzleIcon className="dark:fill-primary" />
-
-            <div className="space-y-5 text-left">
-              <HeadingFour className='w-full! text-lg! md:text-[25px]! font-bold!' text={t("researchHeading")} />
-              <p className={`${satoshi.className} text-foreground font-normal text-sm md:text-[18px]`}>{t("researchDescription")}</p>
+            <div className="space-y-5 flex flex-col">
+              <HeadingFour className='text-justify md:text-left text-[25px]! font-bold!' text={t("researchHeading")} />
+              <p className={`${satoshi.className} text-justify md:text-left text-foreground font-normal text-[18px]`}>{t("researchDescription")}</p>
             </div>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-5 flex md:items-start pr-4 items-center flex-col">
             <LockIcon className="dark:fill-primary" />
-            <div className="space-y-5 text-left">
-              <HeadingFour className='text-lg! md:text-[25px]! font-bold!' text={t("programsHeading")} />
-              <p className={`${satoshi.className} text-foreground font-normal text-sm md:text-[18px]`}>{t("programsDescription")}</p>
+            <div className="space-y-5 flex flex-col">
+              <HeadingFour className='text-justify md:text-left text-[25px]! font-bold!' text={t("programsHeading")} />
+              <p className={`${satoshi.className} text-justify md:text-left text-foreground font-normal text-[18px]`}>{t("programsDescription")}</p>
             </div>
           </div>
-          <div className="space-y-5 text-left">
+          <div className="space-y-5 flex md:items-start items-center flex-col">
             <LockIcon className="dark:fill-primary" />
-            <div className="space-y-5">
-              <HeadingFour className="text-lg! md:text-[25px]! font-bold!" text={t("productsHeading")} />
-              <p className={`${satoshi.className} text-foreground font-normal text-sm md:text-[18px]`}>{t("productsDescription")}</p>
+            <div className="space-y-5 flex flex-col">
+              <HeadingFour className="text-justify md:text-left text-[25px]! font-bold!" text={t("productsHeading")} />
+              <p className={`${satoshi.className} text-justify md:text-left text-foreground font-normal text-[18px]`}>{t("productsDescription")}</p>
             </div>
           </div>
         </div>

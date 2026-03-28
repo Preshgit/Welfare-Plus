@@ -8,6 +8,7 @@ import { ArrowUpRight } from "lucide-react"
 import { Button } from "../ui/button"
 import StarOne from "@/assets/svg/star_one.svg"
 import StarTwo from "@/assets/svg/star_two.svg"
+import { useRouter } from "@/i18n/routing"
 
 interface CTASectionProps {
   avatarTopLeft: StaticImageData
@@ -34,17 +35,7 @@ const scaleIn = {
   }
 }
 
-const floatAnimation = {
-  initial: { y: 0 },
-  animate: {
-    y: [-15, 15, -15],
-    transition: {
-      duration: 8,
-      repeat: Infinity,
-      ease: "easeInOut" as any
-    }
-  }
-}
+
 
 export default function CTASection({
   avatarTopLeft,
@@ -52,6 +43,7 @@ export default function CTASection({
   avatarTopRight,
   avatarBottomRight,
 }: CTASectionProps) {
+  const router = useRouter()
   const t = useTranslations("ContactHero")
   return (
     <section className="relative bg-background text-foreground overflow-hidden min-h-[80vh] flex items-center" style={{
@@ -74,7 +66,7 @@ export default function CTASection({
             {t("headingPost")}
           </motion.h2>
           <motion.div variants={fadeInUp}>
-            <Button className="rounded-full px-10 py-4 text-lg md:text-xl shadow-xl transition-all hover:scale-105 active:scale-95">
+            <Button onClick={() => router.push('/about-us')} className="rounded-full px-10 py-4 text-lg md:text-xl shadow-xl transition-all hover:scale-105 active:scale-95">
               {t("button")} <ArrowUpRight className="ml-2" size={30} />
             </Button>
           </motion.div>
@@ -94,7 +86,6 @@ export default function CTASection({
         <div
           className="absolute bottom-1/3 left-10 hidden lg:block text-primary drop-shadow-lg"
         >
-          <StarOne className="w-12 h-12" />
         </div>
 
         <div
@@ -115,7 +106,6 @@ export default function CTASection({
           animate="animate"
           transition={{ delay: 0.7 }}
         >
-          <StarTwo className="w-16 h-16" />
         </motion.div>
       </div>
     </section>
