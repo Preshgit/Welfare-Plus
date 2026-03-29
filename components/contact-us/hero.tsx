@@ -46,19 +46,19 @@ export default function CTASection({
   const router = useRouter()
   const t = useTranslations("ContactHero")
   return (
-    <section className="relative bg-background text-foreground overflow-hidden min-h-[80vh] flex items-center" style={{
+    <section className="relative bg-background text-foreground overflow-hidden min-h-[60vh] flex items-center" style={{
       backgroundImage: "url(/Line.png)",
       backgroundSize: "cover"
     }}>
-      <div className="relative mx-auto max-w-7xl px-6 md:px-12 lg:px-25 py-24 md:py-32 w-full">
+      <div className="relative mx-auto max-w-7xl px-6 md:px-12 lg:px-25 sm:py-24 md:py-32 w-full">
         <motion.div
-          className="relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto space-y-10"
+          className="relative z-10 flex flex-col md:items-center text-center max-w-5xl mx-auto space-y-10"
           initial="initial"
           animate="animate"
           variants={fadeInUp}
         >
           <motion.h2
-            className={`${satoshi.className} font-medium text-[32px] sm:text-[48px] md:text-[60px] lg:text-[72px]! leading-tight`}
+            className={`${satoshi.className} font-medium text-[45px] sm:text-[48px] md:text-[60px] lg:text-[72px]! leading-tight`}
             variants={fadeInUp}
           >
             {t("headingPre")} <br className="hidden sm:block" />{" "}

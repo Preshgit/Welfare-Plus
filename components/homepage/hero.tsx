@@ -34,7 +34,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="relative space-y-5 h-screen w-full overflow-hidden bg-black">
+    <section className="relative space-y-5 min-h-screen w-full overflow-hidden bg-black">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -61,7 +61,7 @@ const Hero = () => {
         </motion.div>
       </AnimatePresence>
       <div className={`relative z-10 w-full h-full flex items-center justify-center overflow-hidden ${satoshi.className}`}>
-        <div className="sm:space-y-0 max-w-6xl w-full gap-4.5 text-white text-left">
+        <div className="sm:space-y-0 max-w-6xl w-full gap-4.5 text-white text-left pb-24 md:pb-0 md:mt-20">
           <div className="space-y-3 px-3">
             <div className="px-3">
               <motion.div
@@ -93,7 +93,7 @@ const Hero = () => {
               </Button>
             </motion.div>
           </div>
-          <div className="text-right! flex sm:mt-8 flex-col ml-auto px-3 md:px-0 w-fit space-y-0">
+          <div className="text-right! flex sm:mt-8 flex-col ml-auto px-3 md:px-0 w-fit space-y-0 text-sm sm:text-base lg:text-lg font-light opacity-90">
             <p><i>{t("quote1")}</i></p>
             <p><i>{t("quote2")}</i></p>
           </div>
