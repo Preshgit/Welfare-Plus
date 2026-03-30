@@ -61,7 +61,7 @@ const Hero = () => {
         </motion.div>
       </AnimatePresence>
       <div className={`relative z-10 w-full h-full flex items-center justify-center overflow-hidden ${satoshi.className}`}>
-        <div className="sm:space-y-0 max-w-6xl w-full gap-4.5 text-white text-left pb-24 md:pb-0 md:mt-20">
+        <div className="sm:space-y-10 mt-12 max-w-6xl w-full gap-4.5 text-white text-left pb-24 md:pb-0 md:mt-20">
           <div className="space-y-3 px-3">
             <div className="px-3">
               <motion.div
@@ -93,21 +93,23 @@ const Hero = () => {
               </Button>
             </motion.div>
           </div>
-          <div className="text-right! flex sm:mt-8 flex-col ml-auto px-3 md:px-0 w-fit space-y-0 text-sm sm:text-base lg:text-lg font-light opacity-90">
+          <div className="text-right! flex sm:mt-8 mt-12 flex-col ml-auto px-3 md:px-8 w-fit space-y-0 text-sm sm:text-base lg:text-lg font-light opacity-90">
             <p><i>{t("quote1")}</i></p>
             <p><i>{t("quote2")}</i></p>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-16 z-20 flex gap-4">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`h-1.5 rounded-full transition-all duration-500 ease-out ${current === i ? "bg-primary w-12" : "bg-white/30 w-6 hover:bg-white/50"}`}
-            aria-label={`Go to slide ${i + 1}`}
-          />
-        ))}
+      <div className="relative max-w-6xl mx-auto flex items-center px-10 pb-8">
+        <div className="ml-auto w-fit items-end flex gap-x-1 h-full">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`h-4 w-4 rounded-full transition-all duration-500 ease-out ${current === i ? "bg-primary " : "bg-white/30 hover:bg-white/50"}`}
+              aria-label={`Go to slide ${i + 1}`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )
