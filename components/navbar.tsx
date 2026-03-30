@@ -30,8 +30,8 @@ const Navbar = () => {
   ]
 
   return (
-    <div className="w-screen flex sticky top-0 z-50 flex-col items-center bg-background text-foreground">
-      <div className={`${interTight.className} font-medium border-b w-screen flex items-center px-10`}>
+    <div className="w-screen flex sticky top-0 z-50 flex-col items-center bg-background text-foreground md:space-y-0 space-y-3">
+      <div className={`${interTight.className} font-medium border-b w-screen flex items-center px-5 space-y-3 md:px-10`}>
         <div className="hidden md:flex w-full max-w-6xl mx-auto px-6 md:px-12 py-3 justify-between items-center">
           <ul className="flex justify-start text-sm text-foreground mx-auto">
             <li className="pr-4 flex items-center gap-x-3"><span><MailIcon size={16} className="stroke-primary" /></span>{t("email")}</li>
@@ -39,8 +39,16 @@ const Navbar = () => {
             <li className="pl-4 border-l border-gray-300 flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
           </ul>
         </div>
-        <div className="flex items-center gap-6 ml-auto">
-          <LocaleSwitcher />
+        <div className="block md:hidden w-full">
+          <ul className="mx-auto w-full space-y-3">
+            <div className="grid grid-cols-2 border-b border-gray-300/40 py-2">
+              <li className="pr-4 flex items-center gap-x-3 text-[14px]"><span><MailIcon size={16} className="stroke-primary " /></span>{t("email")}</li>
+              <li className="px-4 border-l border-gray-300/40 flex items-center text-[13px] gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
+            </div>
+            <div className="flex items-center justify-center pb-3">
+              <li className="pl-4 text-[15px]  flex items-center gap-x-3 pb-5"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
+            </div>
+          </ul>
         </div>
       </div>
       <div className="border-b w-full px-6 md:px-12 lg:px-25">
@@ -132,11 +140,7 @@ const Navbar = () => {
                 {t("getInTouch")}
               </Button>
             </div>
-            <ul className="flex flex-col gap-1 text-xs text-gray-500 border-t pt-3">
-              <li>{t("email")}</li>
-              <li>{t("address")}</li>
-              <li>{t("phone")}</li>
-            </ul>
+
           </motion.div>
         )}
       </AnimatePresence>
