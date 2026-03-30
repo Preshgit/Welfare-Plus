@@ -1,6 +1,7 @@
 "use client"
 
-
+import WhiteLogo from "@/assets/svg/wpLOGOpng 1.svg"
+import DarkLogo from "@/assets/svg/LOGOoption1 1.svg"
 import WhatsAppIcon from "@/assets/svg/whatsapp-color-svgrepo-com.svg"
 import Image from "next/image"
 import { useState } from "react"
@@ -45,8 +46,8 @@ const Navbar = () => {
       <div className="border-b w-full px-6 md:px-12 lg:px-25">
         <div className="max-w-6xl mx-auto flex items-center justify-between py-1">
           <Link href="/" onClick={() => setMenuOpen(false)}>
-            <Image src="/Logo.png" height={70} width={140} alt="logo" className="dark:hidden" />
-            <Image src="/logodark.png" height={70} width={140} alt="logo" className="hidden dark:block" />
+            <WhiteLogo className="dark:hidden" />
+            <DarkLogo className="hidden dark:block" />
           </Link>
           <ul className="hidden md:flex gap-x-5 items-center">
             {navLinks.map(({ href, label }) => {
@@ -69,8 +70,8 @@ const Navbar = () => {
               onClick={() => router.push("/contact-us")}
               variant="plain"
               className={`py-3 px-6 flex-1 shadow-none ${isContactActive
-                  ? "border-primary bg-primary text-white font-semibold hover:bg-primary"
-                  : "border text-foreground hover:bg-primary hover:text-white"
+                ? "border-primary bg-primary text-white font-semibold hover:bg-primary"
+                : "border text-foreground hover:bg-primary hover:text-white"
                 }`}
             >
               {t("getInTouch")}
@@ -122,8 +123,8 @@ const Navbar = () => {
                 }}
                 variant="plain"
                 className={`py-3 px-6 flex-1 shadow-none ${isContactActive
-                    ? "border-primary bg-primary text-white font-semibold hover:bg-primary"
-                    : "border text-foreground hover:bg-primary hover:text-white"
+                  ? "border-primary bg-primary text-white font-semibold hover:bg-primary"
+                  : "border text-foreground hover:bg-primary hover:text-white"
                   }`}
               >
                 {t("getInTouch")}
