@@ -35,8 +35,8 @@ const Navbar = () => {
         <div className="hidden md:flex w-full max-w-6xl mx-auto px-6 md:px-12 py-3 justify-between items-center">
           <ul className="flex justify-start text-sm text-foreground mx-auto">
             <li className="pr-4 flex items-center gap-x-3"><span><MailIcon size={16} className="stroke-primary" /></span>{t("email")}</li>
-            <li className="px-4 border-l border-gray-300 flex items-center gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
-            <li className="pl-4 border-l border-gray-300 flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
+            <li className="px-4 border-l border-gray-300/40 flex items-center gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
+            <li className="pl-4 border-l border-gray-300/40 flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
           </ul>
         </div>
         <div className="block md:hidden w-full">
