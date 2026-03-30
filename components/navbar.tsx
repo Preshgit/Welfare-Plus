@@ -78,6 +78,9 @@ const Navbar = () => {
             </Button>
           </div>
           <div className="md:hidden flex items-center gap-2">
+            <div className="md:hidden">
+              <ModeToggle />
+            </div>
             <button
               className="p-2 bg-primary text-white rounded-full transition-all active:scale-95 shadow-md"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -105,7 +108,7 @@ const Navbar = () => {
                     <Link
                       href={href}
                       onClick={() => setMenuOpen(false)}
-                      className={`block w-full px-4 py-2.5 rounded-md transition-all ${isActive ? "bg-primary text-white font-semibold" : "hover:bg-accent hover:text-primary"
+                      className={`block w-full px-4 py-2.5 rounded-none transition-all ${isActive ? "bg-primary text-white font-semibold" : "hover:bg-accent hover:text-primary"
                         }`}
                     >
                       {label}
@@ -115,7 +118,6 @@ const Navbar = () => {
               })}
             </ul>
             <div className="flex items-center gap-3">
-              <ModeToggle />
               <Button
                 onClick={() => {
                   router.push("/contact-us");
