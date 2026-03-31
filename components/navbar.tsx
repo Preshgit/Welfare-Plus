@@ -51,7 +51,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="border-b w-full px-6 md:px-12 lg:px-25">
+      <div className="border-b dark:bg-[#373435] w-full px-6 md:px-12 lg:px-25">
         <div className="max-w-6xl mx-auto flex items-center justify-between py-1">
           <Link href="/" onClick={() => setMenuOpen(false)}>
             <WhiteLogo className="dark:hidden" />
