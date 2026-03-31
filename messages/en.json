@@ -250,7 +250,12 @@
               "namePlaceholder": "Your name*",
               "emailPlaceholder": "Your email address*",
               "messagePlaceholder": "Your message*",
-              "button": "Send a message"
+              "button": "Send a message",
+              "validationError": "Please fill in all required fields.",
+              "configError": "Email service is not configured yet. Please try again later.",
+              "sending": "Sending...",
+              "success": "Thanks! Your message has been sent successfully.",
+              "error": "Sorry, we could not send your message. Please try again."
        },
        "ContactSection": {
               "addressLabel": "Address",

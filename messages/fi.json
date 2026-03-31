@@ -250,7 +250,12 @@
               "namePlaceholder": "Nimesi*",
               "emailPlaceholder": "Sähköpostiosoitteesi*",
               "messagePlaceholder": "Viestisi*",
-              "button": "Lähetä viesti"
+              "button": "Lähetä viesti",
+              "validationError": "Täytä kaikki pakolliset kentät.",
+              "configError": "Sähköpostipalvelua ei ole vielä määritetty. Yritä myöhemmin uudelleen.",
+              "sending": "Lähetetään...",
+              "success": "Kiitos! Viestisi on lähetetty onnistuneesti.",
+              "error": "Valitettavasti viestin lähetys epäonnistui. Yritä uudelleen."
        },
        "ContactSection": {
               "addressLabel": "Osoite",
