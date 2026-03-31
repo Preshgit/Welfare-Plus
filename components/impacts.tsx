@@ -5,7 +5,7 @@ import type { ReactNode } from "react"
 import { Button } from "./ui/button"
 import HeadingThree from "./ui/typography/headingThree"
 import { useRouter } from "@/i18n/routing"
-import { outfit } from "@/app/utils/fonts"
+import { outfit, satoshi } from "@/app/utils/fonts"
 
 type ImpactTextItem = { text: string };
 type ImpactServiceItem = { id?: string; title: string; description: string };
@@ -191,7 +191,9 @@ const Impacts = ({ text, content, btnText, partnershipsText }: { text: string, c
         </div>
         <div className="space-y-5">
           <HeadingThree text={"Partnerships"} className="text-primary!" />
-          <p className="text-[20px] sm:text-[24px] lg:text-[30px] font-normal text-justify">
+          <p
+            className={`${satoshi.className} text-justify text-base sm:text-lg md:text-xl lg:text-[30px] text-foreground leading-relaxed mx-auto font-light`}
+          >
             {renderPartnershipText(partnershipsText)}
           </p>
           <Button onClick={() => router.push("/contact-us/#contactForm")} variant="primary" className="gap-[10.95px] md:w-fit w-full py-[14.6px] pl-[19.47px] pr-[15.82px]">

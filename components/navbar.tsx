@@ -41,12 +41,12 @@ const Navbar = () => {
         </div>
         <div className="block md:hidden w-full">
           <ul className="mx-auto w-full space-y-3">
-            <div className="grid grid-cols-2 border-b border-gray-300/40 py-2">
+            <div className="grid grid-cols-2 border-b border-gray-300/10 py-2">
               <li className="pr-4 flex items-center gap-x-3 text-[14px]"><span><MailIcon size={16} className="stroke-primary " /></span>{t("email")}</li>
-              <li className="px-4 border-l border-gray-300/40 flex items-center text-[13px] gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
+              <li className="px-4 border-l border-gray-300/10 flex items-center text-[13px] gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
             </div>
             <div className="flex items-center justify-center pb-3">
-              <li className="pl-4 text-[15px]  flex items-center gap-x-3 pb-5"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
+              <li className="pl-4 text-[15px]  flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
             </div>
           </ul>
         </div>
