@@ -18,7 +18,9 @@ const Story = () => {
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>
           <p>{t("p4")}</p>
-          <p>{t("p5")}</p>
+          <p>{t.rich("p5", {
+            b: (chunks) => <span className="font-medium">{chunks}</span>
+          })}</p>
         </div>
       </div>
     </SectionContainer>
