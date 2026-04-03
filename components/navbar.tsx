@@ -38,6 +38,7 @@ const Navbar = () => {
             <li className="px-4 border-l border-gray-300/40 flex items-center gap-x-3"><span><MapPinIcon size={16} className="stroke-primary" /></span>{t("address")}</li>
             <li className="pl-4 border-l border-gray-300/40 flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
           </ul>
+          <LocaleSwitcher />
         </div>
         <div className="block md:hidden w-full">
           <ul className="mx-auto w-full space-y-3">
@@ -47,6 +48,9 @@ const Navbar = () => {
             </div>
             <div className="flex items-center justify-center pb-3">
               <li className="pl-4 text-[15px]  flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
+            </div>
+            <div className="ml-auto pb-3 w-fit">
+              <LocaleSwitcher />
             </div>
           </ul>
         </div>
