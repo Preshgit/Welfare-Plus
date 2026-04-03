@@ -99,7 +99,7 @@
               "products": {
                      "title": "Sosiaaliset tutkimukset, ohjelmien kehittäminen ja poliittinen neuvonta.",
                      "description": [
-                            "Yhteisöpohjaiset sosiaalihuollon ja osallisuuden aloitteet.",
+                            "Yhteisöpohjaiset sosiaalihuolto ja projektien toteutus.",
                             "Sosiaalihuollon laitosten ja ammattilaisten kapasiteetin vahvistaminen.",
                             "Vertaileva sosiaalihuollon ja sosiaalipolitiikan tutkimus.",
                             "Perusselvitykset, arvioinnit ja vaikutusten arvioinnit.",
@@ -276,7 +276,7 @@
                             "description": "Helpotamme erilaisten apuvälineiden, kuten itsenäisen asumisen, liikkumisen ja ortopedian laitteiden tukku- ja vähittäismyyntiä."
                      },
                      {
-                            "title": "PARANNETUT HOITOPALVELUT JA -TUOTTEET",
+                            "title": "PARANNETUT HOITOPALVELUT JA TUOTTEET",
                             "description": "Ajammme edullisia ja parhaiden standardien mukaisia interventioita ja apupalveluita."
                      },
                      {
@@ -285,14 +285,14 @@
                      },
                      {
                             "title": "SOSIAALIHUOLLON JA SOSIAALIPOLITIIKAN TUTKIMUS",
-                            "description": "Edistämme tutkimusta, edunvalvontaa ja politiikkaa sosiaalisesti haavoittuvien ihmisten tilanteen parantamiseksi."
+                            "description": "Edistämme tutkimusta, edunvalvontaa ja politiikkaa sosiaalisesti haavoittuvien ihmisten olosuhteiden parantamiseksi."
                      },
                      {
                             "title": "NÄYTTÖÖN PERUSTUVAT INNOVAATIOT",
                             "description": "Tuotamme poikkitieteellistä tutkimusta räätälöidyistä terapiatyökaluista."
                      },
                      {
-                            "title": "KONSULTOINTIPALVELUT",
+                            "title": "Konsultointipalvelut ja projektien toteutus",
                             "description": "Edistämme kansainvälistä sosiaalityötä (ISW) erikoisalana."
                      }
               ],
@@ -305,7 +305,7 @@
               "hubDescription": "",
               "featureTitle": "Sub-Saharan Afrikka",
               "featureContent": "Welfare-Plus Nigeria Limited tekee yhteistyötä Suomen Welfare Plusin kanssa edustaakseen kansainvälisiä parhaiden apuvälineteknologioiden ja itsenäisen elämisen laitteiden valmistajia. Nämä kumppanuudet tukevat markkinoille pääsyä, jakelua ja osallistavien sosiaalipalveluiden ja kehitysohjelmien toteuttamista Afrikan maissa.",
-              "impactsText": "Palvelut ja tuotteet Sub-Saharan Afrikassa",
+              "impactsText": "Tuotteet ja palvelut Sub-Saharan Afrikassa",
               "impactsContent": [
                      {
                             "title": "APUVÄLINEIDEN SAATAVUUDEN EDISTÄMINEN",
