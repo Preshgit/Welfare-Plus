@@ -50,7 +50,6 @@ const Navbar = () => {
               <li className="pl-4 text-[15px]  flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
             </div>
             <div className="ml-auto pb-3 w-fit">
-              <LocaleSwitcher />
             </div>
           </ul>
         </div>
@@ -90,7 +89,8 @@ const Navbar = () => {
             </Button>
           </div>
           <div className="md:hidden flex items-center gap-2">
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center gap-x-5">
+              <LocaleSwitcher />
               <ModeToggle />
             </div>
             <button
