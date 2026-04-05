@@ -49,8 +49,6 @@ const Navbar = () => {
             <div className="flex items-center justify-center pb-3">
               <li className="pl-4 text-[15px]  flex items-center gap-x-3"><span><WhatsAppIcon className="size-4" /></span>{t("phone")}</li>
             </div>
-            <div className="ml-auto pb-3 w-fit">
-            </div>
           </ul>
         </div>
       </div>
